@@ -18,26 +18,26 @@ def pessimisticMajoritySorting(inputFile, outputFile, weights, table, treshold):
     total_voters = 0
     for value in weights1.values():
         total_voters += value
-    cereals_df = pd.read_excel(inputFile)
-    cereals_df = cereals_df.rename(columns={"energy100g": "energy", "sugars100g": "sugar",
+    foods_df = pd.read_excel(inputFile)
+    foods_df = foods_df.rename(columns={"energy100g": "energy", "sugars100g": "sugar",
                                             "saturatedfat100g": "satu. fat.", "sodium100g": "salt",
                                             "proteins100g": "protein", "fiber100g": "fiber"})
-    cereals_df = cereals_df[["energy", "sugar", "satu. fat.", "salt", "protein", "fiber", "nutriscoregrade"]]
-    columns = cereals_df.columns
-    true_score = cereals_df["nutriscoregrade"].values.tolist()
+    foods_df = foods_df[["energy", "sugar", "satu. fat.", "salt", "protein", "fiber", "nutriscoregrade"]]
+    columns = foods_df.columns
+    true_score = foods_df["nutriscoregrade"].values.tolist()
     predicted_score = []
 
-    for prod in range(len(cereals_df)):
+    for prod in range(len(foods_df)):
         for row in range(len(table)):
             p, r = 0, 0
             for i in range(len(table[0])):
                 if i < 4:
-                    if cereals_df.loc[prod][i] <= table[row][i]:
+                    if foods_df.loc[prod][i] <= table[row][i]:
                         p += 1 * weights.get(columns[i])
                     else:
                         r += 1 * weights.get(columns[i])
                 else:
-                    if cereals_df.loc[prod][i] >= table[row][i]:
+                    if foods_df.loc[prod][i] >= table[row][i]:
                         p += 1 * weights.get(columns[i])
                     else:
                         r += 1 * weights.get(columns[i])
@@ -45,8 +45,51 @@ def pessimisticMajoritySorting(inputFile, outputFile, weights, table, treshold):
                 predicted_score.append(nutri_scores.get(row))
                 break
 
-    cereals_df["predicted nutri score"] = predicted_score
-    cereals_df.to_excel(outputFile)
+    foods_df["predicted nutri score"] = predicted_score
+    foods_df.to_excel(outputFile)
+
+    pairs = []
+    for i in range(len(true_score)):
+        pair = (true_score[i], predicted_score[i])
+        pairs.append(pair)
+    return pairs
+
+
+def optimisticMajoritySorting(inputFile, outputFile, weights, table, treshold):
+    total_voters = 0
+    for value in weights1.values():
+        total_voters += value
+    foods_df = pd.read_excel(inputFile)
+    foods_df = foods_df.rename(columns={"energy100g": "energy", "sugars100g": "sugar",
+                                            "saturatedfat100g": "satu. fat.", "sodium100g": "salt",
+                                            "proteins100g": "protein", "fiber100g": "fiber"})
+    foods_df = foods_df[["energy", "sugar", "satu. fat.", "salt", "protein", "fiber", "nutriscoregrade"]]
+    columns = foods_df.columns
+    true_score = foods_df["nutriscoregrade"].values.tolist()
+    predicted_score = []
+
+    for prod in range(len(foods_df)):
+        # print("\n")
+        for row in range(len(table)-1, -1, -1):
+            p, r = 0, 0
+            for i in range(len(table[0])):
+                if i < 4:
+                    if foods_df.loc[prod][i] <= table[row][i]:
+                        p += 1 * weights.get(columns[i])
+                    else:
+                        r += 1 * weights.get(columns[i])
+                else:
+                    if foods_df.loc[prod][i] >= table[row][i]:
+                        p += 1 * weights.get(columns[i])
+                    else:
+                        r += 1 * weights.get(columns[i])
+            # print(r, p, "***", row)
+            if r >= total_voters*treshold > p:
+                predicted_score.append(nutri_scores.get(row+1))
+                break
+
+    foods_df["predicted nutri score"] = predicted_score
+    foods_df.to_excel(outputFile)
 
     pairs = []
     for i in range(len(true_score)):
@@ -66,9 +109,12 @@ def calculateConfusionMatrix(pairs, size):
         print(row)
 
 
+# for th in tresholds:
+#     pairs1 = pessimisticMajoritySorting("OpenFood_Petales.xlsx", "pessimistic_OpenFood_Petales.xlsx", weights1, table1, th)
+#     print("\nFor treshold", th, "the confusion matrix is:")
+#     calculateConfusionMatrix(pairs1, 5)
+
 for th in tresholds:
-    pairs1 = pessimisticMajoritySorting("OpenFood_Petales.xlsx", "pessimistic_OpenFood_Petales.xlsx", weights1, table1, th)
+    pairs2 = optimisticMajoritySorting("OpenFood_Petales.xlsx", "optimistic_OpenFood_Petales.xlsx", weights1, table1, th)
     print("\nFor treshold", th, "the confusion matrix is:")
-    calculateConfusionMatrix(pairs1, 5)
-
-
+    calculateConfusionMatrix(pairs2, 5)
