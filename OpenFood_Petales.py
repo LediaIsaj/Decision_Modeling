@@ -2,6 +2,8 @@
 
 from pulp import * 
 
+import pandas as pd 
+
 prob = LpProblem('NutriScore', LpMaximize) 
 
 # Create problem variables 
@@ -564,3811 +566,3811 @@ epsilon_4=LpVariable("epsilon_4",1, 20)
 
  # Variables associated to the marginal utility functions of food 1 x_1
 
-U1_1623=LpVariable('utilite_1_1623',0, 20) 
+U1_1623=LpVariable('U1_1623',0, 20) 
 
-U2_2_4=LpVariable('utilite_2_2_4',0, 20) 
+U2_2_4=LpVariable('U2_2_4',0, 20) 
 
-U3_18_0=LpVariable('utilite_3_18_0',0, 20) 
+U3_18_0=LpVariable('U3_18_0',0, 20) 
 
-U4_9_0=LpVariable('utilite_4_9_0',0, 20) 
+U4_9_0=LpVariable('U4_9_0',0, 20) 
 
-U5_11_0=LpVariable('utilite_5_11_0',0, 20) 
+U5_11_0=LpVariable('U5_11_0',0, 20) 
 
-U6_0_08=LpVariable('utilite_6_0_08',0, 20) 
+U6_0_08=LpVariable('U6_0_08',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_2
 
-U1_1548=LpVariable('utilite_1_1548',0, 20) 
+U1_1548=LpVariable('U1_1548',0, 20) 
 
-U2_0_8=LpVariable('utilite_2_0_8',0, 20) 
+U2_0_8=LpVariable('U2_0_8',0, 20) 
 
-U3_1_0=LpVariable('utilite_3_1_0',0, 20) 
+U3_1_0=LpVariable('U3_1_0',0, 20) 
 
-U4_6_2=LpVariable('utilite_4_6_2',0, 20) 
+U4_6_2=LpVariable('U4_6_2',0, 20) 
 
-U5_13_9=LpVariable('utilite_5_13_9',0, 20) 
+U5_13_9=LpVariable('U5_13_9',0, 20) 
 
-U6_0_4=LpVariable('utilite_6_0_4',0, 20) 
+U6_0_4=LpVariable('U6_0_4',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_3
 
-U1_1506=LpVariable('utilite_1_1506',0, 20) 
+U1_1506=LpVariable('U1_1506',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_8_8=LpVariable('utilite_3_8_8',0, 20) 
+U3_8_8=LpVariable('U3_8_8',0, 20) 
 
-U4_8_8=LpVariable('utilite_4_8_8',0, 20) 
+U4_8_8=LpVariable('U4_8_8',0, 20) 
 
-U5_8_4=LpVariable('utilite_5_8_4',0, 20) 
+U5_8_4=LpVariable('U5_8_4',0, 20) 
 
-U6_0_336=LpVariable('utilite_6_0_336',0, 20) 
+U6_0_336=LpVariable('U6_0_336',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_4
 
-U1_1561=LpVariable('utilite_1_1561',0, 20) 
+U1_1561=LpVariable('U1_1561',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_11_8=LpVariable('utilite_3_11_8',0, 20) 
+U3_11_8=LpVariable('U3_11_8',0, 20) 
 
-U4_6_2=LpVariable('utilite_4_6_2',0, 20) 
+U4_6_2=LpVariable('U4_6_2',0, 20) 
 
-U5_8_9=LpVariable('utilite_5_8_9',0, 20) 
+U5_8_9=LpVariable('U5_8_9',0, 20) 
 
-U6_0_196=LpVariable('utilite_6_0_196',0, 20) 
+U6_0_196=LpVariable('U6_0_196',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_5
 
-U1_1565=LpVariable('utilite_1_1565',0, 20) 
+U1_1565=LpVariable('U1_1565',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_5_0=LpVariable('utilite_3_5_0',0, 20) 
+U3_5_0=LpVariable('U3_5_0',0, 20) 
 
-U4_4_0=LpVariable('utilite_4_4_0',0, 20) 
+U4_4_0=LpVariable('U4_4_0',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_0=LpVariable('utilite_6_0_0',0, 20) 
+U6_0_0=LpVariable('U6_0_0',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_6
 
-U1_1653=LpVariable('utilite_1_1653',0, 20) 
+U1_1653=LpVariable('U1_1653',0, 20) 
 
-U2_0_6=LpVariable('utilite_2_0_6',0, 20) 
+U2_0_6=LpVariable('U2_0_6',0, 20) 
 
-U3_0_7=LpVariable('utilite_3_0_7',0, 20) 
+U3_0_7=LpVariable('U3_0_7',0, 20) 
 
-U4_6_3=LpVariable('utilite_4_6_3',0, 20) 
+U4_6_3=LpVariable('U4_6_3',0, 20) 
 
-U5_14_0=LpVariable('utilite_5_14_0',0, 20) 
+U5_14_0=LpVariable('U5_14_0',0, 20) 
 
-U6_0_044=LpVariable('utilite_6_0_044',0, 20) 
+U6_0_044=LpVariable('U6_0_044',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_7
 
-U1_565=LpVariable('utilite_1_565',0, 20) 
+U1_565=LpVariable('U1_565',0, 20) 
 
-U2_0_7=LpVariable('utilite_2_0_7',0, 20) 
+U2_0_7=LpVariable('U2_0_7',0, 20) 
 
-U3_7_5=LpVariable('utilite_3_7_5',0, 20) 
+U3_7_5=LpVariable('U3_7_5',0, 20) 
 
-U4_2_0=LpVariable('utilite_4_2_0',0, 20) 
+U4_2_0=LpVariable('U4_2_0',0, 20) 
 
-U5_3_7=LpVariable('utilite_5_3_7',0, 20) 
+U5_3_7=LpVariable('U5_3_7',0, 20) 
 
-U6_0_004=LpVariable('utilite_6_0_004',0, 20) 
+U6_0_004=LpVariable('U6_0_004',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_8
 
-U1_1573=LpVariable('utilite_1_1573',0, 20) 
+U1_1573=LpVariable('U1_1573',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_8_8=LpVariable('utilite_3_8_8',0, 20) 
+U3_8_8=LpVariable('U3_8_8',0, 20) 
 
-U4_5_8=LpVariable('utilite_4_5_8',0, 20) 
+U4_5_8=LpVariable('U4_5_8',0, 20) 
 
-U5_9_0=LpVariable('utilite_5_9_0',0, 20) 
+U5_9_0=LpVariable('U5_9_0',0, 20) 
 
-U6_0_356=LpVariable('utilite_6_0_356',0, 20) 
+U6_0_356=LpVariable('U6_0_356',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_9
 
-U1_1530=LpVariable('utilite_1_1530',0, 20) 
+U1_1530=LpVariable('U1_1530',0, 20) 
 
-U2_1_33=LpVariable('utilite_2_1_33',0, 20) 
+U2_1_33=LpVariable('U2_1_33',0, 20) 
 
-U3_4_0=LpVariable('utilite_3_4_0',0, 20) 
+U3_4_0=LpVariable('U3_4_0',0, 20) 
 
-U4_9_0=LpVariable('utilite_4_9_0',0, 20) 
+U4_9_0=LpVariable('U4_9_0',0, 20) 
 
-U5_14_0=LpVariable('utilite_5_14_0',0, 20) 
+U5_14_0=LpVariable('U5_14_0',0, 20) 
 
-U6_0_173=LpVariable('utilite_6_0_173',0, 20) 
+U6_0_173=LpVariable('U6_0_173',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_10
 
-U1_1594=LpVariable('utilite_1_1594',0, 20) 
+U1_1594=LpVariable('U1_1594',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_4_0=LpVariable('utilite_3_4_0',0, 20) 
+U3_4_0=LpVariable('U3_4_0',0, 20) 
 
-U4_4_0=LpVariable('utilite_4_4_0',0, 20) 
+U4_4_0=LpVariable('U4_4_0',0, 20) 
 
-U5_7_5=LpVariable('utilite_5_7_5',0, 20) 
+U5_7_5=LpVariable('U5_7_5',0, 20) 
 
-U6_0_332=LpVariable('utilite_6_0_332',0, 20) 
+U6_0_332=LpVariable('U6_0_332',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_11
 
-U1_1510=LpVariable('utilite_1_1510',0, 20) 
+U1_1510=LpVariable('U1_1510',0, 20) 
 
-U2_0_667=LpVariable('utilite_2_0_667',0, 20) 
+U2_0_667=LpVariable('U2_0_667',0, 20) 
 
-U3_3_0=LpVariable('utilite_3_3_0',0, 20) 
+U3_3_0=LpVariable('U3_3_0',0, 20) 
 
-U4_10_0=LpVariable('utilite_4_10_0',0, 20) 
+U4_10_0=LpVariable('U4_10_0',0, 20) 
 
-U5_13_0=LpVariable('utilite_5_13_0',0, 20) 
+U5_13_0=LpVariable('U5_13_0',0, 20) 
 
-U6_0_227=LpVariable('utilite_6_0_227',0, 20) 
+U6_0_227=LpVariable('U6_0_227',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_12
 
-U1_1573=LpVariable('utilite_1_1573',0, 20) 
+U1_1573=LpVariable('U1_1573',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_2_9=LpVariable('utilite_3_2_9',0, 20) 
+U3_2_9=LpVariable('U3_2_9',0, 20) 
 
-U4_11_0=LpVariable('utilite_4_11_0',0, 20) 
+U4_11_0=LpVariable('U4_11_0',0, 20) 
 
-U5_15_0=LpVariable('utilite_5_15_0',0, 20) 
+U5_15_0=LpVariable('U5_15_0',0, 20) 
 
-U6_0_036=LpVariable('utilite_6_0_036',0, 20) 
+U6_0_036=LpVariable('U6_0_036',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_13
 
-U1_1540=LpVariable('utilite_1_1540',0, 20) 
+U1_1540=LpVariable('U1_1540',0, 20) 
 
-U2_0_6=LpVariable('utilite_2_0_6',0, 20) 
+U2_0_6=LpVariable('U2_0_6',0, 20) 
 
-U3_11_0=LpVariable('utilite_3_11_0',0, 20) 
+U3_11_0=LpVariable('U3_11_0',0, 20) 
 
-U4_8_9=LpVariable('utilite_4_8_9',0, 20) 
+U4_8_9=LpVariable('U4_8_9',0, 20) 
 
-U5_9_4=LpVariable('utilite_5_9_4',0, 20) 
+U5_9_4=LpVariable('U5_9_4',0, 20) 
 
-U6_0_0=LpVariable('utilite_6_0_0',0, 20) 
+U6_0_0=LpVariable('U6_0_0',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_14
 
-U1_1611=LpVariable('utilite_1_1611',0, 20) 
+U1_1611=LpVariable('U1_1611',0, 20) 
 
-U2_1_6=LpVariable('utilite_2_1_6',0, 20) 
+U2_1_6=LpVariable('U2_1_6',0, 20) 
 
-U3_21_0=LpVariable('utilite_3_21_0',0, 20) 
+U3_21_0=LpVariable('U3_21_0',0, 20) 
 
-U4_7_6=LpVariable('utilite_4_7_6',0, 20) 
+U4_7_6=LpVariable('U4_7_6',0, 20) 
 
-U5_9_7=LpVariable('utilite_5_9_7',0, 20) 
+U5_9_7=LpVariable('U5_9_7',0, 20) 
 
-U6_0_072=LpVariable('utilite_6_0_072',0, 20) 
+U6_0_072=LpVariable('U6_0_072',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_15
 
-U1_1602=LpVariable('utilite_1_1602',0, 20) 
+U1_1602=LpVariable('U1_1602',0, 20) 
 
-U2_0_5=LpVariable('utilite_2_0_5',0, 20) 
+U2_0_5=LpVariable('U2_0_5',0, 20) 
 
-U3_1_1=LpVariable('utilite_3_1_1',0, 20) 
+U3_1_1=LpVariable('U3_1_1',0, 20) 
 
-U4_6_4=LpVariable('utilite_4_6_4',0, 20) 
+U4_6_4=LpVariable('U4_6_4',0, 20) 
 
-U5_8_1=LpVariable('utilite_5_8_1',0, 20) 
+U5_8_1=LpVariable('U5_8_1',0, 20) 
 
-U6_0_004=LpVariable('utilite_6_0_004',0, 20) 
+U6_0_004=LpVariable('U6_0_004',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_16
 
-U1_1615=LpVariable('utilite_1_1615',0, 20) 
+U1_1615=LpVariable('U1_1615',0, 20) 
 
-U2_0_8=LpVariable('utilite_2_0_8',0, 20) 
+U2_0_8=LpVariable('U2_0_8',0, 20) 
 
-U3_2_1=LpVariable('utilite_3_2_1',0, 20) 
+U3_2_1=LpVariable('U3_2_1',0, 20) 
 
-U4_5_8=LpVariable('utilite_4_5_8',0, 20) 
+U4_5_8=LpVariable('U4_5_8',0, 20) 
 
-U5_14_1=LpVariable('utilite_5_14_1',0, 20) 
+U5_14_1=LpVariable('U5_14_1',0, 20) 
 
-U6_0_48=LpVariable('utilite_6_0_48',0, 20) 
+U6_0_48=LpVariable('U6_0_48',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_17
 
-U1_1561=LpVariable('utilite_1_1561',0, 20) 
+U1_1561=LpVariable('U1_1561',0, 20) 
 
-U2_0_4=LpVariable('utilite_2_0_4',0, 20) 
+U2_0_4=LpVariable('U2_0_4',0, 20) 
 
-U3_13_9=LpVariable('utilite_3_13_9',0, 20) 
+U3_13_9=LpVariable('U3_13_9',0, 20) 
 
-U4_7_0=LpVariable('utilite_4_7_0',0, 20) 
+U4_7_0=LpVariable('U4_7_0',0, 20) 
 
-U5_8_5=LpVariable('utilite_5_8_5',0, 20) 
+U5_8_5=LpVariable('U5_8_5',0, 20) 
 
-U6_0_148=LpVariable('utilite_6_0_148',0, 20) 
+U6_0_148=LpVariable('U6_0_148',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_18
 
-U1_1603=LpVariable('utilite_1_1603',0, 20) 
+U1_1603=LpVariable('U1_1603',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_13_3=LpVariable('utilite_3_13_3',0, 20) 
+U3_13_3=LpVariable('U3_13_3',0, 20) 
 
-U4_3_9=LpVariable('utilite_4_3_9',0, 20) 
+U4_3_9=LpVariable('U4_3_9',0, 20) 
 
-U5_12_0=LpVariable('utilite_5_12_0',0, 20) 
+U5_12_0=LpVariable('U5_12_0',0, 20) 
 
-U6_0_26416=LpVariable('utilite_6_0_26416',0, 20) 
+U6_0_26416=LpVariable('U6_0_26416',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_19
 
-U1_1523=LpVariable('utilite_1_1523',0, 20) 
+U1_1523=LpVariable('U1_1523',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_9_4=LpVariable('utilite_3_9_4',0, 20) 
+U3_9_4=LpVariable('U3_9_4',0, 20) 
 
-U4_5_5=LpVariable('utilite_4_5_5',0, 20) 
+U4_5_5=LpVariable('U4_5_5',0, 20) 
 
-U5_7_8=LpVariable('utilite_5_7_8',0, 20) 
+U5_7_8=LpVariable('U5_7_8',0, 20) 
 
-U6_0_16=LpVariable('utilite_6_0_16',0, 20) 
+U6_0_16=LpVariable('U6_0_16',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_20
 
-U1_1565=LpVariable('utilite_1_1565',0, 20) 
+U1_1565=LpVariable('U1_1565',0, 20) 
 
-U2_0_7=LpVariable('utilite_2_0_7',0, 20) 
+U2_0_7=LpVariable('U2_0_7',0, 20) 
 
-U3_5_4=LpVariable('utilite_3_5_4',0, 20) 
+U3_5_4=LpVariable('U3_5_4',0, 20) 
 
-U4_7_5=LpVariable('utilite_4_7_5',0, 20) 
+U4_7_5=LpVariable('U4_7_5',0, 20) 
 
-U5_13_8=LpVariable('utilite_5_13_8',0, 20) 
+U5_13_8=LpVariable('U5_13_8',0, 20) 
 
-U6_0_0012=LpVariable('utilite_6_0_0012',0, 20) 
+U6_0_0012=LpVariable('U6_0_0012',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_21
 
-U1_1632=LpVariable('utilite_1_1632',0, 20) 
+U1_1632=LpVariable('U1_1632',0, 20) 
 
-U2_0_7=LpVariable('utilite_2_0_7',0, 20) 
+U2_0_7=LpVariable('U2_0_7',0, 20) 
 
-U3_16_8=LpVariable('utilite_3_16_8',0, 20) 
+U3_16_8=LpVariable('U3_16_8',0, 20) 
 
-U4_5_2=LpVariable('utilite_4_5_2',0, 20) 
+U4_5_2=LpVariable('U4_5_2',0, 20) 
 
-U5_9_2=LpVariable('utilite_5_9_2',0, 20) 
+U5_9_2=LpVariable('U5_9_2',0, 20) 
 
-U6_0_008=LpVariable('utilite_6_0_008',0, 20) 
+U6_0_008=LpVariable('U6_0_008',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_22
 
-U1_1540=LpVariable('utilite_1_1540',0, 20) 
+U1_1540=LpVariable('U1_1540',0, 20) 
 
-U2_0_0=LpVariable('utilite_2_0_0',0, 20) 
+U2_0_0=LpVariable('U2_0_0',0, 20) 
 
-U3_5_0=LpVariable('utilite_3_5_0',0, 20) 
+U3_5_0=LpVariable('U3_5_0',0, 20) 
 
-U4_3_0=LpVariable('utilite_4_3_0',0, 20) 
+U4_3_0=LpVariable('U4_3_0',0, 20) 
 
-U5_7_0=LpVariable('utilite_5_7_0',0, 20) 
+U5_7_0=LpVariable('U5_7_0',0, 20) 
 
-U6_0_0=LpVariable('utilite_6_0_0',0, 20) 
+U6_0_0=LpVariable('U6_0_0',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_23
 
-U1_1452=LpVariable('utilite_1_1452',0, 20) 
+U1_1452=LpVariable('U1_1452',0, 20) 
 
-U2_0_5=LpVariable('utilite_2_0_5',0, 20) 
+U2_0_5=LpVariable('U2_0_5',0, 20) 
 
-U3_1_1=LpVariable('utilite_3_1_1',0, 20) 
+U3_1_1=LpVariable('U3_1_1',0, 20) 
 
-U4_12_0=LpVariable('utilite_4_12_0',0, 20) 
+U4_12_0=LpVariable('U4_12_0',0, 20) 
 
-U5_11_0=LpVariable('utilite_5_11_0',0, 20) 
+U5_11_0=LpVariable('U5_11_0',0, 20) 
 
-U6_0_396=LpVariable('utilite_6_0_396',0, 20) 
+U6_0_396=LpVariable('U6_0_396',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_24
 
-U1_1652=LpVariable('utilite_1_1652',0, 20) 
+U1_1652=LpVariable('U1_1652',0, 20) 
 
-U2_0_8=LpVariable('utilite_2_0_8',0, 20) 
+U2_0_8=LpVariable('U2_0_8',0, 20) 
 
-U3_13_0=LpVariable('utilite_3_13_0',0, 20) 
+U3_13_0=LpVariable('U3_13_0',0, 20) 
 
-U4_4_3=LpVariable('utilite_4_4_3',0, 20) 
+U4_4_3=LpVariable('U4_4_3',0, 20) 
 
-U5_7_6=LpVariable('utilite_5_7_6',0, 20) 
+U5_7_6=LpVariable('U5_7_6',0, 20) 
 
-U6_0_096=LpVariable('utilite_6_0_096',0, 20) 
+U6_0_096=LpVariable('U6_0_096',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_25
 
-U1_1552=LpVariable('utilite_1_1552',0, 20) 
+U1_1552=LpVariable('U1_1552',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_6_0=LpVariable('utilite_3_6_0',0, 20) 
+U3_6_0=LpVariable('U3_6_0',0, 20) 
 
-U4_5_0=LpVariable('utilite_4_5_0',0, 20) 
+U4_5_0=LpVariable('U4_5_0',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_332=LpVariable('utilite_6_0_332',0, 20) 
+U6_0_332=LpVariable('U6_0_332',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_26
 
-U1_1594=LpVariable('utilite_1_1594',0, 20) 
+U1_1594=LpVariable('U1_1594',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_0_6=LpVariable('utilite_3_0_6',0, 20) 
+U3_0_6=LpVariable('U3_0_6',0, 20) 
 
-U4_4_4=LpVariable('utilite_4_4_4',0, 20) 
+U4_4_4=LpVariable('U4_4_4',0, 20) 
 
-U5_6_7=LpVariable('utilite_5_6_7',0, 20) 
+U5_6_7=LpVariable('U5_6_7',0, 20) 
 
-U6_0_0=LpVariable('utilite_6_0_0',0, 20) 
+U6_0_0=LpVariable('U6_0_0',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_27
 
-U1_1548=LpVariable('utilite_1_1548',0, 20) 
+U1_1548=LpVariable('U1_1548',0, 20) 
 
-U2_0_4=LpVariable('utilite_2_0_4',0, 20) 
+U2_0_4=LpVariable('U2_0_4',0, 20) 
 
-U3_16_0=LpVariable('utilite_3_16_0',0, 20) 
+U3_16_0=LpVariable('U3_16_0',0, 20) 
 
-U4_7_5=LpVariable('utilite_4_7_5',0, 20) 
+U4_7_5=LpVariable('U4_7_5',0, 20) 
 
-U5_14_0=LpVariable('utilite_5_14_0',0, 20) 
+U5_14_0=LpVariable('U5_14_0',0, 20) 
 
-U6_0_22=LpVariable('utilite_6_0_22',0, 20) 
+U6_0_22=LpVariable('U6_0_22',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_28
 
-U1_628=LpVariable('utilite_1_628',0, 20) 
+U1_628=LpVariable('U1_628',0, 20) 
 
-U2_0_1=LpVariable('utilite_2_0_1',0, 20) 
+U2_0_1=LpVariable('U2_0_1',0, 20) 
 
-U3_0_5=LpVariable('utilite_3_0_5',0, 20) 
+U3_0_5=LpVariable('U3_0_5',0, 20) 
 
-U4_1_3=LpVariable('utilite_4_1_3',0, 20) 
+U4_1_3=LpVariable('U4_1_3',0, 20) 
 
-U5_2_8=LpVariable('utilite_5_2_8',0, 20) 
+U5_2_8=LpVariable('U5_2_8',0, 20) 
 
-U6_0_0=LpVariable('utilite_6_0_0',0, 20) 
+U6_0_0=LpVariable('U6_0_0',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_29
 
-U1_1536=LpVariable('utilite_1_1536',0, 20) 
+U1_1536=LpVariable('U1_1536',0, 20) 
 
-U2_0_8=LpVariable('utilite_2_0_8',0, 20) 
+U2_0_8=LpVariable('U2_0_8',0, 20) 
 
-U3_2_7=LpVariable('utilite_3_2_7',0, 20) 
+U3_2_7=LpVariable('U3_2_7',0, 20) 
 
-U4_39_1=LpVariable('utilite_4_39_1',0, 20) 
+U4_39_1=LpVariable('U4_39_1',0, 20) 
 
-U5_12_8=LpVariable('utilite_5_12_8',0, 20) 
+U5_12_8=LpVariable('U5_12_8',0, 20) 
 
-U6_0_024=LpVariable('utilite_6_0_024',0, 20) 
+U6_0_024=LpVariable('U6_0_024',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_30
 
-U1_1613=LpVariable('utilite_1_1613',0, 20) 
+U1_1613=LpVariable('U1_1613',0, 20) 
 
-U2_0_5=LpVariable('utilite_2_0_5',0, 20) 
+U2_0_5=LpVariable('U2_0_5',0, 20) 
 
-U3_18_0=LpVariable('utilite_3_18_0',0, 20) 
+U3_18_0=LpVariable('U3_18_0',0, 20) 
 
-U4_5_0=LpVariable('utilite_4_5_0',0, 20) 
+U4_5_0=LpVariable('U4_5_0',0, 20) 
 
-U5_9_0=LpVariable('utilite_5_9_0',0, 20) 
+U5_9_0=LpVariable('U5_9_0',0, 20) 
 
-U6_0_252=LpVariable('utilite_6_0_252',0, 20) 
+U6_0_252=LpVariable('U6_0_252',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_31
 
-U1_1841=LpVariable('utilite_1_1841',0, 20) 
+U1_1841=LpVariable('U1_1841',0, 20) 
 
-U2_2_2=LpVariable('utilite_2_2_2',0, 20) 
+U2_2_2=LpVariable('U2_2_2',0, 20) 
 
-U3_10_9=LpVariable('utilite_3_10_9',0, 20) 
+U3_10_9=LpVariable('U3_10_9',0, 20) 
 
-U4_8_6=LpVariable('utilite_4_8_6',0, 20) 
+U4_8_6=LpVariable('U4_8_6',0, 20) 
 
-U5_11_9=LpVariable('utilite_5_11_9',0, 20) 
+U5_11_9=LpVariable('U5_11_9',0, 20) 
 
-U6_0_072=LpVariable('utilite_6_0_072',0, 20) 
+U6_0_072=LpVariable('U6_0_072',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_32
 
-U1_1791=LpVariable('utilite_1_1791',0, 20) 
+U1_1791=LpVariable('U1_1791',0, 20) 
 
-U2_1_0=LpVariable('utilite_2_1_0',0, 20) 
+U2_1_0=LpVariable('U2_1_0',0, 20) 
 
-U3_12_0=LpVariable('utilite_3_12_0',0, 20) 
+U3_12_0=LpVariable('U3_12_0',0, 20) 
 
-U4_7_6=LpVariable('utilite_4_7_6',0, 20) 
+U4_7_6=LpVariable('U4_7_6',0, 20) 
 
-U5_8_8=LpVariable('utilite_5_8_8',0, 20) 
+U5_8_8=LpVariable('U5_8_8',0, 20) 
 
-U6_0_156=LpVariable('utilite_6_0_156',0, 20) 
+U6_0_156=LpVariable('U6_0_156',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_33
 
-U1_1682=LpVariable('utilite_1_1682',0, 20) 
+U1_1682=LpVariable('U1_1682',0, 20) 
 
-U2_1_2=LpVariable('utilite_2_1_2',0, 20) 
+U2_1_2=LpVariable('U2_1_2',0, 20) 
 
-U3_14_0=LpVariable('utilite_3_14_0',0, 20) 
+U3_14_0=LpVariable('U3_14_0',0, 20) 
 
-U4_14_0=LpVariable('utilite_4_14_0',0, 20) 
+U4_14_0=LpVariable('U4_14_0',0, 20) 
 
-U5_11_0=LpVariable('utilite_5_11_0',0, 20) 
+U5_11_0=LpVariable('U5_11_0',0, 20) 
 
-U6_0_104=LpVariable('utilite_6_0_104',0, 20) 
+U6_0_104=LpVariable('U6_0_104',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_34
 
-U1_1564=LpVariable('utilite_1_1564',0, 20) 
+U1_1564=LpVariable('U1_1564',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_4_0=LpVariable('utilite_3_4_0',0, 20) 
+U3_4_0=LpVariable('U3_4_0',0, 20) 
 
-U4_3_2=LpVariable('utilite_4_3_2',0, 20) 
+U4_3_2=LpVariable('U4_3_2',0, 20) 
 
-U5_7_3=LpVariable('utilite_5_7_3',0, 20) 
+U5_7_3=LpVariable('U5_7_3',0, 20) 
 
-U6_0_4=LpVariable('utilite_6_0_4',0, 20) 
+U6_0_4=LpVariable('U6_0_4',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_35
 
-U1_1561=LpVariable('utilite_1_1561',0, 20) 
+U1_1561=LpVariable('U1_1561',0, 20) 
 
-U2_2_8=LpVariable('utilite_2_2_8',0, 20) 
+U2_2_8=LpVariable('U2_2_8',0, 20) 
 
-U3_18_9=LpVariable('utilite_3_18_9',0, 20) 
+U3_18_9=LpVariable('U3_18_9',0, 20) 
 
-U4_8_5=LpVariable('utilite_4_8_5',0, 20) 
+U4_8_5=LpVariable('U4_8_5',0, 20) 
 
-U5_9_3=LpVariable('utilite_5_9_3',0, 20) 
+U5_9_3=LpVariable('U5_9_3',0, 20) 
 
-U6_0_008=LpVariable('utilite_6_0_008',0, 20) 
+U6_0_008=LpVariable('U6_0_008',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_36
 
-U1_1539=LpVariable('utilite_1_1539',0, 20) 
+U1_1539=LpVariable('U1_1539',0, 20) 
 
-U2_1_7=LpVariable('utilite_2_1_7',0, 20) 
+U2_1_7=LpVariable('U2_1_7',0, 20) 
 
-U3_20_0=LpVariable('utilite_3_20_0',0, 20) 
+U3_20_0=LpVariable('U3_20_0',0, 20) 
 
-U4_8_7=LpVariable('utilite_4_8_7',0, 20) 
+U4_8_7=LpVariable('U4_8_7',0, 20) 
 
-U5_9_8=LpVariable('utilite_5_9_8',0, 20) 
+U5_9_8=LpVariable('U5_9_8',0, 20) 
 
-U6_0_168=LpVariable('utilite_6_0_168',0, 20) 
+U6_0_168=LpVariable('U6_0_168',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_37
 
-U1_1602=LpVariable('utilite_1_1602',0, 20) 
+U1_1602=LpVariable('U1_1602',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_17_0=LpVariable('utilite_3_17_0',0, 20) 
+U3_17_0=LpVariable('U3_17_0',0, 20) 
 
-U4_4_0=LpVariable('utilite_4_4_0',0, 20) 
+U4_4_0=LpVariable('U4_4_0',0, 20) 
 
-U5_8_2=LpVariable('utilite_5_8_2',0, 20) 
+U5_8_2=LpVariable('U5_8_2',0, 20) 
 
-U6_0_32=LpVariable('utilite_6_0_32',0, 20) 
+U6_0_32=LpVariable('U6_0_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_38
 
-U1_1615=LpVariable('utilite_1_1615',0, 20) 
+U1_1615=LpVariable('U1_1615',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_6_7=LpVariable('utilite_3_6_7',0, 20) 
+U3_6_7=LpVariable('U3_6_7',0, 20) 
 
-U4_2_3=LpVariable('utilite_4_2_3',0, 20) 
+U4_2_3=LpVariable('U4_2_3',0, 20) 
 
-U5_8_8=LpVariable('utilite_5_8_8',0, 20) 
+U5_8_8=LpVariable('U5_8_8',0, 20) 
 
-U6_0_44=LpVariable('utilite_6_0_44',0, 20) 
+U6_0_44=LpVariable('U6_0_44',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_39
 
-U1_1602=LpVariable('utilite_1_1602',0, 20) 
+U1_1602=LpVariable('U1_1602',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_17_0=LpVariable('utilite_3_17_0',0, 20) 
+U3_17_0=LpVariable('U3_17_0',0, 20) 
 
-U4_6_1=LpVariable('utilite_4_6_1',0, 20) 
+U4_6_1=LpVariable('U4_6_1',0, 20) 
 
-U5_8_2=LpVariable('utilite_5_8_2',0, 20) 
+U5_8_2=LpVariable('U5_8_2',0, 20) 
 
-U6_0_36=LpVariable('utilite_6_0_36',0, 20) 
+U6_0_36=LpVariable('U6_0_36',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_40
 
-U1_1565=LpVariable('utilite_1_1565',0, 20) 
+U1_1565=LpVariable('U1_1565',0, 20) 
 
-U2_0_5=LpVariable('utilite_2_0_5',0, 20) 
+U2_0_5=LpVariable('U2_0_5',0, 20) 
 
-U3_15_0=LpVariable('utilite_3_15_0',0, 20) 
+U3_15_0=LpVariable('U3_15_0',0, 20) 
 
-U4_6_1=LpVariable('utilite_4_6_1',0, 20) 
+U4_6_1=LpVariable('U4_6_1',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_288=LpVariable('utilite_6_0_288',0, 20) 
+U6_0_288=LpVariable('U6_0_288',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_41
 
-U1_724=LpVariable('utilite_1_724',0, 20) 
+U1_724=LpVariable('U1_724',0, 20) 
 
-U2_1_3=LpVariable('utilite_2_1_3',0, 20) 
+U2_1_3=LpVariable('U2_1_3',0, 20) 
 
-U3_11_0=LpVariable('utilite_3_11_0',0, 20) 
+U3_11_0=LpVariable('U3_11_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_7_4=LpVariable('utilite_5_7_4',0, 20) 
+U5_7_4=LpVariable('U5_7_4',0, 20) 
 
-U6_0_18=LpVariable('utilite_6_0_18',0, 20) 
+U6_0_18=LpVariable('U6_0_18',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_42
 
-U1_1581=LpVariable('utilite_1_1581',0, 20) 
+U1_1581=LpVariable('U1_1581',0, 20) 
 
-U2_0_5=LpVariable('utilite_2_0_5',0, 20) 
+U2_0_5=LpVariable('U2_0_5',0, 20) 
 
-U3_16_0=LpVariable('utilite_3_16_0',0, 20) 
+U3_16_0=LpVariable('U3_16_0',0, 20) 
 
-U4_6_1=LpVariable('utilite_4_6_1',0, 20) 
+U4_6_1=LpVariable('U4_6_1',0, 20) 
 
-U5_8_1=LpVariable('utilite_5_8_1',0, 20) 
+U5_8_1=LpVariable('U5_8_1',0, 20) 
 
-U6_0_28=LpVariable('utilite_6_0_28',0, 20) 
+U6_0_28=LpVariable('U6_0_28',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_43
 
-U1_1615=LpVariable('utilite_1_1615',0, 20) 
+U1_1615=LpVariable('U1_1615',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_15_0=LpVariable('utilite_3_15_0',0, 20) 
+U3_15_0=LpVariable('U3_15_0',0, 20) 
 
-U4_5_2=LpVariable('utilite_4_5_2',0, 20) 
+U4_5_2=LpVariable('U4_5_2',0, 20) 
 
-U5_8_3=LpVariable('utilite_5_8_3',0, 20) 
+U5_8_3=LpVariable('U5_8_3',0, 20) 
 
-U6_0_36=LpVariable('utilite_6_0_36',0, 20) 
+U6_0_36=LpVariable('U6_0_36',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_44
 
-U1_1615=LpVariable('utilite_1_1615',0, 20) 
+U1_1615=LpVariable('U1_1615',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_15_0=LpVariable('utilite_3_15_0',0, 20) 
+U3_15_0=LpVariable('U3_15_0',0, 20) 
 
-U4_3_1=LpVariable('utilite_4_3_1',0, 20) 
+U4_3_1=LpVariable('U4_3_1',0, 20) 
 
-U5_8_3=LpVariable('utilite_5_8_3',0, 20) 
+U5_8_3=LpVariable('U5_8_3',0, 20) 
 
-U6_0_36=LpVariable('utilite_6_0_36',0, 20) 
+U6_0_36=LpVariable('U6_0_36',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_45
 
-U1_1632=LpVariable('utilite_1_1632',0, 20) 
+U1_1632=LpVariable('U1_1632',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_11_2=LpVariable('utilite_3_11_2',0, 20) 
+U3_11_2=LpVariable('U3_11_2',0, 20) 
 
-U4_3_7=LpVariable('utilite_4_3_7',0, 20) 
+U4_3_7=LpVariable('U4_3_7',0, 20) 
 
-U5_7_7=LpVariable('utilite_5_7_7',0, 20) 
+U5_7_7=LpVariable('U5_7_7',0, 20) 
 
-U6_0_32=LpVariable('utilite_6_0_32',0, 20) 
+U6_0_32=LpVariable('U6_0_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_46
 
-U1_1609=LpVariable('utilite_1_1609',0, 20) 
+U1_1609=LpVariable('U1_1609',0, 20) 
 
-U2_0_8=LpVariable('utilite_2_0_8',0, 20) 
+U2_0_8=LpVariable('U2_0_8',0, 20) 
 
-U3_17_0=LpVariable('utilite_3_17_0',0, 20) 
+U3_17_0=LpVariable('U3_17_0',0, 20) 
 
-U4_8_9=LpVariable('utilite_4_8_9',0, 20) 
+U4_8_9=LpVariable('U4_8_9',0, 20) 
 
-U5_10_0=LpVariable('utilite_5_10_0',0, 20) 
+U5_10_0=LpVariable('U5_10_0',0, 20) 
 
-U6_0_3=LpVariable('utilite_6_0_3',0, 20) 
+U6_0_3=LpVariable('U6_0_3',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_47
 
-U1_1648=LpVariable('utilite_1_1648',0, 20) 
+U1_1648=LpVariable('U1_1648',0, 20) 
 
-U2_2_0=LpVariable('utilite_2_2_0',0, 20) 
+U2_2_0=LpVariable('U2_2_0',0, 20) 
 
-U3_26_0=LpVariable('utilite_3_26_0',0, 20) 
+U3_26_0=LpVariable('U3_26_0',0, 20) 
 
-U4_5_3=LpVariable('utilite_4_5_3',0, 20) 
+U4_5_3=LpVariable('U4_5_3',0, 20) 
 
-U5_8_1=LpVariable('utilite_5_8_1',0, 20) 
+U5_8_1=LpVariable('U5_8_1',0, 20) 
 
-U6_0_056=LpVariable('utilite_6_0_056',0, 20) 
+U6_0_056=LpVariable('U6_0_056',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_48
 
-U1_1632=LpVariable('utilite_1_1632',0, 20) 
+U1_1632=LpVariable('U1_1632',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_13_0=LpVariable('utilite_3_13_0',0, 20) 
+U3_13_0=LpVariable('U3_13_0',0, 20) 
 
-U4_3_7=LpVariable('utilite_4_3_7',0, 20) 
+U4_3_7=LpVariable('U4_3_7',0, 20) 
 
-U5_7_7=LpVariable('utilite_5_7_7',0, 20) 
+U5_7_7=LpVariable('U5_7_7',0, 20) 
 
-U6_0_32=LpVariable('utilite_6_0_32',0, 20) 
+U6_0_32=LpVariable('U6_0_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_49
 
-U1_1615=LpVariable('utilite_1_1615',0, 20) 
+U1_1615=LpVariable('U1_1615',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_15_0=LpVariable('utilite_3_15_0',0, 20) 
+U3_15_0=LpVariable('U3_15_0',0, 20) 
 
-U4_5_2=LpVariable('utilite_4_5_2',0, 20) 
+U4_5_2=LpVariable('U4_5_2',0, 20) 
 
-U5_8_3=LpVariable('utilite_5_8_3',0, 20) 
+U5_8_3=LpVariable('U5_8_3',0, 20) 
 
-U6_0_36=LpVariable('utilite_6_0_36',0, 20) 
+U6_0_36=LpVariable('U6_0_36',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_50
 
-U1_1540=LpVariable('utilite_1_1540',0, 20) 
+U1_1540=LpVariable('U1_1540',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_5_5=LpVariable('utilite_3_5_5',0, 20) 
+U3_5_5=LpVariable('U3_5_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_7_3=LpVariable('utilite_5_7_3',0, 20) 
+U5_7_3=LpVariable('U5_7_3',0, 20) 
 
-U6_0_12=LpVariable('utilite_6_0_12',0, 20) 
+U6_0_12=LpVariable('U6_0_12',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_51
 
-U1_1578=LpVariable('utilite_1_1578',0, 20) 
+U1_1578=LpVariable('U1_1578',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_11_9=LpVariable('utilite_3_11_9',0, 20) 
+U3_11_9=LpVariable('U3_11_9',0, 20) 
 
-U4_4_8=LpVariable('utilite_4_4_8',0, 20) 
+U4_4_8=LpVariable('U4_4_8',0, 20) 
 
-U5_9_3=LpVariable('utilite_5_9_3',0, 20) 
+U5_9_3=LpVariable('U5_9_3',0, 20) 
 
-U6_0_4=LpVariable('utilite_6_0_4',0, 20) 
+U6_0_4=LpVariable('U6_0_4',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_52
 
-U1_1473=LpVariable('utilite_1_1473',0, 20) 
+U1_1473=LpVariable('U1_1473',0, 20) 
 
-U2_0_8=LpVariable('utilite_2_0_8',0, 20) 
+U2_0_8=LpVariable('U2_0_8',0, 20) 
 
-U3_23_9=LpVariable('utilite_3_23_9',0, 20) 
+U3_23_9=LpVariable('U3_23_9',0, 20) 
 
-U4_5_1=LpVariable('utilite_4_5_1',0, 20) 
+U4_5_1=LpVariable('U4_5_1',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_044=LpVariable('utilite_6_0_044',0, 20) 
+U6_0_044=LpVariable('U6_0_044',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_53
 
-U1_1565=LpVariable('utilite_1_1565',0, 20) 
+U1_1565=LpVariable('U1_1565',0, 20) 
 
-U2_0_5=LpVariable('utilite_2_0_5',0, 20) 
+U2_0_5=LpVariable('U2_0_5',0, 20) 
 
-U3_14_0=LpVariable('utilite_3_14_0',0, 20) 
+U3_14_0=LpVariable('U3_14_0',0, 20) 
 
-U4_9_5=LpVariable('utilite_4_9_5',0, 20) 
+U4_9_5=LpVariable('U4_9_5',0, 20) 
 
-U5_10_0=LpVariable('utilite_5_10_0',0, 20) 
+U5_10_0=LpVariable('U5_10_0',0, 20) 
 
-U6_0_32=LpVariable('utilite_6_0_32',0, 20) 
+U6_0_32=LpVariable('U6_0_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_54
 
-U1_1636=LpVariable('utilite_1_1636',0, 20) 
+U1_1636=LpVariable('U1_1636',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_11_9=LpVariable('utilite_3_11_9',0, 20) 
+U3_11_9=LpVariable('U3_11_9',0, 20) 
 
-U4_3_9=LpVariable('utilite_4_3_9',0, 20) 
+U4_3_9=LpVariable('U4_3_9',0, 20) 
 
-U5_7_8=LpVariable('utilite_5_7_8',0, 20) 
+U5_7_8=LpVariable('U5_7_8',0, 20) 
 
-U6_0_28=LpVariable('utilite_6_0_28',0, 20) 
+U6_0_28=LpVariable('U6_0_28',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_55
 
-U1_1615=LpVariable('utilite_1_1615',0, 20) 
+U1_1615=LpVariable('U1_1615',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_15_0=LpVariable('utilite_3_15_0',0, 20) 
+U3_15_0=LpVariable('U3_15_0',0, 20) 
 
-U4_3_1=LpVariable('utilite_4_3_1',0, 20) 
+U4_3_1=LpVariable('U4_3_1',0, 20) 
 
-U5_8_3=LpVariable('utilite_5_8_3',0, 20) 
+U5_8_3=LpVariable('U5_8_3',0, 20) 
 
-U6_0_36=LpVariable('utilite_6_0_36',0, 20) 
+U6_0_36=LpVariable('U6_0_36',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_56
 
-U1_1586=LpVariable('utilite_1_1586',0, 20) 
+U1_1586=LpVariable('U1_1586',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_7_0=LpVariable('utilite_3_7_0',0, 20) 
+U3_7_0=LpVariable('U3_7_0',0, 20) 
 
-U4_3_0=LpVariable('utilite_4_3_0',0, 20) 
+U4_3_0=LpVariable('U4_3_0',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_44=LpVariable('utilite_6_0_44',0, 20) 
+U6_0_44=LpVariable('U6_0_44',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_57
 
-U1_1602=LpVariable('utilite_1_1602',0, 20) 
+U1_1602=LpVariable('U1_1602',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_17_0=LpVariable('utilite_3_17_0',0, 20) 
+U3_17_0=LpVariable('U3_17_0',0, 20) 
 
-U4_6_1=LpVariable('utilite_4_6_1',0, 20) 
+U4_6_1=LpVariable('U4_6_1',0, 20) 
 
-U5_8_2=LpVariable('utilite_5_8_2',0, 20) 
+U5_8_2=LpVariable('U5_8_2',0, 20) 
 
-U6_0_36=LpVariable('utilite_6_0_36',0, 20) 
+U6_0_36=LpVariable('U6_0_36',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_58
 
-U1_1569=LpVariable('utilite_1_1569',0, 20) 
+U1_1569=LpVariable('U1_1569',0, 20) 
 
-U2_1_7=LpVariable('utilite_2_1_7',0, 20) 
+U2_1_7=LpVariable('U2_1_7',0, 20) 
 
-U3_19_0=LpVariable('utilite_3_19_0',0, 20) 
+U3_19_0=LpVariable('U3_19_0',0, 20) 
 
-U4_5_5=LpVariable('utilite_4_5_5',0, 20) 
+U4_5_5=LpVariable('U4_5_5',0, 20) 
 
-U5_6_3=LpVariable('utilite_5_6_3',0, 20) 
+U5_6_3=LpVariable('U5_6_3',0, 20) 
 
-U6_0_06=LpVariable('utilite_6_0_06',0, 20) 
+U6_0_06=LpVariable('U6_0_06',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_59
 
-U1_1647=LpVariable('utilite_1_1647',0, 20) 
+U1_1647=LpVariable('U1_1647',0, 20) 
 
-U2_0_8=LpVariable('utilite_2_0_8',0, 20) 
+U2_0_8=LpVariable('U2_0_8',0, 20) 
 
-U3_24_0=LpVariable('utilite_3_24_0',0, 20) 
+U3_24_0=LpVariable('U3_24_0',0, 20) 
 
-U4_4_5=LpVariable('utilite_4_4_5',0, 20) 
+U4_4_5=LpVariable('U4_4_5',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_152=LpVariable('utilite_6_0_152',0, 20) 
+U6_0_152=LpVariable('U6_0_152',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_60
 
-U1_1623=LpVariable('utilite_1_1623',0, 20) 
+U1_1623=LpVariable('U1_1623',0, 20) 
 
-U2_0_8=LpVariable('utilite_2_0_8',0, 20) 
+U2_0_8=LpVariable('U2_0_8',0, 20) 
 
-U3_17_0=LpVariable('utilite_3_17_0',0, 20) 
+U3_17_0=LpVariable('U3_17_0',0, 20) 
 
-U4_3_8=LpVariable('utilite_4_3_8',0, 20) 
+U4_3_8=LpVariable('U4_3_8',0, 20) 
 
-U5_6_8=LpVariable('utilite_5_6_8',0, 20) 
+U5_6_8=LpVariable('U5_6_8',0, 20) 
 
-U6_0_344=LpVariable('utilite_6_0_344',0, 20) 
+U6_0_344=LpVariable('U6_0_344',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_61
 
-U1_1628=LpVariable('utilite_1_1628',0, 20) 
+U1_1628=LpVariable('U1_1628',0, 20) 
 
-U2_1_4=LpVariable('utilite_2_1_4',0, 20) 
+U2_1_4=LpVariable('U2_1_4',0, 20) 
 
-U3_27_2=LpVariable('utilite_3_27_2',0, 20) 
+U3_27_2=LpVariable('U3_27_2',0, 20) 
 
-U4_2_1=LpVariable('utilite_4_2_1',0, 20) 
+U4_2_1=LpVariable('U4_2_1',0, 20) 
 
-U5_8_1=LpVariable('utilite_5_8_1',0, 20) 
+U5_8_1=LpVariable('U5_8_1',0, 20) 
 
-U6_0_128=LpVariable('utilite_6_0_128',0, 20) 
+U6_0_128=LpVariable('U6_0_128',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_62
 
-U1_1565=LpVariable('utilite_1_1565',0, 20) 
+U1_1565=LpVariable('U1_1565',0, 20) 
 
-U2_2_1=LpVariable('utilite_2_2_1',0, 20) 
+U2_2_1=LpVariable('U2_2_1',0, 20) 
 
-U3_20_0=LpVariable('utilite_3_20_0',0, 20) 
+U3_20_0=LpVariable('U3_20_0',0, 20) 
 
-U4_9_5=LpVariable('utilite_4_9_5',0, 20) 
+U4_9_5=LpVariable('U4_9_5',0, 20) 
 
-U5_9_7=LpVariable('utilite_5_9_7',0, 20) 
+U5_9_7=LpVariable('U5_9_7',0, 20) 
 
-U6_0_2=LpVariable('utilite_6_0_2',0, 20) 
+U6_0_2=LpVariable('U6_0_2',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_63
 
-U1_1648=LpVariable('utilite_1_1648',0, 20) 
+U1_1648=LpVariable('U1_1648',0, 20) 
 
-U2_3_0=LpVariable('utilite_2_3_0',0, 20) 
+U2_3_0=LpVariable('U2_3_0',0, 20) 
 
-U3_20_0=LpVariable('utilite_3_20_0',0, 20) 
+U3_20_0=LpVariable('U3_20_0',0, 20) 
 
-U4_4_9=LpVariable('utilite_4_4_9',0, 20) 
+U4_4_9=LpVariable('U4_4_9',0, 20) 
 
-U5_8_6=LpVariable('utilite_5_8_6',0, 20) 
+U5_8_6=LpVariable('U5_8_6',0, 20) 
 
-U6_0_332=LpVariable('utilite_6_0_332',0, 20) 
+U6_0_332=LpVariable('U6_0_332',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_64
 
-U1_1705=LpVariable('utilite_1_1705',0, 20) 
+U1_1705=LpVariable('U1_1705',0, 20) 
 
-U2_1_0=LpVariable('utilite_2_1_0',0, 20) 
+U2_1_0=LpVariable('U2_1_0',0, 20) 
 
-U3_19_9=LpVariable('utilite_3_19_9',0, 20) 
+U3_19_9=LpVariable('U3_19_9',0, 20) 
 
-U4_10_4=LpVariable('utilite_4_10_4',0, 20) 
+U4_10_4=LpVariable('U4_10_4',0, 20) 
 
-U5_10_9=LpVariable('utilite_5_10_9',0, 20) 
+U5_10_9=LpVariable('U5_10_9',0, 20) 
 
-U6_0_23=LpVariable('utilite_6_0_23',0, 20) 
+U6_0_23=LpVariable('U6_0_23',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_65
 
-U1_2633=LpVariable('utilite_1_2633',0, 20) 
+U1_2633=LpVariable('U1_2633',0, 20) 
 
-U2_4_6=LpVariable('utilite_2_4_6',0, 20) 
+U2_4_6=LpVariable('U2_4_6',0, 20) 
 
-U3_4_0=LpVariable('utilite_3_4_0',0, 20) 
+U3_4_0=LpVariable('U3_4_0',0, 20) 
 
-U4_13_0=LpVariable('utilite_4_13_0',0, 20) 
+U4_13_0=LpVariable('U4_13_0',0, 20) 
 
-U5_26_0=LpVariable('utilite_5_26_0',0, 20) 
+U5_26_0=LpVariable('U5_26_0',0, 20) 
 
-U6_0_004=LpVariable('utilite_6_0_004',0, 20) 
+U6_0_004=LpVariable('U6_0_004',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_66
 
-U1_1697=LpVariable('utilite_1_1697',0, 20) 
+U1_1697=LpVariable('U1_1697',0, 20) 
 
-U2_3_3=LpVariable('utilite_2_3_3',0, 20) 
+U2_3_3=LpVariable('U2_3_3',0, 20) 
 
-U3_23_0=LpVariable('utilite_3_23_0',0, 20) 
+U3_23_0=LpVariable('U3_23_0',0, 20) 
 
-U4_5_3=LpVariable('utilite_4_5_3',0, 20) 
+U4_5_3=LpVariable('U4_5_3',0, 20) 
 
-U5_7_4=LpVariable('utilite_5_7_4',0, 20) 
+U5_7_4=LpVariable('U5_7_4',0, 20) 
 
-U6_0_26=LpVariable('utilite_6_0_26',0, 20) 
+U6_0_26=LpVariable('U6_0_26',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_67
 
-U1_1658=LpVariable('utilite_1_1658',0, 20) 
+U1_1658=LpVariable('U1_1658',0, 20) 
 
-U2_1_4=LpVariable('utilite_2_1_4',0, 20) 
+U2_1_4=LpVariable('U2_1_4',0, 20) 
 
-U3_29_0=LpVariable('utilite_3_29_0',0, 20) 
+U3_29_0=LpVariable('U3_29_0',0, 20) 
 
-U4_6_6=LpVariable('utilite_4_6_6',0, 20) 
+U4_6_6=LpVariable('U4_6_6',0, 20) 
 
-U5_9_6=LpVariable('utilite_5_9_6',0, 20) 
+U5_9_6=LpVariable('U5_9_6',0, 20) 
 
-U6_0_096=LpVariable('utilite_6_0_096',0, 20) 
+U6_0_096=LpVariable('U6_0_096',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_68
 
-U1_1697=LpVariable('utilite_1_1697',0, 20) 
+U1_1697=LpVariable('U1_1697',0, 20) 
 
-U2_3_9=LpVariable('utilite_2_3_9',0, 20) 
+U2_3_9=LpVariable('U2_3_9',0, 20) 
 
-U3_22_0=LpVariable('utilite_3_22_0',0, 20) 
+U3_22_0=LpVariable('U3_22_0',0, 20) 
 
-U4_6_3=LpVariable('utilite_4_6_3',0, 20) 
+U4_6_3=LpVariable('U4_6_3',0, 20) 
 
-U5_7_4=LpVariable('utilite_5_7_4',0, 20) 
+U5_7_4=LpVariable('U5_7_4',0, 20) 
 
-U6_0_248=LpVariable('utilite_6_0_248',0, 20) 
+U6_0_248=LpVariable('U6_0_248',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_69
 
-U1_1602=LpVariable('utilite_1_1602',0, 20) 
+U1_1602=LpVariable('U1_1602',0, 20) 
 
-U2_1_4=LpVariable('utilite_2_1_4',0, 20) 
+U2_1_4=LpVariable('U2_1_4',0, 20) 
 
-U3_15_0=LpVariable('utilite_3_15_0',0, 20) 
+U3_15_0=LpVariable('U3_15_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_7_8=LpVariable('utilite_5_7_8',0, 20) 
+U5_7_8=LpVariable('U5_7_8',0, 20) 
 
-U6_0_24=LpVariable('utilite_6_0_24',0, 20) 
+U6_0_24=LpVariable('U6_0_24',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_70
 
-U1_1590=LpVariable('utilite_1_1590',0, 20) 
+U1_1590=LpVariable('U1_1590',0, 20) 
 
-U2_2_0=LpVariable('utilite_2_2_0',0, 20) 
+U2_2_0=LpVariable('U2_2_0',0, 20) 
 
-U3_33_0=LpVariable('utilite_3_33_0',0, 20) 
+U3_33_0=LpVariable('U3_33_0',0, 20) 
 
-U4_8_0=LpVariable('utilite_4_8_0',0, 20) 
+U4_8_0=LpVariable('U4_8_0',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_12=LpVariable('utilite_6_0_12',0, 20) 
+U6_0_12=LpVariable('U6_0_12',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_71
 
-U1_1616=LpVariable('utilite_1_1616',0, 20) 
+U1_1616=LpVariable('U1_1616',0, 20) 
 
-U2_1_2=LpVariable('utilite_2_1_2',0, 20) 
+U2_1_2=LpVariable('U2_1_2',0, 20) 
 
-U3_27_5=LpVariable('utilite_3_27_5',0, 20) 
+U3_27_5=LpVariable('U3_27_5',0, 20) 
 
-U4_7_6=LpVariable('utilite_4_7_6',0, 20) 
+U4_7_6=LpVariable('U4_7_6',0, 20) 
 
-U5_9_5=LpVariable('utilite_5_9_5',0, 20) 
+U5_9_5=LpVariable('U5_9_5',0, 20) 
 
-U6_0_11176=LpVariable('utilite_6_0_11176',0, 20) 
+U6_0_11176=LpVariable('U6_0_11176',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_72
 
-U1_1780=LpVariable('utilite_1_1780',0, 20) 
+U1_1780=LpVariable('U1_1780',0, 20) 
 
-U2_2_22=LpVariable('utilite_2_2_22',0, 20) 
+U2_2_22=LpVariable('U2_2_22',0, 20) 
 
-U3_18_9=LpVariable('utilite_3_18_9',0, 20) 
+U3_18_9=LpVariable('U3_18_9',0, 20) 
 
-U4_8_44=LpVariable('utilite_4_8_44',0, 20) 
+U4_8_44=LpVariable('U4_8_44',0, 20) 
 
-U5_9_78=LpVariable('utilite_5_9_78',0, 20) 
+U5_9_78=LpVariable('U5_9_78',0, 20) 
 
-U6_0_107=LpVariable('utilite_6_0_107',0, 20) 
+U6_0_107=LpVariable('U6_0_107',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_73
 
-U1_1573=LpVariable('utilite_1_1573',0, 20) 
+U1_1573=LpVariable('U1_1573',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_4_0=LpVariable('utilite_3_4_0',0, 20) 
+U3_4_0=LpVariable('U3_4_0',0, 20) 
 
-U4_5_0=LpVariable('utilite_4_5_0',0, 20) 
+U4_5_0=LpVariable('U4_5_0',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_72=LpVariable('utilite_6_0_72',0, 20) 
+U6_0_72=LpVariable('U6_0_72',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_74
 
-U1_1615=LpVariable('utilite_1_1615',0, 20) 
+U1_1615=LpVariable('U1_1615',0, 20) 
 
-U2_2_6=LpVariable('utilite_2_2_6',0, 20) 
+U2_2_6=LpVariable('U2_2_6',0, 20) 
 
-U3_21_3=LpVariable('utilite_3_21_3',0, 20) 
+U3_21_3=LpVariable('U3_21_3',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_9_6=LpVariable('utilite_5_9_6',0, 20) 
+U5_9_6=LpVariable('U5_9_6',0, 20) 
 
-U6_0_004=LpVariable('utilite_6_0_004',0, 20) 
+U6_0_004=LpVariable('U6_0_004',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_75
 
-U1_1586=LpVariable('utilite_1_1586',0, 20) 
+U1_1586=LpVariable('U1_1586',0, 20) 
 
-U2_3_0=LpVariable('utilite_2_3_0',0, 20) 
+U2_3_0=LpVariable('U2_3_0',0, 20) 
 
-U3_21_0=LpVariable('utilite_3_21_0',0, 20) 
+U3_21_0=LpVariable('U3_21_0',0, 20) 
 
-U4_5_1=LpVariable('utilite_4_5_1',0, 20) 
+U4_5_1=LpVariable('U4_5_1',0, 20) 
 
-U5_8_4=LpVariable('utilite_5_8_4',0, 20) 
+U5_8_4=LpVariable('U5_8_4',0, 20) 
 
-U6_0_32=LpVariable('utilite_6_0_32',0, 20) 
+U6_0_32=LpVariable('U6_0_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_76
 
-U1_1669=LpVariable('utilite_1_1669',0, 20) 
+U1_1669=LpVariable('U1_1669',0, 20) 
 
-U2_4_3=LpVariable('utilite_2_4_3',0, 20) 
+U2_4_3=LpVariable('U2_4_3',0, 20) 
 
-U3_20_0=LpVariable('utilite_3_20_0',0, 20) 
+U3_20_0=LpVariable('U3_20_0',0, 20) 
 
-U4_7_0=LpVariable('utilite_4_7_0',0, 20) 
+U4_7_0=LpVariable('U4_7_0',0, 20) 
 
-U5_8_5=LpVariable('utilite_5_8_5',0, 20) 
+U5_8_5=LpVariable('U5_8_5',0, 20) 
 
-U6_0_32=LpVariable('utilite_6_0_32',0, 20) 
+U6_0_32=LpVariable('U6_0_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_77
 
-U1_1687=LpVariable('utilite_1_1687',0, 20) 
+U1_1687=LpVariable('U1_1687',0, 20) 
 
-U2_4_5=LpVariable('utilite_2_4_5',0, 20) 
+U2_4_5=LpVariable('U2_4_5',0, 20) 
 
-U3_17_0=LpVariable('utilite_3_17_0',0, 20) 
+U3_17_0=LpVariable('U3_17_0',0, 20) 
 
-U4_7_9=LpVariable('utilite_4_7_9',0, 20) 
+U4_7_9=LpVariable('U4_7_9',0, 20) 
 
-U5_8_9=LpVariable('utilite_5_8_9',0, 20) 
+U5_8_9=LpVariable('U5_8_9',0, 20) 
 
-U6_0_3=LpVariable('utilite_6_0_3',0, 20) 
+U6_0_3=LpVariable('U6_0_3',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_78
 
-U1_1590=LpVariable('utilite_1_1590',0, 20) 
+U1_1590=LpVariable('U1_1590',0, 20) 
 
-U2_1_3=LpVariable('utilite_2_1_3',0, 20) 
+U2_1_3=LpVariable('U2_1_3',0, 20) 
 
-U3_31_3=LpVariable('utilite_3_31_3',0, 20) 
+U3_31_3=LpVariable('U3_31_3',0, 20) 
 
-U4_5_3=LpVariable('utilite_4_5_3',0, 20) 
+U4_5_3=LpVariable('U4_5_3',0, 20) 
 
-U5_8_1=LpVariable('utilite_5_8_1',0, 20) 
+U5_8_1=LpVariable('U5_8_1',0, 20) 
 
-U6_0_3=LpVariable('utilite_6_0_3',0, 20) 
+U6_0_3=LpVariable('U6_0_3',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_79
 
-U1_1605=LpVariable('utilite_1_1605',0, 20) 
+U1_1605=LpVariable('U1_1605',0, 20) 
 
-U2_1_5=LpVariable('utilite_2_1_5',0, 20) 
+U2_1_5=LpVariable('U2_1_5',0, 20) 
 
-U3_36_0=LpVariable('utilite_3_36_0',0, 20) 
+U3_36_0=LpVariable('U3_36_0',0, 20) 
 
-U4_8_0=LpVariable('utilite_4_8_0',0, 20) 
+U4_8_0=LpVariable('U4_8_0',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_22=LpVariable('utilite_6_0_22',0, 20) 
+U6_0_22=LpVariable('U6_0_22',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_80
 
-U1_776=LpVariable('utilite_1_776',0, 20) 
+U1_776=LpVariable('U1_776',0, 20) 
 
-U2_0_5=LpVariable('utilite_2_0_5',0, 20) 
+U2_0_5=LpVariable('U2_0_5',0, 20) 
 
-U3_7_3=LpVariable('utilite_3_7_3',0, 20) 
+U3_7_3=LpVariable('U3_7_3',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_14_0=LpVariable('utilite_5_14_0',0, 20) 
+U5_14_0=LpVariable('U5_14_0',0, 20) 
 
-U6_0_56=LpVariable('utilite_6_0_56',0, 20) 
+U6_0_56=LpVariable('U6_0_56',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_81
 
-U1_1724=LpVariable('utilite_1_1724',0, 20) 
+U1_1724=LpVariable('U1_1724',0, 20) 
 
-U2_4_4=LpVariable('utilite_2_4_4',0, 20) 
+U2_4_4=LpVariable('U2_4_4',0, 20) 
 
-U3_12_0=LpVariable('utilite_3_12_0',0, 20) 
+U3_12_0=LpVariable('U3_12_0',0, 20) 
 
-U4_6_0=LpVariable('utilite_4_6_0',0, 20) 
+U4_6_0=LpVariable('U4_6_0',0, 20) 
 
-U5_11_0=LpVariable('utilite_5_11_0',0, 20) 
+U5_11_0=LpVariable('U5_11_0',0, 20) 
 
-U6_0_008=LpVariable('utilite_6_0_008',0, 20) 
+U6_0_008=LpVariable('U6_0_008',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_82
 
-U1_1566=LpVariable('utilite_1_1566',0, 20) 
+U1_1566=LpVariable('U1_1566',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_14_5=LpVariable('utilite_3_14_5',0, 20) 
+U3_14_5=LpVariable('U3_14_5',0, 20) 
 
-U4_3_8=LpVariable('utilite_4_3_8',0, 20) 
+U4_3_8=LpVariable('U4_3_8',0, 20) 
 
-U5_12_8=LpVariable('utilite_5_12_8',0, 20) 
+U5_12_8=LpVariable('U5_12_8',0, 20) 
 
-U6_0_372=LpVariable('utilite_6_0_372',0, 20) 
+U6_0_372=LpVariable('U6_0_372',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_83
 
-U1_1630=LpVariable('utilite_1_1630',0, 20) 
+U1_1630=LpVariable('U1_1630',0, 20) 
 
-U2_4_9=LpVariable('utilite_2_4_9',0, 20) 
+U2_4_9=LpVariable('U2_4_9',0, 20) 
 
-U3_27_0=LpVariable('utilite_3_27_0',0, 20) 
+U3_27_0=LpVariable('U3_27_0',0, 20) 
 
-U4_9_9=LpVariable('utilite_4_9_9',0, 20) 
+U4_9_9=LpVariable('U4_9_9',0, 20) 
 
-U5_6_0=LpVariable('utilite_5_6_0',0, 20) 
+U5_6_0=LpVariable('U5_6_0',0, 20) 
 
-U6_0_232=LpVariable('utilite_6_0_232',0, 20) 
+U6_0_232=LpVariable('U6_0_232',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_84
 
-U1_1626=LpVariable('utilite_1_1626',0, 20) 
+U1_1626=LpVariable('U1_1626',0, 20) 
 
-U2_0_4=LpVariable('utilite_2_0_4',0, 20) 
+U2_0_4=LpVariable('U2_0_4',0, 20) 
 
-U3_19_0=LpVariable('utilite_3_19_0',0, 20) 
+U3_19_0=LpVariable('U3_19_0',0, 20) 
 
-U4_4_2=LpVariable('utilite_4_4_2',0, 20) 
+U4_4_2=LpVariable('U4_4_2',0, 20) 
 
-U5_9_2=LpVariable('utilite_5_9_2',0, 20) 
+U5_9_2=LpVariable('U5_9_2',0, 20) 
 
-U6_0_412=LpVariable('utilite_6_0_412',0, 20) 
+U6_0_412=LpVariable('U6_0_412',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_85
 
-U1_1611=LpVariable('utilite_1_1611',0, 20) 
+U1_1611=LpVariable('U1_1611',0, 20) 
 
-U2_1_6=LpVariable('utilite_2_1_6',0, 20) 
+U2_1_6=LpVariable('U2_1_6',0, 20) 
 
-U3_29_0=LpVariable('utilite_3_29_0',0, 20) 
+U3_29_0=LpVariable('U3_29_0',0, 20) 
 
-U4_4_0=LpVariable('utilite_4_4_0',0, 20) 
+U4_4_0=LpVariable('U4_4_0',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_04=LpVariable('utilite_6_0_04',0, 20) 
+U6_0_04=LpVariable('U6_0_04',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_86
 
-U1_1552=LpVariable('utilite_1_1552',0, 20) 
+U1_1552=LpVariable('U1_1552',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_16_0=LpVariable('utilite_3_16_0',0, 20) 
+U3_16_0=LpVariable('U3_16_0',0, 20) 
 
-U4_6_0=LpVariable('utilite_4_6_0',0, 20) 
+U4_6_0=LpVariable('U4_6_0',0, 20) 
 
-U5_8_4=LpVariable('utilite_5_8_4',0, 20) 
+U5_8_4=LpVariable('U5_8_4',0, 20) 
 
-U6_0_4=LpVariable('utilite_6_0_4',0, 20) 
+U6_0_4=LpVariable('U6_0_4',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_87
 
-U1_1602=LpVariable('utilite_1_1602',0, 20) 
+U1_1602=LpVariable('U1_1602',0, 20) 
 
-U2_3_4=LpVariable('utilite_2_3_4',0, 20) 
+U2_3_4=LpVariable('U2_3_4',0, 20) 
 
-U3_21_6=LpVariable('utilite_3_21_6',0, 20) 
+U3_21_6=LpVariable('U3_21_6',0, 20) 
 
-U4_12_1=LpVariable('utilite_4_12_1',0, 20) 
+U4_12_1=LpVariable('U4_12_1',0, 20) 
 
-U5_9_8=LpVariable('utilite_5_9_8',0, 20) 
+U5_9_8=LpVariable('U5_9_8',0, 20) 
 
-U6_0_2=LpVariable('utilite_6_0_2',0, 20) 
+U6_0_2=LpVariable('U6_0_2',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_88
 
-U1_1582=LpVariable('utilite_1_1582',0, 20) 
+U1_1582=LpVariable('U1_1582',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_21_8=LpVariable('utilite_3_21_8',0, 20) 
+U3_21_8=LpVariable('U3_21_8',0, 20) 
 
-U4_4_0=LpVariable('utilite_4_4_0',0, 20) 
+U4_4_0=LpVariable('U4_4_0',0, 20) 
 
-U5_8_7=LpVariable('utilite_5_8_7',0, 20) 
+U5_8_7=LpVariable('U5_8_7',0, 20) 
 
-U6_0_392=LpVariable('utilite_6_0_392',0, 20) 
+U6_0_392=LpVariable('U6_0_392',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_89
 
-U1_1598=LpVariable('utilite_1_1598',0, 20) 
+U1_1598=LpVariable('U1_1598',0, 20) 
 
-U2_0_7=LpVariable('utilite_2_0_7',0, 20) 
+U2_0_7=LpVariable('U2_0_7',0, 20) 
 
-U3_30_0=LpVariable('utilite_3_30_0',0, 20) 
+U3_30_0=LpVariable('U3_30_0',0, 20) 
 
-U4_5_8=LpVariable('utilite_4_5_8',0, 20) 
+U4_5_8=LpVariable('U4_5_8',0, 20) 
 
-U5_8_6=LpVariable('utilite_5_8_6',0, 20) 
+U5_8_6=LpVariable('U5_8_6',0, 20) 
 
-U6_0_14=LpVariable('utilite_6_0_14',0, 20) 
+U6_0_14=LpVariable('U6_0_14',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_90
 
-U1_1008=LpVariable('utilite_1_1008',0, 20) 
+U1_1008=LpVariable('U1_1008',0, 20) 
 
-U2_0_1=LpVariable('utilite_2_0_1',0, 20) 
+U2_0_1=LpVariable('U2_0_1',0, 20) 
 
-U3_57_5=LpVariable('utilite_3_57_5',0, 20) 
+U3_57_5=LpVariable('U3_57_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_0_6=LpVariable('utilite_5_0_6',0, 20) 
+U5_0_6=LpVariable('U5_0_6',0, 20) 
 
-U6_0_012=LpVariable('utilite_6_0_012',0, 20) 
+U6_0_012=LpVariable('U6_0_012',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_91
 
-U1_1680=LpVariable('utilite_1_1680',0, 20) 
+U1_1680=LpVariable('U1_1680',0, 20) 
 
-U2_3_3=LpVariable('utilite_2_3_3',0, 20) 
+U2_3_3=LpVariable('U2_3_3',0, 20) 
 
-U3_22_0=LpVariable('utilite_3_22_0',0, 20) 
+U3_22_0=LpVariable('U3_22_0',0, 20) 
 
-U4_6_0=LpVariable('utilite_4_6_0',0, 20) 
+U4_6_0=LpVariable('U4_6_0',0, 20) 
 
-U5_7_5=LpVariable('utilite_5_7_5',0, 20) 
+U5_7_5=LpVariable('U5_7_5',0, 20) 
 
-U6_0_26=LpVariable('utilite_6_0_26',0, 20) 
+U6_0_26=LpVariable('U6_0_26',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_92
 
-U1_1693=LpVariable('utilite_1_1693',0, 20) 
+U1_1693=LpVariable('U1_1693',0, 20) 
 
-U2_3_8=LpVariable('utilite_2_3_8',0, 20) 
+U2_3_8=LpVariable('U2_3_8',0, 20) 
 
-U3_21_0=LpVariable('utilite_3_21_0',0, 20) 
+U3_21_0=LpVariable('U3_21_0',0, 20) 
 
-U4_7_1=LpVariable('utilite_4_7_1',0, 20) 
+U4_7_1=LpVariable('U4_7_1',0, 20) 
 
-U5_7_5=LpVariable('utilite_5_7_5',0, 20) 
+U5_7_5=LpVariable('U5_7_5',0, 20) 
 
-U6_0_232=LpVariable('utilite_6_0_232',0, 20) 
+U6_0_232=LpVariable('U6_0_232',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_93
 
-U1_1660=LpVariable('utilite_1_1660',0, 20) 
+U1_1660=LpVariable('U1_1660',0, 20) 
 
-U2_1_1=LpVariable('utilite_2_1_1',0, 20) 
+U2_1_1=LpVariable('U2_1_1',0, 20) 
 
-U3_4_0=LpVariable('utilite_3_4_0',0, 20) 
+U3_4_0=LpVariable('U3_4_0',0, 20) 
 
-U4_18_0=LpVariable('utilite_4_18_0',0, 20) 
+U4_18_0=LpVariable('U4_18_0',0, 20) 
 
-U5_45_0=LpVariable('utilite_5_45_0',0, 20) 
+U5_45_0=LpVariable('U5_45_0',0, 20) 
 
-U6_1_07=LpVariable('utilite_6_1_07',0, 20) 
+U6_1_07=LpVariable('U6_1_07',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_94
 
-U1_1628=LpVariable('utilite_1_1628',0, 20) 
+U1_1628=LpVariable('U1_1628',0, 20) 
 
-U2_1_1=LpVariable('utilite_2_1_1',0, 20) 
+U2_1_1=LpVariable('U2_1_1',0, 20) 
 
-U3_28_0=LpVariable('utilite_3_28_0',0, 20) 
+U3_28_0=LpVariable('U3_28_0',0, 20) 
 
-U4_6_8=LpVariable('utilite_4_6_8',0, 20) 
+U4_6_8=LpVariable('U4_6_8',0, 20) 
 
-U5_9_3=LpVariable('utilite_5_9_3',0, 20) 
+U5_9_3=LpVariable('U5_9_3',0, 20) 
 
-U6_0_108=LpVariable('utilite_6_0_108',0, 20) 
+U6_0_108=LpVariable('U6_0_108',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_95
 
-U1_1902=LpVariable('utilite_1_1902',0, 20) 
+U1_1902=LpVariable('U1_1902',0, 20) 
 
-U2_4_6=LpVariable('utilite_2_4_6',0, 20) 
+U2_4_6=LpVariable('U2_4_6',0, 20) 
 
-U3_16_0=LpVariable('utilite_3_16_0',0, 20) 
+U3_16_0=LpVariable('U3_16_0',0, 20) 
 
-U4_6_9=LpVariable('utilite_4_6_9',0, 20) 
+U4_6_9=LpVariable('U4_6_9',0, 20) 
 
-U5_9_5=LpVariable('utilite_5_9_5',0, 20) 
+U5_9_5=LpVariable('U5_9_5',0, 20) 
 
-U6_0_26=LpVariable('utilite_6_0_26',0, 20) 
+U6_0_26=LpVariable('U6_0_26',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_96
 
-U1_1720=LpVariable('utilite_1_1720',0, 20) 
+U1_1720=LpVariable('U1_1720',0, 20) 
 
-U2_4_9=LpVariable('utilite_2_4_9',0, 20) 
+U2_4_9=LpVariable('U2_4_9',0, 20) 
 
-U3_9_0=LpVariable('utilite_3_9_0',0, 20) 
+U3_9_0=LpVariable('U3_9_0',0, 20) 
 
-U4_5_5=LpVariable('utilite_4_5_5',0, 20) 
+U4_5_5=LpVariable('U4_5_5',0, 20) 
 
-U5_10_0=LpVariable('utilite_5_10_0',0, 20) 
+U5_10_0=LpVariable('U5_10_0',0, 20) 
 
-U6_0_34=LpVariable('utilite_6_0_34',0, 20) 
+U6_0_34=LpVariable('U6_0_34',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_97
 
-U1_1697=LpVariable('utilite_1_1697',0, 20) 
+U1_1697=LpVariable('U1_1697',0, 20) 
 
-U2_3_9=LpVariable('utilite_2_3_9',0, 20) 
+U2_3_9=LpVariable('U2_3_9',0, 20) 
 
-U3_22_0=LpVariable('utilite_3_22_0',0, 20) 
+U3_22_0=LpVariable('U3_22_0',0, 20) 
 
-U4_6_3=LpVariable('utilite_4_6_3',0, 20) 
+U4_6_3=LpVariable('U4_6_3',0, 20) 
 
-U5_7_4=LpVariable('utilite_5_7_4',0, 20) 
+U5_7_4=LpVariable('U5_7_4',0, 20) 
 
-U6_0_248=LpVariable('utilite_6_0_248',0, 20) 
+U6_0_248=LpVariable('U6_0_248',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_98
 
-U1_1653=LpVariable('utilite_1_1653',0, 20) 
+U1_1653=LpVariable('U1_1653',0, 20) 
 
-U2_3_8=LpVariable('utilite_2_3_8',0, 20) 
+U2_3_8=LpVariable('U2_3_8',0, 20) 
 
-U3_22_0=LpVariable('utilite_3_22_0',0, 20) 
+U3_22_0=LpVariable('U3_22_0',0, 20) 
 
-U4_6_3=LpVariable('utilite_4_6_3',0, 20) 
+U4_6_3=LpVariable('U4_6_3',0, 20) 
 
-U5_7_4=LpVariable('utilite_5_7_4',0, 20) 
+U5_7_4=LpVariable('U5_7_4',0, 20) 
 
-U6_0_252=LpVariable('utilite_6_0_252',0, 20) 
+U6_0_252=LpVariable('U6_0_252',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_99
 
-U1_1668=LpVariable('utilite_1_1668',0, 20) 
+U1_1668=LpVariable('U1_1668',0, 20) 
 
-U2_3_8=LpVariable('utilite_2_3_8',0, 20) 
+U2_3_8=LpVariable('U2_3_8',0, 20) 
 
-U3_22_0=LpVariable('utilite_3_22_0',0, 20) 
+U3_22_0=LpVariable('U3_22_0',0, 20) 
 
-U4_6_3=LpVariable('utilite_4_6_3',0, 20) 
+U4_6_3=LpVariable('U4_6_3',0, 20) 
 
-U5_7_4=LpVariable('utilite_5_7_4',0, 20) 
+U5_7_4=LpVariable('U5_7_4',0, 20) 
 
-U6_0_252=LpVariable('utilite_6_0_252',0, 20) 
+U6_0_252=LpVariable('U6_0_252',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_100
 
-U1_1697=LpVariable('utilite_1_1697',0, 20) 
+U1_1697=LpVariable('U1_1697',0, 20) 
 
-U2_3_3=LpVariable('utilite_2_3_3',0, 20) 
+U2_3_3=LpVariable('U2_3_3',0, 20) 
 
-U3_23_0=LpVariable('utilite_3_23_0',0, 20) 
+U3_23_0=LpVariable('U3_23_0',0, 20) 
 
-U4_5_3=LpVariable('utilite_4_5_3',0, 20) 
+U4_5_3=LpVariable('U4_5_3',0, 20) 
 
-U5_7_4=LpVariable('utilite_5_7_4',0, 20) 
+U5_7_4=LpVariable('U5_7_4',0, 20) 
 
-U6_0_26=LpVariable('utilite_6_0_26',0, 20) 
+U6_0_26=LpVariable('U6_0_26',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_101
 
-U1_1460=LpVariable('utilite_1_1460',0, 20) 
+U1_1460=LpVariable('U1_1460',0, 20) 
 
-U2_0_8=LpVariable('utilite_2_0_8',0, 20) 
+U2_0_8=LpVariable('U2_0_8',0, 20) 
 
-U3_24_0=LpVariable('utilite_3_24_0',0, 20) 
+U3_24_0=LpVariable('U3_24_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_152=LpVariable('utilite_6_0_152',0, 20) 
+U6_0_152=LpVariable('U6_0_152',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_102
 
-U1_1708=LpVariable('utilite_1_1708',0, 20) 
+U1_1708=LpVariable('U1_1708',0, 20) 
 
-U2_3_7=LpVariable('utilite_2_3_7',0, 20) 
+U2_3_7=LpVariable('U2_3_7',0, 20) 
 
-U3_21_0=LpVariable('utilite_3_21_0',0, 20) 
+U3_21_0=LpVariable('U3_21_0',0, 20) 
 
-U4_4_4=LpVariable('utilite_4_4_4',0, 20) 
+U4_4_4=LpVariable('U4_4_4',0, 20) 
 
-U5_7_9=LpVariable('utilite_5_7_9',0, 20) 
+U5_7_9=LpVariable('U5_7_9',0, 20) 
 
-U6_0_24=LpVariable('utilite_6_0_24',0, 20) 
+U6_0_24=LpVariable('U6_0_24',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_103
 
-U1_1565=LpVariable('utilite_1_1565',0, 20) 
+U1_1565=LpVariable('U1_1565',0, 20) 
 
-U2_0_7=LpVariable('utilite_2_0_7',0, 20) 
+U2_0_7=LpVariable('U2_0_7',0, 20) 
 
-U3_17_1=LpVariable('utilite_3_17_1',0, 20) 
+U3_17_1=LpVariable('U3_17_1',0, 20) 
 
-U4_2_7=LpVariable('utilite_4_2_7',0, 20) 
+U4_2_7=LpVariable('U4_2_7',0, 20) 
 
-U5_12_7=LpVariable('utilite_5_12_7',0, 20) 
+U5_12_7=LpVariable('U5_12_7',0, 20) 
 
-U6_0_44=LpVariable('utilite_6_0_44',0, 20) 
+U6_0_44=LpVariable('U6_0_44',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_104
 
-U1_1569=LpVariable('utilite_1_1569',0, 20) 
+U1_1569=LpVariable('U1_1569',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_11_0=LpVariable('utilite_3_11_0',0, 20) 
+U3_11_0=LpVariable('U3_11_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_11_0=LpVariable('utilite_5_11_0',0, 20) 
+U5_11_0=LpVariable('U5_11_0',0, 20) 
 
-U6_0_324=LpVariable('utilite_6_0_324',0, 20) 
+U6_0_324=LpVariable('U6_0_324',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_105
 
-U1_1695=LpVariable('utilite_1_1695',0, 20) 
+U1_1695=LpVariable('U1_1695',0, 20) 
 
-U2_4_2=LpVariable('utilite_2_4_2',0, 20) 
+U2_4_2=LpVariable('U2_4_2',0, 20) 
 
-U3_17_7=LpVariable('utilite_3_17_7',0, 20) 
+U3_17_7=LpVariable('U3_17_7',0, 20) 
 
-U4_6_9=LpVariable('utilite_4_6_9',0, 20) 
+U4_6_9=LpVariable('U4_6_9',0, 20) 
 
-U5_9_0=LpVariable('utilite_5_9_0',0, 20) 
+U5_9_0=LpVariable('U5_9_0',0, 20) 
 
-U6_0_124=LpVariable('utilite_6_0_124',0, 20) 
+U6_0_124=LpVariable('U6_0_124',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_106
 
-U1_1597=LpVariable('utilite_1_1597',0, 20) 
+U1_1597=LpVariable('U1_1597',0, 20) 
 
-U2_0_6=LpVariable('utilite_2_0_6',0, 20) 
+U2_0_6=LpVariable('U2_0_6',0, 20) 
 
-U3_8_5=LpVariable('utilite_3_8_5',0, 20) 
+U3_8_5=LpVariable('U3_8_5',0, 20) 
 
-U4_3_3=LpVariable('utilite_4_3_3',0, 20) 
+U4_3_3=LpVariable('U4_3_3',0, 20) 
 
-U5_7_9=LpVariable('utilite_5_7_9',0, 20) 
+U5_7_9=LpVariable('U5_7_9',0, 20) 
 
-U6_0_76=LpVariable('utilite_6_0_76',0, 20) 
+U6_0_76=LpVariable('U6_0_76',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_107
 
-U1_1676=LpVariable('utilite_1_1676',0, 20) 
+U1_1676=LpVariable('U1_1676',0, 20) 
 
-U2_3_8=LpVariable('utilite_2_3_8',0, 20) 
+U2_3_8=LpVariable('U2_3_8',0, 20) 
 
-U3_8_2=LpVariable('utilite_3_8_2',0, 20) 
+U3_8_2=LpVariable('U3_8_2',0, 20) 
 
-U4_5_1=LpVariable('utilite_4_5_1',0, 20) 
+U4_5_1=LpVariable('U4_5_1',0, 20) 
 
-U5_9_2=LpVariable('utilite_5_9_2',0, 20) 
+U5_9_2=LpVariable('U5_9_2',0, 20) 
 
-U6_0_38=LpVariable('utilite_6_0_38',0, 20) 
+U6_0_38=LpVariable('U6_0_38',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_108
 
-U1_1565=LpVariable('utilite_1_1565',0, 20) 
+U1_1565=LpVariable('U1_1565',0, 20) 
 
-U2_0_4=LpVariable('utilite_2_0_4',0, 20) 
+U2_0_4=LpVariable('U2_0_4',0, 20) 
 
-U3_7_7=LpVariable('utilite_3_7_7',0, 20) 
+U3_7_7=LpVariable('U3_7_7',0, 20) 
 
-U4_6_2=LpVariable('utilite_4_6_2',0, 20) 
+U4_6_2=LpVariable('U4_6_2',0, 20) 
 
-U5_7_2=LpVariable('utilite_5_7_2',0, 20) 
+U5_7_2=LpVariable('U5_7_2',0, 20) 
 
-U6_0_68=LpVariable('utilite_6_0_68',0, 20) 
+U6_0_68=LpVariable('U6_0_68',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_109
 
-U1_1624=LpVariable('utilite_1_1624',0, 20) 
+U1_1624=LpVariable('U1_1624',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_17_0=LpVariable('utilite_3_17_0',0, 20) 
+U3_17_0=LpVariable('U3_17_0',0, 20) 
 
-U4_4_5=LpVariable('utilite_4_4_5',0, 20) 
+U4_4_5=LpVariable('U4_4_5',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_4=LpVariable('utilite_6_0_4',0, 20) 
+U6_0_4=LpVariable('U6_0_4',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_110
 
-U1_1754=LpVariable('utilite_1_1754',0, 20) 
+U1_1754=LpVariable('U1_1754',0, 20) 
 
-U2_1_3=LpVariable('utilite_2_1_3',0, 20) 
+U2_1_3=LpVariable('U2_1_3',0, 20) 
 
-U3_22_4=LpVariable('utilite_3_22_4',0, 20) 
+U3_22_4=LpVariable('U3_22_4',0, 20) 
 
-U4_4_7=LpVariable('utilite_4_4_7',0, 20) 
+U4_4_7=LpVariable('U4_4_7',0, 20) 
 
-U5_7_7=LpVariable('utilite_5_7_7',0, 20) 
+U5_7_7=LpVariable('U5_7_7',0, 20) 
 
-U6_0_26=LpVariable('utilite_6_0_26',0, 20) 
+U6_0_26=LpVariable('U6_0_26',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_111
 
-U1_351=LpVariable('utilite_1_351',0, 20) 
+U1_351=LpVariable('U1_351',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_25_0=LpVariable('utilite_3_25_0',0, 20) 
+U3_25_0=LpVariable('U3_25_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_2_6=LpVariable('utilite_5_2_6',0, 20) 
+U5_2_6=LpVariable('U5_2_6',0, 20) 
 
-U6_0_132=LpVariable('utilite_6_0_132',0, 20) 
+U6_0_132=LpVariable('U6_0_132',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_112
 
-U1_1620=LpVariable('utilite_1_1620',0, 20) 
+U1_1620=LpVariable('U1_1620',0, 20) 
 
-U2_0_333=LpVariable('utilite_2_0_333',0, 20) 
+U2_0_333=LpVariable('U2_0_333',0, 20) 
 
-U3_17_0=LpVariable('utilite_3_17_0',0, 20) 
+U3_17_0=LpVariable('U3_17_0',0, 20) 
 
-U4_3_0=LpVariable('utilite_4_3_0',0, 20) 
+U4_3_0=LpVariable('U4_3_0',0, 20) 
 
-U5_9_33=LpVariable('utilite_5_9_33',0, 20) 
+U5_9_33=LpVariable('U5_9_33',0, 20) 
 
-U6_0_44=LpVariable('utilite_6_0_44',0, 20) 
+U6_0_44=LpVariable('U6_0_44',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_113
 
-U1_1556=LpVariable('utilite_1_1556',0, 20) 
+U1_1556=LpVariable('U1_1556',0, 20) 
 
-U2_0_8=LpVariable('utilite_2_0_8',0, 20) 
+U2_0_8=LpVariable('U2_0_8',0, 20) 
 
-U3_26_0=LpVariable('utilite_3_26_0',0, 20) 
+U3_26_0=LpVariable('U3_26_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_9_3=LpVariable('utilite_5_9_3',0, 20) 
+U5_9_3=LpVariable('U5_9_3',0, 20) 
 
-U6_0_12=LpVariable('utilite_6_0_12',0, 20) 
+U6_0_12=LpVariable('U6_0_12',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_114
 
-U1_1791=LpVariable('utilite_1_1791',0, 20) 
+U1_1791=LpVariable('U1_1791',0, 20) 
 
-U2_4_8=LpVariable('utilite_2_4_8',0, 20) 
+U2_4_8=LpVariable('U2_4_8',0, 20) 
 
-U3_20_1=LpVariable('utilite_3_20_1',0, 20) 
+U3_20_1=LpVariable('U3_20_1',0, 20) 
 
-U4_7_7=LpVariable('utilite_4_7_7',0, 20) 
+U4_7_7=LpVariable('U4_7_7',0, 20) 
 
-U5_9_7=LpVariable('utilite_5_9_7',0, 20) 
+U5_9_7=LpVariable('U5_9_7',0, 20) 
 
-U6_0_012=LpVariable('utilite_6_0_012',0, 20) 
+U6_0_012=LpVariable('U6_0_012',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_115
 
-U1_1632=LpVariable('utilite_1_1632',0, 20) 
+U1_1632=LpVariable('U1_1632',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_11_2=LpVariable('utilite_3_11_2',0, 20) 
+U3_11_2=LpVariable('U3_11_2',0, 20) 
 
-U4_2_8=LpVariable('utilite_4_2_8',0, 20) 
+U4_2_8=LpVariable('U4_2_8',0, 20) 
 
-U5_7_7=LpVariable('utilite_5_7_7',0, 20) 
+U5_7_7=LpVariable('U5_7_7',0, 20) 
 
-U6_0_32=LpVariable('utilite_6_0_32',0, 20) 
+U6_0_32=LpVariable('U6_0_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_116
 
-U1_1661=LpVariable('utilite_1_1661',0, 20) 
+U1_1661=LpVariable('U1_1661',0, 20) 
 
-U2_3_0=LpVariable('utilite_2_3_0',0, 20) 
+U2_3_0=LpVariable('U2_3_0',0, 20) 
 
-U3_21_0=LpVariable('utilite_3_21_0',0, 20) 
+U3_21_0=LpVariable('U3_21_0',0, 20) 
 
-U4_5_1=LpVariable('utilite_4_5_1',0, 20) 
+U4_5_1=LpVariable('U4_5_1',0, 20) 
 
-U5_8_4=LpVariable('utilite_5_8_4',0, 20) 
+U5_8_4=LpVariable('U5_8_4',0, 20) 
 
-U6_0_32=LpVariable('utilite_6_0_32',0, 20) 
+U6_0_32=LpVariable('U6_0_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_117
 
-U1_1532=LpVariable('utilite_1_1532',0, 20) 
+U1_1532=LpVariable('U1_1532',0, 20) 
 
-U2_2_8=LpVariable('utilite_2_2_8',0, 20) 
+U2_2_8=LpVariable('U2_2_8',0, 20) 
 
-U3_21_0=LpVariable('utilite_3_21_0',0, 20) 
+U3_21_0=LpVariable('U3_21_0',0, 20) 
 
-U4_11_0=LpVariable('utilite_4_11_0',0, 20) 
+U4_11_0=LpVariable('U4_11_0',0, 20) 
 
-U5_11_0=LpVariable('utilite_5_11_0',0, 20) 
+U5_11_0=LpVariable('U5_11_0',0, 20) 
 
-U6_0_48=LpVariable('utilite_6_0_48',0, 20) 
+U6_0_48=LpVariable('U6_0_48',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_118
 
-U1_1649=LpVariable('utilite_1_1649',0, 20) 
+U1_1649=LpVariable('U1_1649',0, 20) 
 
-U2_1_7=LpVariable('utilite_2_1_7',0, 20) 
+U2_1_7=LpVariable('U2_1_7',0, 20) 
 
-U3_30_0=LpVariable('utilite_3_30_0',0, 20) 
+U3_30_0=LpVariable('U3_30_0',0, 20) 
 
-U4_6_2=LpVariable('utilite_4_6_2',0, 20) 
+U4_6_2=LpVariable('U4_6_2',0, 20) 
 
-U5_9_0=LpVariable('utilite_5_9_0',0, 20) 
+U5_9_0=LpVariable('U5_9_0',0, 20) 
 
-U6_0_092=LpVariable('utilite_6_0_092',0, 20) 
+U6_0_092=LpVariable('U6_0_092',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_119
 
-U1_1650=LpVariable('utilite_1_1650',0, 20) 
+U1_1650=LpVariable('U1_1650',0, 20) 
 
-U2_0_333=LpVariable('utilite_2_0_333',0, 20) 
+U2_0_333=LpVariable('U2_0_333',0, 20) 
 
-U3_17_0=LpVariable('utilite_3_17_0',0, 20) 
+U3_17_0=LpVariable('U3_17_0',0, 20) 
 
-U4_3_0=LpVariable('utilite_4_3_0',0, 20) 
+U4_3_0=LpVariable('U4_3_0',0, 20) 
 
-U5_9_33=LpVariable('utilite_5_9_33',0, 20) 
+U5_9_33=LpVariable('U5_9_33',0, 20) 
 
-U6_0_44=LpVariable('utilite_6_0_44',0, 20) 
+U6_0_44=LpVariable('U6_0_44',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_120
 
-U1_1573=LpVariable('utilite_1_1573',0, 20) 
+U1_1573=LpVariable('U1_1573',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_18_0=LpVariable('utilite_3_18_0',0, 20) 
+U3_18_0=LpVariable('U3_18_0',0, 20) 
 
-U4_5_8=LpVariable('utilite_4_5_8',0, 20) 
+U4_5_8=LpVariable('U4_5_8',0, 20) 
 
-U5_7_4=LpVariable('utilite_5_7_4',0, 20) 
+U5_7_4=LpVariable('U5_7_4',0, 20) 
 
-U6_0_44=LpVariable('utilite_6_0_44',0, 20) 
+U6_0_44=LpVariable('U6_0_44',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_121
 
-U1_1577=LpVariable('utilite_1_1577',0, 20) 
+U1_1577=LpVariable('U1_1577',0, 20) 
 
-U2_0_9=LpVariable('utilite_2_0_9',0, 20) 
+U2_0_9=LpVariable('U2_0_9',0, 20) 
 
-U3_27_0=LpVariable('utilite_3_27_0',0, 20) 
+U3_27_0=LpVariable('U3_27_0',0, 20) 
 
-U4_5_0=LpVariable('utilite_4_5_0',0, 20) 
+U4_5_0=LpVariable('U4_5_0',0, 20) 
 
-U5_10_0=LpVariable('utilite_5_10_0',0, 20) 
+U5_10_0=LpVariable('U5_10_0',0, 20) 
 
-U6_0_312=LpVariable('utilite_6_0_312',0, 20) 
+U6_0_312=LpVariable('U6_0_312',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_122
 
-U1_1625=LpVariable('utilite_1_1625',0, 20) 
+U1_1625=LpVariable('U1_1625',0, 20) 
 
-U2_0_5=LpVariable('utilite_2_0_5',0, 20) 
+U2_0_5=LpVariable('U2_0_5',0, 20) 
 
-U3_8_6=LpVariable('utilite_3_8_6',0, 20) 
+U3_8_6=LpVariable('U3_8_6',0, 20) 
 
-U4_3_4=LpVariable('utilite_4_3_4',0, 20) 
+U4_3_4=LpVariable('U4_3_4',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_56896=LpVariable('utilite_6_0_56896',0, 20) 
+U6_0_56896=LpVariable('U6_0_56896',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_123
 
-U1_1718=LpVariable('utilite_1_1718',0, 20) 
+U1_1718=LpVariable('U1_1718',0, 20) 
 
-U2_4_3=LpVariable('utilite_2_4_3',0, 20) 
+U2_4_3=LpVariable('U2_4_3',0, 20) 
 
-U3_25_7=LpVariable('utilite_3_25_7',0, 20) 
+U3_25_7=LpVariable('U3_25_7',0, 20) 
 
-U4_6_4=LpVariable('utilite_4_6_4',0, 20) 
+U4_6_4=LpVariable('U4_6_4',0, 20) 
 
-U5_7_9=LpVariable('utilite_5_7_9',0, 20) 
+U5_7_9=LpVariable('U5_7_9',0, 20) 
 
-U6_0_144=LpVariable('utilite_6_0_144',0, 20) 
+U6_0_144=LpVariable('U6_0_144',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_124
 
-U1_1741=LpVariable('utilite_1_1741',0, 20) 
+U1_1741=LpVariable('U1_1741',0, 20) 
 
-U2_3_1=LpVariable('utilite_2_3_1',0, 20) 
+U2_3_1=LpVariable('U2_3_1',0, 20) 
 
-U3_24_3=LpVariable('utilite_3_24_3',0, 20) 
+U3_24_3=LpVariable('U3_24_3',0, 20) 
 
-U4_8_6=LpVariable('utilite_4_8_6',0, 20) 
+U4_8_6=LpVariable('U4_8_6',0, 20) 
 
-U5_9_2=LpVariable('utilite_5_9_2',0, 20) 
+U5_9_2=LpVariable('U5_9_2',0, 20) 
 
-U6_0_076=LpVariable('utilite_6_0_076',0, 20) 
+U6_0_076=LpVariable('U6_0_076',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_125
 
-U1_1628=LpVariable('utilite_1_1628',0, 20) 
+U1_1628=LpVariable('U1_1628',0, 20) 
 
-U2_2_2=LpVariable('utilite_2_2_2',0, 20) 
+U2_2_2=LpVariable('U2_2_2',0, 20) 
 
-U3_27_8=LpVariable('utilite_3_27_8',0, 20) 
+U3_27_8=LpVariable('U3_27_8',0, 20) 
 
-U4_9_2=LpVariable('utilite_4_9_2',0, 20) 
+U4_9_2=LpVariable('U4_9_2',0, 20) 
 
-U5_9_1=LpVariable('utilite_5_9_1',0, 20) 
+U5_9_1=LpVariable('U5_9_1',0, 20) 
 
-U6_0_16=LpVariable('utilite_6_0_16',0, 20) 
+U6_0_16=LpVariable('U6_0_16',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_126
 
-U1_1632=LpVariable('utilite_1_1632',0, 20) 
+U1_1632=LpVariable('U1_1632',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_19_9=LpVariable('utilite_3_19_9',0, 20) 
+U3_19_9=LpVariable('U3_19_9',0, 20) 
 
-U4_3_5=LpVariable('utilite_4_3_5',0, 20) 
+U4_3_5=LpVariable('U4_3_5',0, 20) 
 
-U5_7_7=LpVariable('utilite_5_7_7',0, 20) 
+U5_7_7=LpVariable('U5_7_7',0, 20) 
 
-U6_0_296=LpVariable('utilite_6_0_296',0, 20) 
+U6_0_296=LpVariable('U6_0_296',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_127
 
-U1_1624=LpVariable('utilite_1_1624',0, 20) 
+U1_1624=LpVariable('U1_1624',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_22_0=LpVariable('utilite_3_22_0',0, 20) 
+U3_22_0=LpVariable('U3_22_0',0, 20) 
 
-U4_2_1=LpVariable('utilite_4_2_1',0, 20) 
+U4_2_1=LpVariable('U4_2_1',0, 20) 
 
-U5_7_1=LpVariable('utilite_5_7_1',0, 20) 
+U5_7_1=LpVariable('U5_7_1',0, 20) 
 
-U6_0_3=LpVariable('utilite_6_0_3',0, 20) 
+U6_0_3=LpVariable('U6_0_3',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_128
 
-U1_1561=LpVariable('utilite_1_1561',0, 20) 
+U1_1561=LpVariable('U1_1561',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_18_4=LpVariable('utilite_3_18_4',0, 20) 
+U3_18_4=LpVariable('U3_18_4',0, 20) 
 
-U4_4_9=LpVariable('utilite_4_4_9',0, 20) 
+U4_4_9=LpVariable('U4_4_9',0, 20) 
 
-U5_7_9=LpVariable('utilite_5_7_9',0, 20) 
+U5_7_9=LpVariable('U5_7_9',0, 20) 
 
-U6_0_36=LpVariable('utilite_6_0_36',0, 20) 
+U6_0_36=LpVariable('U6_0_36',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_129
 
-U1_987=LpVariable('utilite_1_987',0, 20) 
+U1_987=LpVariable('U1_987',0, 20) 
 
-U2_0_0=LpVariable('utilite_2_0_0',0, 20) 
+U2_0_0=LpVariable('U2_0_0',0, 20) 
 
-U3_58_0=LpVariable('utilite_3_58_0',0, 20) 
+U3_58_0=LpVariable('U3_58_0',0, 20) 
 
-U4_1_0=LpVariable('utilite_4_1_0',0, 20) 
+U4_1_0=LpVariable('U4_1_0',0, 20) 
 
-U5_0_4=LpVariable('utilite_5_0_4',0, 20) 
+U5_0_4=LpVariable('U5_0_4',0, 20) 
 
-U6_0_0=LpVariable('utilite_6_0_0',0, 20) 
+U6_0_0=LpVariable('U6_0_0',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_130
 
-U1_1626=LpVariable('utilite_1_1626',0, 20) 
+U1_1626=LpVariable('U1_1626',0, 20) 
 
-U2_0_4=LpVariable('utilite_2_0_4',0, 20) 
+U2_0_4=LpVariable('U2_0_4',0, 20) 
 
-U3_19_0=LpVariable('utilite_3_19_0',0, 20) 
+U3_19_0=LpVariable('U3_19_0',0, 20) 
 
-U4_4_2=LpVariable('utilite_4_4_2',0, 20) 
+U4_4_2=LpVariable('U4_4_2',0, 20) 
 
-U5_9_2=LpVariable('utilite_5_9_2',0, 20) 
+U5_9_2=LpVariable('U5_9_2',0, 20) 
 
-U6_0_4=LpVariable('utilite_6_0_4',0, 20) 
+U6_0_4=LpVariable('U6_0_4',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_131
 
-U1_1678=LpVariable('utilite_1_1678',0, 20) 
+U1_1678=LpVariable('U1_1678',0, 20) 
 
-U2_1_9=LpVariable('utilite_2_1_9',0, 20) 
+U2_1_9=LpVariable('U2_1_9',0, 20) 
 
-U3_15_0=LpVariable('utilite_3_15_0',0, 20) 
+U3_15_0=LpVariable('U3_15_0',0, 20) 
 
-U4_9_2=LpVariable('utilite_4_9_2',0, 20) 
+U4_9_2=LpVariable('U4_9_2',0, 20) 
 
-U5_11_0=LpVariable('utilite_5_11_0',0, 20) 
+U5_11_0=LpVariable('U5_11_0',0, 20) 
 
-U6_0_292=LpVariable('utilite_6_0_292',0, 20) 
+U6_0_292=LpVariable('U6_0_292',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_132
 
-U1_1582=LpVariable('utilite_1_1582',0, 20) 
+U1_1582=LpVariable('U1_1582',0, 20) 
 
-U2_0_6=LpVariable('utilite_2_0_6',0, 20) 
+U2_0_6=LpVariable('U2_0_6',0, 20) 
 
-U3_15_0=LpVariable('utilite_3_15_0',0, 20) 
+U3_15_0=LpVariable('U3_15_0',0, 20) 
 
-U4_2_8=LpVariable('utilite_4_2_8',0, 20) 
+U4_2_8=LpVariable('U4_2_8',0, 20) 
 
-U5_7_9=LpVariable('utilite_5_7_9',0, 20) 
+U5_7_9=LpVariable('U5_7_9',0, 20) 
 
-U6_0_3=LpVariable('utilite_6_0_3',0, 20) 
+U6_0_3=LpVariable('U6_0_3',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_133
 
-U1_1669=LpVariable('utilite_1_1669',0, 20) 
+U1_1669=LpVariable('U1_1669',0, 20) 
 
-U2_2_6=LpVariable('utilite_2_2_6',0, 20) 
+U2_2_6=LpVariable('U2_2_6',0, 20) 
 
-U3_15_0=LpVariable('utilite_3_15_0',0, 20) 
+U3_15_0=LpVariable('U3_15_0',0, 20) 
 
-U4_4_8=LpVariable('utilite_4_4_8',0, 20) 
+U4_4_8=LpVariable('U4_4_8',0, 20) 
 
-U5_7_6=LpVariable('utilite_5_7_6',0, 20) 
+U5_7_6=LpVariable('U5_7_6',0, 20) 
 
-U6_0_256=LpVariable('utilite_6_0_256',0, 20) 
+U6_0_256=LpVariable('U6_0_256',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_134
 
-U1_1531=LpVariable('utilite_1_1531',0, 20) 
+U1_1531=LpVariable('U1_1531',0, 20) 
 
-U2_0_7=LpVariable('utilite_2_0_7',0, 20) 
+U2_0_7=LpVariable('U2_0_7',0, 20) 
 
-U3_15_1=LpVariable('utilite_3_15_1',0, 20) 
+U3_15_1=LpVariable('U3_15_1',0, 20) 
 
-U4_3_7=LpVariable('utilite_4_3_7',0, 20) 
+U4_3_7=LpVariable('U4_3_7',0, 20) 
 
-U5_12_7=LpVariable('utilite_5_12_7',0, 20) 
+U5_12_7=LpVariable('U5_12_7',0, 20) 
 
-U6_0_6=LpVariable('utilite_6_0_6',0, 20) 
+U6_0_6=LpVariable('U6_0_6',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_135
 
-U1_1879=LpVariable('utilite_1_1879',0, 20) 
+U1_1879=LpVariable('U1_1879',0, 20) 
 
-U2_1_8=LpVariable('utilite_2_1_8',0, 20) 
+U2_1_8=LpVariable('U2_1_8',0, 20) 
 
-U3_5_2=LpVariable('utilite_3_5_2',0, 20) 
+U3_5_2=LpVariable('U3_5_2',0, 20) 
 
-U4_5_3=LpVariable('utilite_4_5_3',0, 20) 
+U4_5_3=LpVariable('U4_5_3',0, 20) 
 
-U5_6_1=LpVariable('utilite_5_6_1',0, 20) 
+U5_6_1=LpVariable('U5_6_1',0, 20) 
 
-U6_0_444=LpVariable('utilite_6_0_444',0, 20) 
+U6_0_444=LpVariable('U6_0_444',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_136
 
-U1_1891=LpVariable('utilite_1_1891',0, 20) 
+U1_1891=LpVariable('U1_1891',0, 20) 
 
-U2_1_4=LpVariable('utilite_2_1_4',0, 20) 
+U2_1_4=LpVariable('U2_1_4',0, 20) 
 
-U3_1_4=LpVariable('utilite_3_1_4',0, 20) 
+U3_1_4=LpVariable('U3_1_4',0, 20) 
 
-U4_5_3=LpVariable('utilite_4_5_3',0, 20) 
+U4_5_3=LpVariable('U4_5_3',0, 20) 
 
-U5_6_0=LpVariable('utilite_5_6_0',0, 20) 
+U5_6_0=LpVariable('U5_6_0',0, 20) 
 
-U6_0_84=LpVariable('utilite_6_0_84',0, 20) 
+U6_0_84=LpVariable('U6_0_84',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_137
 
-U1_1770=LpVariable('utilite_1_1770',0, 20) 
+U1_1770=LpVariable('U1_1770',0, 20) 
 
-U2_4_2=LpVariable('utilite_2_4_2',0, 20) 
+U2_4_2=LpVariable('U2_4_2',0, 20) 
 
-U3_24_0=LpVariable('utilite_3_24_0',0, 20) 
+U3_24_0=LpVariable('U3_24_0',0, 20) 
 
-U4_8_1=LpVariable('utilite_4_8_1',0, 20) 
+U4_8_1=LpVariable('U4_8_1',0, 20) 
 
-U5_5_3=LpVariable('utilite_5_5_3',0, 20) 
+U5_5_3=LpVariable('U5_5_3',0, 20) 
 
-U6_0_152=LpVariable('utilite_6_0_152',0, 20) 
+U6_0_152=LpVariable('U6_0_152',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_138
 
-U1_1660=LpVariable('utilite_1_1660',0, 20) 
+U1_1660=LpVariable('U1_1660',0, 20) 
 
-U2_3_8=LpVariable('utilite_2_3_8',0, 20) 
+U2_3_8=LpVariable('U2_3_8',0, 20) 
 
-U3_28_9=LpVariable('utilite_3_28_9',0, 20) 
+U3_28_9=LpVariable('U3_28_9',0, 20) 
 
-U4_5_7=LpVariable('utilite_4_5_7',0, 20) 
+U4_5_7=LpVariable('U4_5_7',0, 20) 
 
-U5_8_3=LpVariable('utilite_5_8_3',0, 20) 
+U5_8_3=LpVariable('U5_8_3',0, 20) 
 
-U6_0_144=LpVariable('utilite_6_0_144',0, 20) 
+U6_0_144=LpVariable('U6_0_144',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_139
 
-U1_1594=LpVariable('utilite_1_1594',0, 20) 
+U1_1594=LpVariable('U1_1594',0, 20) 
 
-U2_0_7=LpVariable('utilite_2_0_7',0, 20) 
+U2_0_7=LpVariable('U2_0_7',0, 20) 
 
-U3_32_0=LpVariable('utilite_3_32_0',0, 20) 
+U3_32_0=LpVariable('U3_32_0',0, 20) 
 
-U4_5_1=LpVariable('utilite_4_5_1',0, 20) 
+U4_5_1=LpVariable('U4_5_1',0, 20) 
 
-U5_7_6=LpVariable('utilite_5_7_6',0, 20) 
+U5_7_6=LpVariable('U5_7_6',0, 20) 
 
-U6_0_312=LpVariable('utilite_6_0_312',0, 20) 
+U6_0_312=LpVariable('U6_0_312',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_140
 
-U1_1577=LpVariable('utilite_1_1577',0, 20) 
+U1_1577=LpVariable('U1_1577',0, 20) 
 
-U2_1_3=LpVariable('utilite_2_1_3',0, 20) 
+U2_1_3=LpVariable('U2_1_3',0, 20) 
 
-U3_26_8=LpVariable('utilite_3_26_8',0, 20) 
+U3_26_8=LpVariable('U3_26_8',0, 20) 
 
-U4_8_6=LpVariable('utilite_4_8_6',0, 20) 
+U4_8_6=LpVariable('U4_8_6',0, 20) 
 
-U5_9_3=LpVariable('utilite_5_9_3',0, 20) 
+U5_9_3=LpVariable('U5_9_3',0, 20) 
 
-U6_0_168=LpVariable('utilite_6_0_168',0, 20) 
+U6_0_168=LpVariable('U6_0_168',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_141
 
-U1_1565=LpVariable('utilite_1_1565',0, 20) 
+U1_1565=LpVariable('U1_1565',0, 20) 
 
-U2_2_9=LpVariable('utilite_2_2_9',0, 20) 
+U2_2_9=LpVariable('U2_2_9',0, 20) 
 
-U3_0_4=LpVariable('utilite_3_0_4',0, 20) 
+U3_0_4=LpVariable('U3_0_4',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_68_3=LpVariable('utilite_5_68_3',0, 20) 
+U5_68_3=LpVariable('U5_68_3',0, 20) 
 
-U6_0_392=LpVariable('utilite_6_0_392',0, 20) 
+U6_0_392=LpVariable('U6_0_392',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_142
 
-U1_1561=LpVariable('utilite_1_1561',0, 20) 
+U1_1561=LpVariable('U1_1561',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_7_0=LpVariable('utilite_3_7_0',0, 20) 
+U3_7_0=LpVariable('U3_7_0',0, 20) 
 
-U4_3_0=LpVariable('utilite_4_3_0',0, 20) 
+U4_3_0=LpVariable('U4_3_0',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_62=LpVariable('utilite_6_0_62',0, 20) 
+U6_0_62=LpVariable('U6_0_62',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_143
 
-U1_1601=LpVariable('utilite_1_1601',0, 20) 
+U1_1601=LpVariable('U1_1601',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_15_4=LpVariable('utilite_3_15_4',0, 20) 
+U3_15_4=LpVariable('U3_15_4',0, 20) 
 
-U4_2_9=LpVariable('utilite_4_2_9',0, 20) 
+U4_2_9=LpVariable('U4_2_9',0, 20) 
 
-U5_11_3=LpVariable('utilite_5_11_3',0, 20) 
+U5_11_3=LpVariable('U5_11_3',0, 20) 
 
-U6_0_372=LpVariable('utilite_6_0_372',0, 20) 
+U6_0_372=LpVariable('U6_0_372',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_144
 
-U1_1674=LpVariable('utilite_1_1674',0, 20) 
+U1_1674=LpVariable('U1_1674',0, 20) 
 
-U2_2_6=LpVariable('utilite_2_2_6',0, 20) 
+U2_2_6=LpVariable('U2_2_6',0, 20) 
 
-U3_15_0=LpVariable('utilite_3_15_0',0, 20) 
+U3_15_0=LpVariable('U3_15_0',0, 20) 
 
-U4_6_8=LpVariable('utilite_4_6_8',0, 20) 
+U4_6_8=LpVariable('U4_6_8',0, 20) 
 
-U5_7_6=LpVariable('utilite_5_7_6',0, 20) 
+U5_7_6=LpVariable('U5_7_6',0, 20) 
 
-U6_0_26=LpVariable('utilite_6_0_26',0, 20) 
+U6_0_26=LpVariable('U6_0_26',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_145
 
-U1_1645=LpVariable('utilite_1_1645',0, 20) 
+U1_1645=LpVariable('U1_1645',0, 20) 
 
-U2_1_8=LpVariable('utilite_2_1_8',0, 20) 
+U2_1_8=LpVariable('U2_1_8',0, 20) 
 
-U3_28_8=LpVariable('utilite_3_28_8',0, 20) 
+U3_28_8=LpVariable('U3_28_8',0, 20) 
 
-U4_6_2=LpVariable('utilite_4_6_2',0, 20) 
+U4_6_2=LpVariable('U4_6_2',0, 20) 
 
-U5_8_1=LpVariable('utilite_5_8_1',0, 20) 
+U5_8_1=LpVariable('U5_8_1',0, 20) 
 
-U6_0_1524=LpVariable('utilite_6_0_1524',0, 20) 
+U6_0_1524=LpVariable('U6_0_1524',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_146
 
-U1_1666=LpVariable('utilite_1_1666',0, 20) 
+U1_1666=LpVariable('U1_1666',0, 20) 
 
-U2_0_8=LpVariable('utilite_2_0_8',0, 20) 
+U2_0_8=LpVariable('U2_0_8',0, 20) 
 
-U3_18_0=LpVariable('utilite_3_18_0',0, 20) 
+U3_18_0=LpVariable('U3_18_0',0, 20) 
 
-U4_4_5=LpVariable('utilite_4_4_5',0, 20) 
+U4_4_5=LpVariable('U4_4_5',0, 20) 
 
-U5_9_0=LpVariable('utilite_5_9_0',0, 20) 
+U5_9_0=LpVariable('U5_9_0',0, 20) 
 
-U6_0_4064=LpVariable('utilite_6_0_4064',0, 20) 
+U6_0_4064=LpVariable('U6_0_4064',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_147
 
-U1_1588=LpVariable('utilite_1_1588',0, 20) 
+U1_1588=LpVariable('U1_1588',0, 20) 
 
-U2_0_3=LpVariable('utilite_2_0_3',0, 20) 
+U2_0_3=LpVariable('U2_0_3',0, 20) 
 
-U3_19_0=LpVariable('utilite_3_19_0',0, 20) 
+U3_19_0=LpVariable('U3_19_0',0, 20) 
 
-U4_4_5=LpVariable('utilite_4_4_5',0, 20) 
+U4_4_5=LpVariable('U4_4_5',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_4=LpVariable('utilite_6_0_4',0, 20) 
+U6_0_4=LpVariable('U6_0_4',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_148
 
-U1_1619=LpVariable('utilite_1_1619',0, 20) 
+U1_1619=LpVariable('U1_1619',0, 20) 
 
-U2_0_5=LpVariable('utilite_2_0_5',0, 20) 
+U2_0_5=LpVariable('U2_0_5',0, 20) 
 
-U3_23_0=LpVariable('utilite_3_23_0',0, 20) 
+U3_23_0=LpVariable('U3_23_0',0, 20) 
 
-U4_3_5=LpVariable('utilite_4_3_5',0, 20) 
+U4_3_5=LpVariable('U4_3_5',0, 20) 
 
-U5_9_2=LpVariable('utilite_5_9_2',0, 20) 
+U5_9_2=LpVariable('U5_9_2',0, 20) 
 
-U6_0_252=LpVariable('utilite_6_0_252',0, 20) 
+U6_0_252=LpVariable('U6_0_252',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_149
 
-U1_1716=LpVariable('utilite_1_1716',0, 20) 
+U1_1716=LpVariable('U1_1716',0, 20) 
 
-U2_3_8=LpVariable('utilite_2_3_8',0, 20) 
+U2_3_8=LpVariable('U2_3_8',0, 20) 
 
-U3_16_5=LpVariable('utilite_3_16_5',0, 20) 
+U3_16_5=LpVariable('U3_16_5',0, 20) 
 
-U4_4_0=LpVariable('utilite_4_4_0',0, 20) 
+U4_4_0=LpVariable('U4_4_0',0, 20) 
 
-U5_11_5=LpVariable('utilite_5_11_5',0, 20) 
+U5_11_5=LpVariable('U5_11_5',0, 20) 
 
-U6_0_22352=LpVariable('utilite_6_0_22352',0, 20) 
+U6_0_22352=LpVariable('U6_0_22352',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_150
 
-U1_1520=LpVariable('utilite_1_1520',0, 20) 
+U1_1520=LpVariable('U1_1520',0, 20) 
 
-U2_0_4=LpVariable('utilite_2_0_4',0, 20) 
+U2_0_4=LpVariable('U2_0_4',0, 20) 
 
-U3_17_0=LpVariable('utilite_3_17_0',0, 20) 
+U3_17_0=LpVariable('U3_17_0',0, 20) 
 
-U4_15_0=LpVariable('utilite_4_15_0',0, 20) 
+U4_15_0=LpVariable('U4_15_0',0, 20) 
 
-U5_13_0=LpVariable('utilite_5_13_0',0, 20) 
+U5_13_0=LpVariable('U5_13_0',0, 20) 
 
-U6_0_6096=LpVariable('utilite_6_0_6096',0, 20) 
+U6_0_6096=LpVariable('U6_0_6096',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_151
 
-U1_1628=LpVariable('utilite_1_1628',0, 20) 
+U1_1628=LpVariable('U1_1628',0, 20) 
 
-U2_1_8=LpVariable('utilite_2_1_8',0, 20) 
+U2_1_8=LpVariable('U2_1_8',0, 20) 
 
-U3_28_8=LpVariable('utilite_3_28_8',0, 20) 
+U3_28_8=LpVariable('U3_28_8',0, 20) 
 
-U4_6_2=LpVariable('utilite_4_6_2',0, 20) 
+U4_6_2=LpVariable('U4_6_2',0, 20) 
 
-U5_8_1=LpVariable('utilite_5_8_1',0, 20) 
+U5_8_1=LpVariable('U5_8_1',0, 20) 
 
-U6_0_152=LpVariable('utilite_6_0_152',0, 20) 
+U6_0_152=LpVariable('U6_0_152',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_152
 
-U1_1651=LpVariable('utilite_1_1651',0, 20) 
+U1_1651=LpVariable('U1_1651',0, 20) 
 
-U2_1_5=LpVariable('utilite_2_1_5',0, 20) 
+U2_1_5=LpVariable('U2_1_5',0, 20) 
 
-U3_21_0=LpVariable('utilite_3_21_0',0, 20) 
+U3_21_0=LpVariable('U3_21_0',0, 20) 
 
-U4_8_3=LpVariable('utilite_4_8_3',0, 20) 
+U4_8_3=LpVariable('U4_8_3',0, 20) 
 
-U5_11_0=LpVariable('utilite_5_11_0',0, 20) 
+U5_11_0=LpVariable('U5_11_0',0, 20) 
 
-U6_0_36=LpVariable('utilite_6_0_36',0, 20) 
+U6_0_36=LpVariable('U6_0_36',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_153
 
-U1_1573=LpVariable('utilite_1_1573',0, 20) 
+U1_1573=LpVariable('U1_1573',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_10_0=LpVariable('utilite_3_10_0',0, 20) 
+U3_10_0=LpVariable('U3_10_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_8_7=LpVariable('utilite_5_8_7',0, 20) 
+U5_8_7=LpVariable('U5_8_7',0, 20) 
 
-U6_0_44=LpVariable('utilite_6_0_44',0, 20) 
+U6_0_44=LpVariable('U6_0_44',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_154
 
-U1_1625=LpVariable('utilite_1_1625',0, 20) 
+U1_1625=LpVariable('U1_1625',0, 20) 
 
-U2_1_2=LpVariable('utilite_2_1_2',0, 20) 
+U2_1_2=LpVariable('U2_1_2',0, 20) 
 
-U3_25_0=LpVariable('utilite_3_25_0',0, 20) 
+U3_25_0=LpVariable('U3_25_0',0, 20) 
 
-U4_5_0=LpVariable('utilite_4_5_0',0, 20) 
+U4_5_0=LpVariable('U4_5_0',0, 20) 
 
-U5_9_5=LpVariable('utilite_5_9_5',0, 20) 
+U5_9_5=LpVariable('U5_9_5',0, 20) 
 
-U6_0_32004=LpVariable('utilite_6_0_32004',0, 20) 
+U6_0_32004=LpVariable('U6_0_32004',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_155
 
-U1_1820=LpVariable('utilite_1_1820',0, 20) 
+U1_1820=LpVariable('U1_1820',0, 20) 
 
-U2_2_5=LpVariable('utilite_2_2_5',0, 20) 
+U2_2_5=LpVariable('U2_2_5',0, 20) 
 
-U3_17_0=LpVariable('utilite_3_17_0',0, 20) 
+U3_17_0=LpVariable('U3_17_0',0, 20) 
 
-U4_8_0=LpVariable('utilite_4_8_0',0, 20) 
+U4_8_0=LpVariable('U4_8_0',0, 20) 
 
-U5_8_0=LpVariable('utilite_5_8_0',0, 20) 
+U5_8_0=LpVariable('U5_8_0',0, 20) 
 
-U6_0_168=LpVariable('utilite_6_0_168',0, 20) 
+U6_0_168=LpVariable('U6_0_168',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_156
 
-U1_1881=LpVariable('utilite_1_1881',0, 20) 
+U1_1881=LpVariable('U1_1881',0, 20) 
 
-U2_1_7=LpVariable('utilite_2_1_7',0, 20) 
+U2_1_7=LpVariable('U2_1_7',0, 20) 
 
-U3_5_2=LpVariable('utilite_3_5_2',0, 20) 
+U3_5_2=LpVariable('U3_5_2',0, 20) 
 
-U4_5_3=LpVariable('utilite_4_5_3',0, 20) 
+U4_5_3=LpVariable('U4_5_3',0, 20) 
 
-U5_5_7=LpVariable('utilite_5_5_7',0, 20) 
+U5_5_7=LpVariable('U5_5_7',0, 20) 
 
-U6_0_572=LpVariable('utilite_6_0_572',0, 20) 
+U6_0_572=LpVariable('U6_0_572',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_157
 
-U1_1682=LpVariable('utilite_1_1682',0, 20) 
+U1_1682=LpVariable('U1_1682',0, 20) 
 
-U2_1_4=LpVariable('utilite_2_1_4',0, 20) 
+U2_1_4=LpVariable('U2_1_4',0, 20) 
 
-U3_34_0=LpVariable('utilite_3_34_0',0, 20) 
+U3_34_0=LpVariable('U3_34_0',0, 20) 
 
-U4_6_4=LpVariable('utilite_4_6_4',0, 20) 
+U4_6_4=LpVariable('U4_6_4',0, 20) 
 
-U5_8_7=LpVariable('utilite_5_8_7',0, 20) 
+U5_8_7=LpVariable('U5_8_7',0, 20) 
 
-U6_0_152=LpVariable('utilite_6_0_152',0, 20) 
+U6_0_152=LpVariable('U6_0_152',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_158
 
-U1_1610=LpVariable('utilite_1_1610',0, 20) 
+U1_1610=LpVariable('U1_1610',0, 20) 
 
-U2_1_0=LpVariable('utilite_2_1_0',0, 20) 
+U2_1_0=LpVariable('U2_1_0',0, 20) 
 
-U3_28_8=LpVariable('utilite_3_28_8',0, 20) 
+U3_28_8=LpVariable('U3_28_8',0, 20) 
 
-U4_5_0=LpVariable('utilite_4_5_0',0, 20) 
+U4_5_0=LpVariable('U4_5_0',0, 20) 
 
-U5_8_8=LpVariable('utilite_5_8_8',0, 20) 
+U5_8_8=LpVariable('U5_8_8',0, 20) 
 
-U6_0_27432=LpVariable('utilite_6_0_27432',0, 20) 
+U6_0_27432=LpVariable('U6_0_27432',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_159
 
-U1_1592=LpVariable('utilite_1_1592',0, 20) 
+U1_1592=LpVariable('U1_1592',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_19_0=LpVariable('utilite_3_19_0',0, 20) 
+U3_19_0=LpVariable('U3_19_0',0, 20) 
 
-U4_5_0=LpVariable('utilite_4_5_0',0, 20) 
+U4_5_0=LpVariable('U4_5_0',0, 20) 
 
-U5_9_0=LpVariable('utilite_5_9_0',0, 20) 
+U5_9_0=LpVariable('U5_9_0',0, 20) 
 
-U6_0_372=LpVariable('utilite_6_0_372',0, 20) 
+U6_0_372=LpVariable('U6_0_372',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_160
 
-U1_1570=LpVariable('utilite_1_1570',0, 20) 
+U1_1570=LpVariable('U1_1570',0, 20) 
 
-U2_0_5=LpVariable('utilite_2_0_5',0, 20) 
+U2_0_5=LpVariable('U2_0_5',0, 20) 
 
-U3_13_0=LpVariable('utilite_3_13_0',0, 20) 
+U3_13_0=LpVariable('U3_13_0',0, 20) 
 
-U4_3_0=LpVariable('utilite_4_3_0',0, 20) 
+U4_3_0=LpVariable('U4_3_0',0, 20) 
 
-U5_13_0=LpVariable('utilite_5_13_0',0, 20) 
+U5_13_0=LpVariable('U5_13_0',0, 20) 
 
-U6_0_7112=LpVariable('utilite_6_0_7112',0, 20) 
+U6_0_7112=LpVariable('U6_0_7112',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_161
 
-U1_1657=LpVariable('utilite_1_1657',0, 20) 
+U1_1657=LpVariable('U1_1657',0, 20) 
 
-U2_2_5=LpVariable('utilite_2_2_5',0, 20) 
+U2_2_5=LpVariable('U2_2_5',0, 20) 
 
-U3_22_0=LpVariable('utilite_3_22_0',0, 20) 
+U3_22_0=LpVariable('U3_22_0',0, 20) 
 
-U4_1_2=LpVariable('utilite_4_1_2',0, 20) 
+U4_1_2=LpVariable('U4_1_2',0, 20) 
 
-U5_8_8=LpVariable('utilite_5_8_8',0, 20) 
+U5_8_8=LpVariable('U5_8_8',0, 20) 
 
-U6_0_34=LpVariable('utilite_6_0_34',0, 20) 
+U6_0_34=LpVariable('U6_0_34',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_162
 
-U1_1926=LpVariable('utilite_1_1926',0, 20) 
+U1_1926=LpVariable('U1_1926',0, 20) 
 
-U2_1_8=LpVariable('utilite_2_1_8',0, 20) 
+U2_1_8=LpVariable('U2_1_8',0, 20) 
 
-U3_1_2=LpVariable('utilite_3_1_2',0, 20) 
+U3_1_2=LpVariable('U3_1_2',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_13_0=LpVariable('utilite_5_13_0',0, 20) 
+U5_13_0=LpVariable('U5_13_0',0, 20) 
 
-U6_0_88=LpVariable('utilite_6_0_88',0, 20) 
+U6_0_88=LpVariable('U6_0_88',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_163
 
-U1_1594=LpVariable('utilite_1_1594',0, 20) 
+U1_1594=LpVariable('U1_1594',0, 20) 
 
-U2_0_1=LpVariable('utilite_2_0_1',0, 20) 
+U2_0_1=LpVariable('U2_0_1',0, 20) 
 
-U3_37_0=LpVariable('utilite_3_37_0',0, 20) 
+U3_37_0=LpVariable('U3_37_0',0, 20) 
 
-U4_2_0=LpVariable('utilite_4_2_0',0, 20) 
+U4_2_0=LpVariable('U4_2_0',0, 20) 
 
-U5_4_5=LpVariable('utilite_5_4_5',0, 20) 
+U5_4_5=LpVariable('U5_4_5',0, 20) 
 
-U6_0_332=LpVariable('utilite_6_0_332',0, 20) 
+U6_0_332=LpVariable('U6_0_332',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_164
 
-U1_1569=LpVariable('utilite_1_1569',0, 20) 
+U1_1569=LpVariable('U1_1569',0, 20) 
 
-U2_0_1=LpVariable('utilite_2_0_1',0, 20) 
+U2_0_1=LpVariable('U2_0_1',0, 20) 
 
-U3_37_0=LpVariable('utilite_3_37_0',0, 20) 
+U3_37_0=LpVariable('U3_37_0',0, 20) 
 
-U4_2_0=LpVariable('utilite_4_2_0',0, 20) 
+U4_2_0=LpVariable('U4_2_0',0, 20) 
 
-U5_4_5=LpVariable('utilite_5_4_5',0, 20) 
+U5_4_5=LpVariable('U5_4_5',0, 20) 
 
-U6_0_332=LpVariable('utilite_6_0_332',0, 20) 
+U6_0_332=LpVariable('U6_0_332',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_165
 
-U1_2239=LpVariable('utilite_1_2239',0, 20) 
+U1_2239=LpVariable('U1_2239',0, 20) 
 
-U2_4_0=LpVariable('utilite_2_4_0',0, 20) 
+U2_4_0=LpVariable('U2_4_0',0, 20) 
 
-U3_27_0=LpVariable('utilite_3_27_0',0, 20) 
+U3_27_0=LpVariable('U3_27_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_4_3=LpVariable('utilite_5_4_3',0, 20) 
+U5_4_3=LpVariable('U5_4_3',0, 20) 
 
-U6_0_12=LpVariable('utilite_6_0_12',0, 20) 
+U6_0_12=LpVariable('U6_0_12',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_166
 
-U1_1972=LpVariable('utilite_1_1972',0, 20) 
+U1_1972=LpVariable('U1_1972',0, 20) 
 
-U2_13_7=LpVariable('utilite_2_13_7',0, 20) 
+U2_13_7=LpVariable('U2_13_7',0, 20) 
 
-U3_15_6=LpVariable('utilite_3_15_6',0, 20) 
+U3_15_6=LpVariable('U3_15_6',0, 20) 
 
-U4_5_7=LpVariable('utilite_4_5_7',0, 20) 
+U4_5_7=LpVariable('U4_5_7',0, 20) 
 
-U5_7_5=LpVariable('utilite_5_7_5',0, 20) 
+U5_7_5=LpVariable('U5_7_5',0, 20) 
 
-U6_0_012=LpVariable('utilite_6_0_012',0, 20) 
+U6_0_012=LpVariable('U6_0_012',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_167
 
-U1_1616=LpVariable('utilite_1_1616',0, 20) 
+U1_1616=LpVariable('U1_1616',0, 20) 
 
-U2_0_5=LpVariable('utilite_2_0_5',0, 20) 
+U2_0_5=LpVariable('U2_0_5',0, 20) 
 
-U3_24_0=LpVariable('utilite_3_24_0',0, 20) 
+U3_24_0=LpVariable('U3_24_0',0, 20) 
 
-U4_2_7=LpVariable('utilite_4_2_7',0, 20) 
+U4_2_7=LpVariable('U4_2_7',0, 20) 
 
-U5_6_5=LpVariable('utilite_5_6_5',0, 20) 
+U5_6_5=LpVariable('U5_6_5',0, 20) 
 
-U6_0_6=LpVariable('utilite_6_0_6',0, 20) 
+U6_0_6=LpVariable('U6_0_6',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_168
 
-U1_1552=LpVariable('utilite_1_1552',0, 20) 
+U1_1552=LpVariable('U1_1552',0, 20) 
 
-U2_3_2=LpVariable('utilite_2_3_2',0, 20) 
+U2_3_2=LpVariable('U2_3_2',0, 20) 
 
-U3_0_0=LpVariable('utilite_3_0_0',0, 20) 
+U3_0_0=LpVariable('U3_0_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_68_9=LpVariable('utilite_5_68_9',0, 20) 
+U5_68_9=LpVariable('U5_68_9',0, 20) 
 
-U6_1_96=LpVariable('utilite_6_1_96',0, 20) 
+U6_1_96=LpVariable('U6_1_96',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_169
 
-U1_2035=LpVariable('utilite_1_2035',0, 20) 
+U1_2035=LpVariable('U1_2035',0, 20) 
 
-U2_1_6=LpVariable('utilite_2_1_6',0, 20) 
+U2_1_6=LpVariable('U2_1_6',0, 20) 
 
-U3_0_5=LpVariable('utilite_3_0_5',0, 20) 
+U3_0_5=LpVariable('U3_0_5',0, 20) 
 
-U4_3_5=LpVariable('utilite_4_3_5',0, 20) 
+U4_3_5=LpVariable('U4_3_5',0, 20) 
 
-U5_5_2=LpVariable('utilite_5_5_2',0, 20) 
+U5_5_2=LpVariable('U5_5_2',0, 20) 
 
-U6_1_016=LpVariable('utilite_6_1_016',0, 20) 
+U6_1_016=LpVariable('U6_1_016',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_170
 
-U1_2029=LpVariable('utilite_1_2029',0, 20) 
+U1_2029=LpVariable('U1_2029',0, 20) 
 
-U2_2_1=LpVariable('utilite_2_2_1',0, 20) 
+U2_2_1=LpVariable('U2_2_1',0, 20) 
 
-U3_0_5=LpVariable('utilite_3_0_5',0, 20) 
+U3_0_5=LpVariable('U3_0_5',0, 20) 
 
-U4_4_0=LpVariable('utilite_4_4_0',0, 20) 
+U4_4_0=LpVariable('U4_4_0',0, 20) 
 
-U5_3_5=LpVariable('utilite_5_3_5',0, 20) 
+U5_3_5=LpVariable('U5_3_5',0, 20) 
 
-U6_0_96=LpVariable('utilite_6_0_96',0, 20) 
+U6_0_96=LpVariable('U6_0_96',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_171
 
-U1_1611=LpVariable('utilite_1_1611',0, 20) 
+U1_1611=LpVariable('U1_1611',0, 20) 
 
-U2_1_2=LpVariable('utilite_2_1_2',0, 20) 
+U2_1_2=LpVariable('U2_1_2',0, 20) 
 
-U3_24_0=LpVariable('utilite_3_24_0',0, 20) 
+U3_24_0=LpVariable('U3_24_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_6_1=LpVariable('utilite_5_6_1',0, 20) 
+U5_6_1=LpVariable('U5_6_1',0, 20) 
 
-U6_0_22=LpVariable('utilite_6_0_22',0, 20) 
+U6_0_22=LpVariable('U6_0_22',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_172
 
-U1_1676=LpVariable('utilite_1_1676',0, 20) 
+U1_1676=LpVariable('U1_1676',0, 20) 
 
-U2_5_0=LpVariable('utilite_2_5_0',0, 20) 
+U2_5_0=LpVariable('U2_5_0',0, 20) 
 
-U3_23_0=LpVariable('utilite_3_23_0',0, 20) 
+U3_23_0=LpVariable('U3_23_0',0, 20) 
 
-U4_9_0=LpVariable('utilite_4_9_0',0, 20) 
+U4_9_0=LpVariable('U4_9_0',0, 20) 
 
-U5_9_0=LpVariable('utilite_5_9_0',0, 20) 
+U5_9_0=LpVariable('U5_9_0',0, 20) 
 
-U6_0_352=LpVariable('utilite_6_0_352',0, 20) 
+U6_0_352=LpVariable('U6_0_352',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_173
 
-U1_1100=LpVariable('utilite_1_1100',0, 20) 
+U1_1100=LpVariable('U1_1100',0, 20) 
 
-U2_2_7=LpVariable('utilite_2_2_7',0, 20) 
+U2_2_7=LpVariable('U2_2_7',0, 20) 
 
-U3_0_5=LpVariable('utilite_3_0_5',0, 20) 
+U3_0_5=LpVariable('U3_0_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_23_0=LpVariable('utilite_5_23_0',0, 20) 
+U5_23_0=LpVariable('U5_23_0',0, 20) 
 
-U6_1_08=LpVariable('utilite_6_1_08',0, 20) 
+U6_1_08=LpVariable('U6_1_08',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_174
 
-U1_1895=LpVariable('utilite_1_1895',0, 20) 
+U1_1895=LpVariable('U1_1895',0, 20) 
 
-U2_4_3=LpVariable('utilite_2_4_3',0, 20) 
+U2_4_3=LpVariable('U2_4_3',0, 20) 
 
-U3_17_0=LpVariable('utilite_3_17_0',0, 20) 
+U3_17_0=LpVariable('U3_17_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_7_6=LpVariable('utilite_5_7_6',0, 20) 
+U5_7_6=LpVariable('U5_7_6',0, 20) 
 
-U6_0_2=LpVariable('utilite_6_0_2',0, 20) 
+U6_0_2=LpVariable('U6_0_2',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_175
 
-U1_833=LpVariable('utilite_1_833',0, 20) 
+U1_833=LpVariable('U1_833',0, 20) 
 
-U2_0_1=LpVariable('utilite_2_0_1',0, 20) 
+U2_0_1=LpVariable('U2_0_1',0, 20) 
 
-U3_50_0=LpVariable('utilite_3_50_0',0, 20) 
+U3_50_0=LpVariable('U3_50_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_0_5=LpVariable('utilite_5_0_5',0, 20) 
+U5_0_5=LpVariable('U5_0_5',0, 20) 
 
-U6_0_008=LpVariable('utilite_6_0_008',0, 20) 
+U6_0_008=LpVariable('U6_0_008',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_176
 
-U1_1025=LpVariable('utilite_1_1025',0, 20) 
+U1_1025=LpVariable('U1_1025',0, 20) 
 
-U2_0_1=LpVariable('utilite_2_0_1',0, 20) 
+U2_0_1=LpVariable('U2_0_1',0, 20) 
 
-U3_61_0=LpVariable('utilite_3_61_0',0, 20) 
+U3_61_0=LpVariable('U3_61_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_0_5=LpVariable('utilite_5_0_5',0, 20) 
+U5_0_5=LpVariable('U5_0_5',0, 20) 
 
-U6_0_016=LpVariable('utilite_6_0_016',0, 20) 
+U6_0_016=LpVariable('U6_0_016',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_177
 
-U1_1025=LpVariable('utilite_1_1025',0, 20) 
+U1_1025=LpVariable('U1_1025',0, 20) 
 
-U2_0_1=LpVariable('utilite_2_0_1',0, 20) 
+U2_0_1=LpVariable('U2_0_1',0, 20) 
 
-U3_61_0=LpVariable('utilite_3_61_0',0, 20) 
+U3_61_0=LpVariable('U3_61_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_0_5=LpVariable('utilite_5_0_5',0, 20) 
+U5_0_5=LpVariable('U5_0_5',0, 20) 
 
-U6_0_016=LpVariable('utilite_6_0_016',0, 20) 
+U6_0_016=LpVariable('U6_0_016',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_178
 
-U1_1124=LpVariable('utilite_1_1124',0, 20) 
+U1_1124=LpVariable('U1_1124',0, 20) 
 
-U2_0_1=LpVariable('utilite_2_0_1',0, 20) 
+U2_0_1=LpVariable('U2_0_1',0, 20) 
 
-U3_55_0=LpVariable('utilite_3_55_0',0, 20) 
+U3_55_0=LpVariable('U3_55_0',0, 20) 
 
-U4_0_5=LpVariable('utilite_4_0_5',0, 20) 
+U4_0_5=LpVariable('U4_0_5',0, 20) 
 
-U5_0_5=LpVariable('utilite_5_0_5',0, 20) 
+U5_0_5=LpVariable('U5_0_5',0, 20) 
 
-U6_0_008=LpVariable('utilite_6_0_008',0, 20) 
+U6_0_008=LpVariable('U6_0_008',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_179
 
-U1_1205=LpVariable('utilite_1_1205',0, 20) 
+U1_1205=LpVariable('U1_1205',0, 20) 
 
-U2_0_1=LpVariable('utilite_2_0_1',0, 20) 
+U2_0_1=LpVariable('U2_0_1',0, 20) 
 
-U3_71_0=LpVariable('utilite_3_71_0',0, 20) 
+U3_71_0=LpVariable('U3_71_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_0_5=LpVariable('utilite_5_0_5',0, 20) 
+U5_0_5=LpVariable('U5_0_5',0, 20) 
 
-U6_0_014=LpVariable('utilite_6_0_014',0, 20) 
+U6_0_014=LpVariable('U6_0_014',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_180
 
-U1_1205=LpVariable('utilite_1_1205',0, 20) 
+U1_1205=LpVariable('U1_1205',0, 20) 
 
-U2_0_1=LpVariable('utilite_2_0_1',0, 20) 
+U2_0_1=LpVariable('U2_0_1',0, 20) 
 
-U3_71_0=LpVariable('utilite_3_71_0',0, 20) 
+U3_71_0=LpVariable('U3_71_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_0_5=LpVariable('utilite_5_0_5',0, 20) 
+U5_0_5=LpVariable('U5_0_5',0, 20) 
 
-U6_0_012=LpVariable('utilite_6_0_012',0, 20) 
+U6_0_012=LpVariable('U6_0_012',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_181
 
-U1_987=LpVariable('utilite_1_987',0, 20) 
+U1_987=LpVariable('U1_987',0, 20) 
 
-U2_0_0=LpVariable('utilite_2_0_0',0, 20) 
+U2_0_0=LpVariable('U2_0_0',0, 20) 
 
-U3_59_0=LpVariable('utilite_3_59_0',0, 20) 
+U3_59_0=LpVariable('U3_59_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_0_0=LpVariable('utilite_5_0_0',0, 20) 
+U5_0_0=LpVariable('U5_0_0',0, 20) 
 
-U6_0_0=LpVariable('utilite_6_0_0',0, 20) 
+U6_0_0=LpVariable('U6_0_0',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_182
 
-U1_1025=LpVariable('utilite_1_1025',0, 20) 
+U1_1025=LpVariable('U1_1025',0, 20) 
 
-U2_0_1=LpVariable('utilite_2_0_1',0, 20) 
+U2_0_1=LpVariable('U2_0_1',0, 20) 
 
-U3_61_0=LpVariable('utilite_3_61_0',0, 20) 
+U3_61_0=LpVariable('U3_61_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_0_5=LpVariable('utilite_5_0_5',0, 20) 
+U5_0_5=LpVariable('U5_0_5',0, 20) 
 
-U6_0_016=LpVariable('utilite_6_0_016',0, 20) 
+U6_0_016=LpVariable('U6_0_016',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_183
 
-U1_1187=LpVariable('utilite_1_1187',0, 20) 
+U1_1187=LpVariable('U1_1187',0, 20) 
 
-U2_5_6=LpVariable('utilite_2_5_6',0, 20) 
+U2_5_6=LpVariable('U2_5_6',0, 20) 
 
-U3_0_5=LpVariable('utilite_3_0_5',0, 20) 
+U3_0_5=LpVariable('U3_0_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_34_0=LpVariable('utilite_5_34_0',0, 20) 
+U5_34_0=LpVariable('U5_34_0',0, 20) 
 
-U6_2_16=LpVariable('utilite_6_2_16',0, 20) 
+U6_2_16=LpVariable('U6_2_16',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_184
 
-U1_502=LpVariable('utilite_1_502',0, 20) 
+U1_502=LpVariable('U1_502',0, 20) 
 
-U2_0_5=LpVariable('utilite_2_0_5',0, 20) 
+U2_0_5=LpVariable('U2_0_5',0, 20) 
 
-U3_0_3=LpVariable('utilite_3_0_3',0, 20) 
+U3_0_3=LpVariable('U3_0_3',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_23_8=LpVariable('utilite_5_23_8',0, 20) 
+U5_23_8=LpVariable('U5_23_8',0, 20) 
 
-U6_1_32=LpVariable('utilite_6_1_32',0, 20) 
+U6_1_32=LpVariable('U6_1_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_185
 
-U1_1862=LpVariable('utilite_1_1862',0, 20) 
+U1_1862=LpVariable('U1_1862',0, 20) 
 
-U2_1_8=LpVariable('utilite_2_1_8',0, 20) 
+U2_1_8=LpVariable('U2_1_8',0, 20) 
 
-U3_5_3=LpVariable('utilite_3_5_3',0, 20) 
+U3_5_3=LpVariable('U3_5_3',0, 20) 
 
-U4_5_1=LpVariable('utilite_4_5_1',0, 20) 
+U4_5_1=LpVariable('U4_5_1',0, 20) 
 
-U5_5_3=LpVariable('utilite_5_5_3',0, 20) 
+U5_5_3=LpVariable('U5_5_3',0, 20) 
 
-U6_1_58=LpVariable('utilite_6_1_58',0, 20) 
+U6_1_58=LpVariable('U6_1_58',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_186
 
-U1_2233=LpVariable('utilite_1_2233',0, 20) 
+U1_2233=LpVariable('U1_2233',0, 20) 
 
-U2_2_8=LpVariable('utilite_2_2_8',0, 20) 
+U2_2_8=LpVariable('U2_2_8',0, 20) 
 
-U3_7_0=LpVariable('utilite_3_7_0',0, 20) 
+U3_7_0=LpVariable('U3_7_0',0, 20) 
 
-U4_1_7=LpVariable('utilite_4_1_7',0, 20) 
+U4_1_7=LpVariable('U4_1_7',0, 20) 
 
-U5_2_1=LpVariable('utilite_5_2_1',0, 20) 
+U5_2_1=LpVariable('U5_2_1',0, 20) 
 
-U6_0_76=LpVariable('utilite_6_0_76',0, 20) 
+U6_0_76=LpVariable('U6_0_76',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_187
 
-U1_1619=LpVariable('utilite_1_1619',0, 20) 
+U1_1619=LpVariable('U1_1619',0, 20) 
 
-U2_1_3=LpVariable('utilite_2_1_3',0, 20) 
+U2_1_3=LpVariable('U2_1_3',0, 20) 
 
-U3_23_3=LpVariable('utilite_3_23_3',0, 20) 
+U3_23_3=LpVariable('U3_23_3',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_10_6=LpVariable('utilite_5_10_6',0, 20) 
+U5_10_6=LpVariable('U5_10_6',0, 20) 
 
-U6_0_12=LpVariable('utilite_6_0_12',0, 20) 
+U6_0_12=LpVariable('U6_0_12',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_188
 
-U1_1661=LpVariable('utilite_1_1661',0, 20) 
+U1_1661=LpVariable('U1_1661',0, 20) 
 
-U2_3_8=LpVariable('utilite_2_3_8',0, 20) 
+U2_3_8=LpVariable('U2_3_8',0, 20) 
 
-U3_26_6=LpVariable('utilite_3_26_6',0, 20) 
+U3_26_6=LpVariable('U3_26_6',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_10_8=LpVariable('utilite_5_10_8',0, 20) 
+U5_10_8=LpVariable('U5_10_8',0, 20) 
 
-U6_0_4=LpVariable('utilite_6_0_4',0, 20) 
+U6_0_4=LpVariable('U6_0_4',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_189
 
-U1_1569=LpVariable('utilite_1_1569',0, 20) 
+U1_1569=LpVariable('U1_1569',0, 20) 
 
-U2_0_6=LpVariable('utilite_2_0_6',0, 20) 
+U2_0_6=LpVariable('U2_0_6',0, 20) 
 
-U3_6_5=LpVariable('utilite_3_6_5',0, 20) 
+U3_6_5=LpVariable('U3_6_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_7_9=LpVariable('utilite_5_7_9',0, 20) 
+U5_7_9=LpVariable('U5_7_9',0, 20) 
 
-U6_0_76=LpVariable('utilite_6_0_76',0, 20) 
+U6_0_76=LpVariable('U6_0_76',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_190
 
-U1_2674=LpVariable('utilite_1_2674',0, 20) 
+U1_2674=LpVariable('U1_2674',0, 20) 
 
-U2_51_0=LpVariable('utilite_2_51_0',0, 20) 
+U2_51_0=LpVariable('U2_51_0',0, 20) 
 
-U3_16_0=LpVariable('utilite_3_16_0',0, 20) 
+U3_16_0=LpVariable('U3_16_0',0, 20) 
 
-U4_15_0=LpVariable('utilite_4_15_0',0, 20) 
+U4_15_0=LpVariable('U4_15_0',0, 20) 
 
-U5_6_2=LpVariable('utilite_5_6_2',0, 20) 
+U5_6_2=LpVariable('U5_6_2',0, 20) 
 
-U6_0_44=LpVariable('utilite_6_0_44',0, 20) 
+U6_0_44=LpVariable('U6_0_44',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_191
 
-U1_1669=LpVariable('utilite_1_1669',0, 20) 
+U1_1669=LpVariable('U1_1669',0, 20) 
 
-U2_3_9=LpVariable('utilite_2_3_9',0, 20) 
+U2_3_9=LpVariable('U2_3_9',0, 20) 
 
-U3_20_0=LpVariable('utilite_3_20_0',0, 20) 
+U3_20_0=LpVariable('U3_20_0',0, 20) 
 
-U4_10_0=LpVariable('utilite_4_10_0',0, 20) 
+U4_10_0=LpVariable('U4_10_0',0, 20) 
 
-U5_9_7=LpVariable('utilite_5_9_7',0, 20) 
+U5_9_7=LpVariable('U5_9_7',0, 20) 
 
-U6_0_52=LpVariable('utilite_6_0_52',0, 20) 
+U6_0_52=LpVariable('U6_0_52',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_192
 
-U1_1615=LpVariable('utilite_1_1615',0, 20) 
+U1_1615=LpVariable('U1_1615',0, 20) 
 
-U2_1_4=LpVariable('utilite_2_1_4',0, 20) 
+U2_1_4=LpVariable('U2_1_4',0, 20) 
 
-U3_29_4=LpVariable('utilite_3_29_4',0, 20) 
+U3_29_4=LpVariable('U3_29_4',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_9_1=LpVariable('utilite_5_9_1',0, 20) 
+U5_9_1=LpVariable('U5_9_1',0, 20) 
 
-U6_0_088=LpVariable('utilite_6_0_088',0, 20) 
+U6_0_088=LpVariable('U6_0_088',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_193
 
-U1_1709=LpVariable('utilite_1_1709',0, 20) 
+U1_1709=LpVariable('U1_1709',0, 20) 
 
-U2_4_0=LpVariable('utilite_2_4_0',0, 20) 
+U2_4_0=LpVariable('U2_4_0',0, 20) 
 
-U3_22_0=LpVariable('utilite_3_22_0',0, 20) 
+U3_22_0=LpVariable('U3_22_0',0, 20) 
 
-U4_4_0=LpVariable('utilite_4_4_0',0, 20) 
+U4_4_0=LpVariable('U4_4_0',0, 20) 
 
-U5_9_4=LpVariable('utilite_5_9_4',0, 20) 
+U5_9_4=LpVariable('U5_9_4',0, 20) 
 
-U6_0_4064=LpVariable('utilite_6_0_4064',0, 20) 
+U6_0_4064=LpVariable('U6_0_4064',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_194
 
-U1_1703=LpVariable('utilite_1_1703',0, 20) 
+U1_1703=LpVariable('U1_1703',0, 20) 
 
-U2_3_1=LpVariable('utilite_2_3_1',0, 20) 
+U2_3_1=LpVariable('U2_3_1',0, 20) 
 
-U3_25_0=LpVariable('utilite_3_25_0',0, 20) 
+U3_25_0=LpVariable('U3_25_0',0, 20) 
 
-U4_3_8=LpVariable('utilite_4_3_8',0, 20) 
+U4_3_8=LpVariable('U4_3_8',0, 20) 
 
-U5_7_7=LpVariable('utilite_5_7_7',0, 20) 
+U5_7_7=LpVariable('U5_7_7',0, 20) 
 
-U6_0_332=LpVariable('utilite_6_0_332',0, 20) 
+U6_0_332=LpVariable('U6_0_332',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_195
 
-U1_1715=LpVariable('utilite_1_1715',0, 20) 
+U1_1715=LpVariable('U1_1715',0, 20) 
 
-U2_4_1=LpVariable('utilite_2_4_1',0, 20) 
+U2_4_1=LpVariable('U2_4_1',0, 20) 
 
-U3_22_0=LpVariable('utilite_3_22_0',0, 20) 
+U3_22_0=LpVariable('U3_22_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_7_6=LpVariable('utilite_5_7_6',0, 20) 
+U5_7_6=LpVariable('U5_7_6',0, 20) 
 
-U6_0_32=LpVariable('utilite_6_0_32',0, 20) 
+U6_0_32=LpVariable('U6_0_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_196
 
-U1_1565=LpVariable('utilite_1_1565',0, 20) 
+U1_1565=LpVariable('U1_1565',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_19_0=LpVariable('utilite_3_19_0',0, 20) 
+U3_19_0=LpVariable('U3_19_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_7_9=LpVariable('utilite_5_7_9',0, 20) 
+U5_7_9=LpVariable('U5_7_9',0, 20) 
 
-U6_0_372=LpVariable('utilite_6_0_372',0, 20) 
+U6_0_372=LpVariable('U6_0_372',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_197
 
-U1_1552=LpVariable('utilite_1_1552',0, 20) 
+U1_1552=LpVariable('U1_1552',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_16_0=LpVariable('utilite_3_16_0',0, 20) 
+U3_16_0=LpVariable('U3_16_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_8_4=LpVariable('utilite_5_8_4',0, 20) 
+U5_8_4=LpVariable('U5_8_4',0, 20) 
 
-U6_0_4=LpVariable('utilite_6_0_4',0, 20) 
+U6_0_4=LpVariable('U6_0_4',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_198
 
-U1_2055=LpVariable('utilite_1_2055',0, 20) 
+U1_2055=LpVariable('U1_2055',0, 20) 
 
-U2_3_0=LpVariable('utilite_2_3_0',0, 20) 
+U2_3_0=LpVariable('U2_3_0',0, 20) 
 
-U3_45_2=LpVariable('utilite_3_45_2',0, 20) 
+U3_45_2=LpVariable('U3_45_2',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_4_9=LpVariable('utilite_5_4_9',0, 20) 
+U5_4_9=LpVariable('U5_4_9',0, 20) 
 
-U6_0_064=LpVariable('utilite_6_0_064',0, 20) 
+U6_0_064=LpVariable('U6_0_064',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_199
 
-U1_2165=LpVariable('utilite_1_2165',0, 20) 
+U1_2165=LpVariable('U1_2165',0, 20) 
 
-U2_8_8=LpVariable('utilite_2_8_8',0, 20) 
+U2_8_8=LpVariable('U2_8_8',0, 20) 
 
-U3_1_4=LpVariable('utilite_3_1_4',0, 20) 
+U3_1_4=LpVariable('U3_1_4',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_5_4=LpVariable('utilite_5_5_4',0, 20) 
+U5_5_4=LpVariable('U5_5_4',0, 20) 
 
-U6_0_392=LpVariable('utilite_6_0_392',0, 20) 
+U6_0_392=LpVariable('U6_0_392',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_200
 
-U1_1590=LpVariable('utilite_1_1590',0, 20) 
+U1_1590=LpVariable('U1_1590',0, 20) 
 
-U2_0_6=LpVariable('utilite_2_0_6',0, 20) 
+U2_0_6=LpVariable('U2_0_6',0, 20) 
 
-U3_24_4=LpVariable('utilite_3_24_4',0, 20) 
+U3_24_4=LpVariable('U3_24_4',0, 20) 
 
-U4_2_8=LpVariable('utilite_4_2_8',0, 20) 
+U4_2_8=LpVariable('U4_2_8',0, 20) 
 
-U5_6_5=LpVariable('utilite_5_6_5',0, 20) 
+U5_6_5=LpVariable('U5_6_5',0, 20) 
 
-U6_0_6=LpVariable('utilite_6_0_6',0, 20) 
+U6_0_6=LpVariable('U6_0_6',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_201
 
-U1_1728=LpVariable('utilite_1_1728',0, 20) 
+U1_1728=LpVariable('U1_1728',0, 20) 
 
-U2_5_8=LpVariable('utilite_2_5_8',0, 20) 
+U2_5_8=LpVariable('U2_5_8',0, 20) 
 
-U3_11_0=LpVariable('utilite_3_11_0',0, 20) 
+U3_11_0=LpVariable('U3_11_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_9_0=LpVariable('utilite_5_9_0',0, 20) 
+U5_9_0=LpVariable('U5_9_0',0, 20) 
 
-U6_0_024=LpVariable('utilite_6_0_024',0, 20) 
+U6_0_024=LpVariable('U6_0_024',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_202
 
-U1_1745=LpVariable('utilite_1_1745',0, 20) 
+U1_1745=LpVariable('U1_1745',0, 20) 
 
-U2_8_1=LpVariable('utilite_2_8_1',0, 20) 
+U2_8_1=LpVariable('U2_8_1',0, 20) 
 
-U3_26_0=LpVariable('utilite_3_26_0',0, 20) 
+U3_26_0=LpVariable('U3_26_0',0, 20) 
 
-U4_6_1=LpVariable('utilite_4_6_1',0, 20) 
+U4_6_1=LpVariable('U4_6_1',0, 20) 
 
-U5_6_4=LpVariable('utilite_5_6_4',0, 20) 
+U5_6_4=LpVariable('U5_6_4',0, 20) 
 
-U6_0_4=LpVariable('utilite_6_0_4',0, 20) 
+U6_0_4=LpVariable('U6_0_4',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_203
 
-U1_1682=LpVariable('utilite_1_1682',0, 20) 
+U1_1682=LpVariable('U1_1682',0, 20) 
 
-U2_20_0=LpVariable('utilite_2_20_0',0, 20) 
+U2_20_0=LpVariable('U2_20_0',0, 20) 
 
-U3_0_0=LpVariable('utilite_3_0_0',0, 20) 
+U3_0_0=LpVariable('U3_0_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_32_0=LpVariable('utilite_5_32_0',0, 20) 
+U5_32_0=LpVariable('U5_32_0',0, 20) 
 
-U6_0_64=LpVariable('utilite_6_0_64',0, 20) 
+U6_0_64=LpVariable('U6_0_64',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_204
 
-U1_1665=LpVariable('utilite_1_1665',0, 20) 
+U1_1665=LpVariable('U1_1665',0, 20) 
 
-U2_18_0=LpVariable('utilite_2_18_0',0, 20) 
+U2_18_0=LpVariable('U2_18_0',0, 20) 
 
-U3_0_0=LpVariable('utilite_3_0_0',0, 20) 
+U3_0_0=LpVariable('U3_0_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_33_0=LpVariable('utilite_5_33_0',0, 20) 
+U5_33_0=LpVariable('U5_33_0',0, 20) 
 
-U6_0_6=LpVariable('utilite_6_0_6',0, 20) 
+U6_0_6=LpVariable('U6_0_6',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_205
 
-U1_1602=LpVariable('utilite_1_1602',0, 20) 
+U1_1602=LpVariable('U1_1602',0, 20) 
 
-U2_0_1=LpVariable('utilite_2_0_1',0, 20) 
+U2_0_1=LpVariable('U2_0_1',0, 20) 
 
-U3_25_0=LpVariable('utilite_3_25_0',0, 20) 
+U3_25_0=LpVariable('U3_25_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_6_0=LpVariable('utilite_5_6_0',0, 20) 
+U5_6_0=LpVariable('U5_6_0',0, 20) 
 
-U6_0_5=LpVariable('utilite_6_0_5',0, 20) 
+U6_0_5=LpVariable('U6_0_5',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_206
 
-U1_1710=LpVariable('utilite_1_1710',0, 20) 
+U1_1710=LpVariable('U1_1710',0, 20) 
 
-U2_3_67=LpVariable('utilite_2_3_67',0, 20) 
+U2_3_67=LpVariable('U2_3_67',0, 20) 
 
-U3_25_7=LpVariable('utilite_3_25_7',0, 20) 
+U3_25_7=LpVariable('U3_25_7',0, 20) 
 
-U4_3_67=LpVariable('utilite_4_3_67',0, 20) 
+U4_3_67=LpVariable('U4_3_67',0, 20) 
 
-U5_8_33=LpVariable('utilite_5_8_33',0, 20) 
+U5_8_33=LpVariable('U5_8_33',0, 20) 
 
-U6_0_333=LpVariable('utilite_6_0_333',0, 20) 
+U6_0_333=LpVariable('U6_0_333',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_207
 
-U1_1586=LpVariable('utilite_1_1586',0, 20) 
+U1_1586=LpVariable('U1_1586',0, 20) 
 
-U2_0_0=LpVariable('utilite_2_0_0',0, 20) 
+U2_0_0=LpVariable('U2_0_0',0, 20) 
 
-U3_34_48=LpVariable('utilite_3_34_48',0, 20) 
+U3_34_48=LpVariable('U3_34_48',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_1_0=LpVariable('utilite_5_1_0',0, 20) 
+U5_1_0=LpVariable('U5_1_0',0, 20) 
 
-U6_0_06=LpVariable('utilite_6_0_06',0, 20) 
+U6_0_06=LpVariable('U6_0_06',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_208
 
-U1_1577=LpVariable('utilite_1_1577',0, 20) 
+U1_1577=LpVariable('U1_1577',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_28_0=LpVariable('utilite_3_28_0',0, 20) 
+U3_28_0=LpVariable('U3_28_0',0, 20) 
 
-U4_3_5=LpVariable('utilite_4_3_5',0, 20) 
+U4_3_5=LpVariable('U4_3_5',0, 20) 
 
-U5_6_0=LpVariable('utilite_5_6_0',0, 20) 
+U5_6_0=LpVariable('U5_6_0',0, 20) 
 
-U6_0_52=LpVariable('utilite_6_0_52',0, 20) 
+U6_0_52=LpVariable('U6_0_52',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_209
 
-U1_1640=LpVariable('utilite_1_1640',0, 20) 
+U1_1640=LpVariable('U1_1640',0, 20) 
 
-U2_20_0=LpVariable('utilite_2_20_0',0, 20) 
+U2_20_0=LpVariable('U2_20_0',0, 20) 
 
-U3_0_0=LpVariable('utilite_3_0_0',0, 20) 
+U3_0_0=LpVariable('U3_0_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_32_0=LpVariable('utilite_5_32_0',0, 20) 
+U5_32_0=LpVariable('U5_32_0',0, 20) 
 
-U6_0_64=LpVariable('utilite_6_0_64',0, 20) 
+U6_0_64=LpVariable('U6_0_64',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_210
 
-U1_1665=LpVariable('utilite_1_1665',0, 20) 
+U1_1665=LpVariable('U1_1665',0, 20) 
 
-U2_5_0=LpVariable('utilite_2_5_0',0, 20) 
+U2_5_0=LpVariable('U2_5_0',0, 20) 
 
-U3_23_0=LpVariable('utilite_3_23_0',0, 20) 
+U3_23_0=LpVariable('U3_23_0',0, 20) 
 
-U4_9_0=LpVariable('utilite_4_9_0',0, 20) 
+U4_9_0=LpVariable('U4_9_0',0, 20) 
 
-U5_9_0=LpVariable('utilite_5_9_0',0, 20) 
+U5_9_0=LpVariable('U5_9_0',0, 20) 
 
-U6_0_36=LpVariable('utilite_6_0_36',0, 20) 
+U6_0_36=LpVariable('U6_0_36',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_211
 
-U1_2226=LpVariable('utilite_1_2226',0, 20) 
+U1_2226=LpVariable('U1_2226',0, 20) 
 
-U2_4_2=LpVariable('utilite_2_4_2',0, 20) 
+U2_4_2=LpVariable('U2_4_2',0, 20) 
 
-U3_29_7=LpVariable('utilite_3_29_7',0, 20) 
+U3_29_7=LpVariable('U3_29_7',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_3_7=LpVariable('utilite_5_3_7',0, 20) 
+U5_3_7=LpVariable('U5_3_7',0, 20) 
 
-U6_0_0=LpVariable('utilite_6_0_0',0, 20) 
+U6_0_0=LpVariable('U6_0_0',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_212
 
-U1_2264=LpVariable('utilite_1_2264',0, 20) 
+U1_2264=LpVariable('U1_2264',0, 20) 
 
-U2_23_0=LpVariable('utilite_2_23_0',0, 20) 
+U2_23_0=LpVariable('U2_23_0',0, 20) 
 
-U3_32_0=LpVariable('utilite_3_32_0',0, 20) 
+U3_32_0=LpVariable('U3_32_0',0, 20) 
 
-U4_9_0=LpVariable('utilite_4_9_0',0, 20) 
+U4_9_0=LpVariable('U4_9_0',0, 20) 
 
-U5_7_3=LpVariable('utilite_5_7_3',0, 20) 
+U5_7_3=LpVariable('U5_7_3',0, 20) 
 
-U6_0_0268=LpVariable('utilite_6_0_0268',0, 20) 
+U6_0_0268=LpVariable('U6_0_0268',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_213
 
-U1_1732=LpVariable('utilite_1_1732',0, 20) 
+U1_1732=LpVariable('U1_1732',0, 20) 
 
-U2_4_2=LpVariable('utilite_2_4_2',0, 20) 
+U2_4_2=LpVariable('U2_4_2',0, 20) 
 
-U3_21_0=LpVariable('utilite_3_21_0',0, 20) 
+U3_21_0=LpVariable('U3_21_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_5_8=LpVariable('utilite_5_5_8',0, 20) 
+U5_5_8=LpVariable('U5_5_8',0, 20) 
 
-U6_0_28=LpVariable('utilite_6_0_28',0, 20) 
+U6_0_28=LpVariable('U6_0_28',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_214
 
-U1_1602=LpVariable('utilite_1_1602',0, 20) 
+U1_1602=LpVariable('U1_1602',0, 20) 
 
-U2_0_4=LpVariable('utilite_2_0_4',0, 20) 
+U2_0_4=LpVariable('U2_0_4',0, 20) 
 
-U3_35_0=LpVariable('utilite_3_35_0',0, 20) 
+U3_35_0=LpVariable('U3_35_0',0, 20) 
 
-U4_3_3=LpVariable('utilite_4_3_3',0, 20) 
+U4_3_3=LpVariable('U4_3_3',0, 20) 
 
-U5_5_5=LpVariable('utilite_5_5_5',0, 20) 
+U5_5_5=LpVariable('U5_5_5',0, 20) 
 
-U6_0_508=LpVariable('utilite_6_0_508',0, 20) 
+U6_0_508=LpVariable('U6_0_508',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_215
 
-U1_1695=LpVariable('utilite_1_1695',0, 20) 
+U1_1695=LpVariable('U1_1695',0, 20) 
 
-U2_3_6=LpVariable('utilite_2_3_6',0, 20) 
+U2_3_6=LpVariable('U2_3_6',0, 20) 
 
-U3_25_7=LpVariable('utilite_3_25_7',0, 20) 
+U3_25_7=LpVariable('U3_25_7',0, 20) 
 
-U4_4_0=LpVariable('utilite_4_4_0',0, 20) 
+U4_4_0=LpVariable('U4_4_0',0, 20) 
 
-U5_6_3=LpVariable('utilite_5_6_3',0, 20) 
+U5_6_3=LpVariable('U5_6_3',0, 20) 
 
-U6_0_8=LpVariable('utilite_6_0_8',0, 20) 
+U6_0_8=LpVariable('U6_0_8',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_216
 
-U1_2046=LpVariable('utilite_1_2046',0, 20) 
+U1_2046=LpVariable('U1_2046',0, 20) 
 
-U2_2_0=LpVariable('utilite_2_2_0',0, 20) 
+U2_2_0=LpVariable('U2_2_0',0, 20) 
 
-U3_1_0=LpVariable('utilite_3_1_0',0, 20) 
+U3_1_0=LpVariable('U3_1_0',0, 20) 
 
-U4_4_0=LpVariable('utilite_4_4_0',0, 20) 
+U4_4_0=LpVariable('U4_4_0',0, 20) 
 
-U5_3_5=LpVariable('utilite_5_3_5',0, 20) 
+U5_3_5=LpVariable('U5_3_5',0, 20) 
 
-U6_0_96=LpVariable('utilite_6_0_96',0, 20) 
+U6_0_96=LpVariable('U6_0_96',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_217
 
-U1_1665=LpVariable('utilite_1_1665',0, 20) 
+U1_1665=LpVariable('U1_1665',0, 20) 
 
-U2_18_0=LpVariable('utilite_2_18_0',0, 20) 
+U2_18_0=LpVariable('U2_18_0',0, 20) 
 
-U3_0_0=LpVariable('utilite_3_0_0',0, 20) 
+U3_0_0=LpVariable('U3_0_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_33_0=LpVariable('utilite_5_33_0',0, 20) 
+U5_33_0=LpVariable('U5_33_0',0, 20) 
 
-U6_0_6=LpVariable('utilite_6_0_6',0, 20) 
+U6_0_6=LpVariable('U6_0_6',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_218
 
-U1_1611=LpVariable('utilite_1_1611',0, 20) 
+U1_1611=LpVariable('U1_1611',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_28_2=LpVariable('utilite_3_28_2',0, 20) 
+U3_28_2=LpVariable('U3_28_2',0, 20) 
 
-U4_3_5=LpVariable('utilite_4_3_5',0, 20) 
+U4_3_5=LpVariable('U4_3_5',0, 20) 
 
-U5_6_0=LpVariable('utilite_5_6_0',0, 20) 
+U5_6_0=LpVariable('U5_6_0',0, 20) 
 
-U6_0_52=LpVariable('utilite_6_0_52',0, 20) 
+U6_0_52=LpVariable('U6_0_52',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_219
 
-U1_2151=LpVariable('utilite_1_2151',0, 20) 
+U1_2151=LpVariable('U1_2151',0, 20) 
 
-U2_4_2=LpVariable('utilite_2_4_2',0, 20) 
+U2_4_2=LpVariable('U2_4_2',0, 20) 
 
-U3_12_5=LpVariable('utilite_3_12_5',0, 20) 
+U3_12_5=LpVariable('U3_12_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_5_8=LpVariable('utilite_5_5_8',0, 20) 
+U5_5_8=LpVariable('U5_5_8',0, 20) 
 
-U6_0_32=LpVariable('utilite_6_0_32',0, 20) 
+U6_0_32=LpVariable('U6_0_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_220
 
-U1_1648=LpVariable('utilite_1_1648',0, 20) 
+U1_1648=LpVariable('U1_1648',0, 20) 
 
-U2_0_4=LpVariable('utilite_2_0_4',0, 20) 
+U2_0_4=LpVariable('U2_0_4',0, 20) 
 
-U3_30_0=LpVariable('utilite_3_30_0',0, 20) 
+U3_30_0=LpVariable('U3_30_0',0, 20) 
 
-U4_2_6=LpVariable('utilite_4_2_6',0, 20) 
+U4_2_6=LpVariable('U4_2_6',0, 20) 
 
-U5_6_2=LpVariable('utilite_5_6_2',0, 20) 
+U5_6_2=LpVariable('U5_6_2',0, 20) 
 
-U6_0_3=LpVariable('utilite_6_0_3',0, 20) 
+U6_0_3=LpVariable('U6_0_3',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_221
 
-U1_2188=LpVariable('utilite_1_2188',0, 20) 
+U1_2188=LpVariable('U1_2188',0, 20) 
 
-U2_3_0=LpVariable('utilite_2_3_0',0, 20) 
+U2_3_0=LpVariable('U2_3_0',0, 20) 
 
-U3_2_9=LpVariable('utilite_3_2_9',0, 20) 
+U3_2_9=LpVariable('U3_2_9',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_4_2=LpVariable('utilite_5_4_2',0, 20) 
+U5_4_2=LpVariable('U5_4_2',0, 20) 
 
-U6_0_88=LpVariable('utilite_6_0_88',0, 20) 
+U6_0_88=LpVariable('U6_0_88',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_222
 
-U1_2042=LpVariable('utilite_1_2042',0, 20) 
+U1_2042=LpVariable('U1_2042',0, 20) 
 
-U2_1_9=LpVariable('utilite_2_1_9',0, 20) 
+U2_1_9=LpVariable('U2_1_9',0, 20) 
 
-U3_0_5=LpVariable('utilite_3_0_5',0, 20) 
+U3_0_5=LpVariable('U3_0_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_3_3=LpVariable('utilite_5_3_3',0, 20) 
+U5_3_3=LpVariable('U5_3_3',0, 20) 
 
-U6_1_308=LpVariable('utilite_6_1_308',0, 20) 
+U6_1_308=LpVariable('U6_1_308',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_223
 
-U1_1715=LpVariable('utilite_1_1715',0, 20) 
+U1_1715=LpVariable('U1_1715',0, 20) 
 
-U2_4_1=LpVariable('utilite_2_4_1',0, 20) 
+U2_4_1=LpVariable('U2_4_1',0, 20) 
 
-U3_22_0=LpVariable('utilite_3_22_0',0, 20) 
+U3_22_0=LpVariable('U3_22_0',0, 20) 
 
-U4_5_0=LpVariable('utilite_4_5_0',0, 20) 
+U4_5_0=LpVariable('U4_5_0',0, 20) 
 
-U5_7_6=LpVariable('utilite_5_7_6',0, 20) 
+U5_7_6=LpVariable('U5_7_6',0, 20) 
 
-U6_0_32=LpVariable('utilite_6_0_32',0, 20) 
+U6_0_32=LpVariable('U6_0_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_224
 
-U1_1686=LpVariable('utilite_1_1686',0, 20) 
+U1_1686=LpVariable('U1_1686',0, 20) 
 
-U2_3_1=LpVariable('utilite_2_3_1',0, 20) 
+U2_3_1=LpVariable('U2_3_1',0, 20) 
 
-U3_25_0=LpVariable('utilite_3_25_0',0, 20) 
+U3_25_0=LpVariable('U3_25_0',0, 20) 
 
-U4_3_8=LpVariable('utilite_4_3_8',0, 20) 
+U4_3_8=LpVariable('U4_3_8',0, 20) 
 
-U5_7_7=LpVariable('utilite_5_7_7',0, 20) 
+U5_7_7=LpVariable('U5_7_7',0, 20) 
 
-U6_0_32=LpVariable('utilite_6_0_32',0, 20) 
+U6_0_32=LpVariable('U6_0_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_225
 
-U1_1686=LpVariable('utilite_1_1686',0, 20) 
+U1_1686=LpVariable('U1_1686',0, 20) 
 
-U2_3_1=LpVariable('utilite_2_3_1',0, 20) 
+U2_3_1=LpVariable('U2_3_1',0, 20) 
 
-U3_25_0=LpVariable('utilite_3_25_0',0, 20) 
+U3_25_0=LpVariable('U3_25_0',0, 20) 
 
-U4_3_8=LpVariable('utilite_4_3_8',0, 20) 
+U4_3_8=LpVariable('U4_3_8',0, 20) 
 
-U5_7_7=LpVariable('utilite_5_7_7',0, 20) 
+U5_7_7=LpVariable('U5_7_7',0, 20) 
 
-U6_0_32=LpVariable('utilite_6_0_32',0, 20) 
+U6_0_32=LpVariable('U6_0_32',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_226
 
-U1_1678=LpVariable('utilite_1_1678',0, 20) 
+U1_1678=LpVariable('U1_1678',0, 20) 
 
-U2_20_0=LpVariable('utilite_2_20_0',0, 20) 
+U2_20_0=LpVariable('U2_20_0',0, 20) 
 
-U3_0_1=LpVariable('utilite_3_0_1',0, 20) 
+U3_0_1=LpVariable('U3_0_1',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_25_0=LpVariable('utilite_5_25_0',0, 20) 
+U5_25_0=LpVariable('U5_25_0',0, 20) 
 
-U6_0_76=LpVariable('utilite_6_0_76',0, 20) 
+U6_0_76=LpVariable('U6_0_76',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_227
 
-U1_1665=LpVariable('utilite_1_1665',0, 20) 
+U1_1665=LpVariable('U1_1665',0, 20) 
 
-U2_18_0=LpVariable('utilite_2_18_0',0, 20) 
+U2_18_0=LpVariable('U2_18_0',0, 20) 
 
-U3_0_0=LpVariable('utilite_3_0_0',0, 20) 
+U3_0_0=LpVariable('U3_0_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_33_0=LpVariable('utilite_5_33_0',0, 20) 
+U5_33_0=LpVariable('U5_33_0',0, 20) 
 
-U6_0_6=LpVariable('utilite_6_0_6',0, 20) 
+U6_0_6=LpVariable('U6_0_6',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_228
 
-U1_874=LpVariable('utilite_1_874',0, 20) 
+U1_874=LpVariable('U1_874',0, 20) 
 
-U2_2_9=LpVariable('utilite_2_2_9',0, 20) 
+U2_2_9=LpVariable('U2_2_9',0, 20) 
 
-U3_0_5=LpVariable('utilite_3_0_5',0, 20) 
+U3_0_5=LpVariable('U3_0_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_34_0=LpVariable('utilite_5_34_0',0, 20) 
+U5_34_0=LpVariable('U5_34_0',0, 20) 
 
-U6_2_2=LpVariable('utilite_6_2_2',0, 20) 
+U6_2_2=LpVariable('U6_2_2',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_229
 
-U1_1712=LpVariable('utilite_1_1712',0, 20) 
+U1_1712=LpVariable('U1_1712',0, 20) 
 
-U2_1_5=LpVariable('utilite_2_1_5',0, 20) 
+U2_1_5=LpVariable('U2_1_5',0, 20) 
 
-U3_5_0=LpVariable('utilite_3_5_0',0, 20) 
+U3_5_0=LpVariable('U3_5_0',0, 20) 
 
-U4_7_0=LpVariable('utilite_4_7_0',0, 20) 
+U4_7_0=LpVariable('U4_7_0',0, 20) 
 
-U5_5_0=LpVariable('utilite_5_5_0',0, 20) 
+U5_5_0=LpVariable('U5_5_0',0, 20) 
 
-U6_0_82=LpVariable('utilite_6_0_82',0, 20) 
+U6_0_82=LpVariable('U6_0_82',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_230
 
-U1_1761=LpVariable('utilite_1_1761',0, 20) 
+U1_1761=LpVariable('U1_1761',0, 20) 
 
-U2_5_6=LpVariable('utilite_2_5_6',0, 20) 
+U2_5_6=LpVariable('U2_5_6',0, 20) 
 
-U3_35_0=LpVariable('utilite_3_35_0',0, 20) 
+U3_35_0=LpVariable('U3_35_0',0, 20) 
 
-U4_3_6=LpVariable('utilite_4_3_6',0, 20) 
+U4_3_6=LpVariable('U4_3_6',0, 20) 
 
-U5_5_7=LpVariable('utilite_5_5_7',0, 20) 
+U5_5_7=LpVariable('U5_5_7',0, 20) 
 
-U6_0_292=LpVariable('utilite_6_0_292',0, 20) 
+U6_0_292=LpVariable('U6_0_292',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_231
 
-U1_1599=LpVariable('utilite_1_1599',0, 20) 
+U1_1599=LpVariable('U1_1599',0, 20) 
 
-U2_0_7=LpVariable('utilite_2_0_7',0, 20) 
+U2_0_7=LpVariable('U2_0_7',0, 20) 
 
-U3_37_0=LpVariable('utilite_3_37_0',0, 20) 
+U3_37_0=LpVariable('U3_37_0',0, 20) 
 
-U4_2_1=LpVariable('utilite_4_2_1',0, 20) 
+U4_2_1=LpVariable('U4_2_1',0, 20) 
 
-U5_6_9=LpVariable('utilite_5_6_9',0, 20) 
+U5_6_9=LpVariable('U5_6_9',0, 20) 
 
-U6_0_43688=LpVariable('utilite_6_0_43688',0, 20) 
+U6_0_43688=LpVariable('U6_0_43688',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_232
 
-U1_1728=LpVariable('utilite_1_1728',0, 20) 
+U1_1728=LpVariable('U1_1728',0, 20) 
 
-U2_3_9=LpVariable('utilite_2_3_9',0, 20) 
+U2_3_9=LpVariable('U2_3_9',0, 20) 
 
-U3_23_0=LpVariable('utilite_3_23_0',0, 20) 
+U3_23_0=LpVariable('U3_23_0',0, 20) 
 
-U4_3_9=LpVariable('utilite_4_3_9',0, 20) 
+U4_3_9=LpVariable('U4_3_9',0, 20) 
 
-U5_8_8=LpVariable('utilite_5_8_8',0, 20) 
+U5_8_8=LpVariable('U5_8_8',0, 20) 
 
-U6_0_36=LpVariable('utilite_6_0_36',0, 20) 
+U6_0_36=LpVariable('U6_0_36',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_233
 
-U1_1634=LpVariable('utilite_1_1634',0, 20) 
+U1_1634=LpVariable('U1_1634',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_5_7=LpVariable('utilite_3_5_7',0, 20) 
+U3_5_7=LpVariable('U3_5_7',0, 20) 
 
-U4_3_4=LpVariable('utilite_4_3_4',0, 20) 
+U4_3_4=LpVariable('U4_3_4',0, 20) 
 
-U5_8_5=LpVariable('utilite_5_8_5',0, 20) 
+U5_8_5=LpVariable('U5_8_5',0, 20) 
 
-U6_0_88=LpVariable('utilite_6_0_88',0, 20) 
+U6_0_88=LpVariable('U6_0_88',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_234
 
-U1_1761=LpVariable('utilite_1_1761',0, 20) 
+U1_1761=LpVariable('U1_1761',0, 20) 
 
-U2_4_0=LpVariable('utilite_2_4_0',0, 20) 
+U2_4_0=LpVariable('U2_4_0',0, 20) 
 
-U3_19_5=LpVariable('utilite_3_19_5',0, 20) 
+U3_19_5=LpVariable('U3_19_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_7_6=LpVariable('utilite_5_7_6',0, 20) 
+U5_7_6=LpVariable('U5_7_6',0, 20) 
 
-U6_0_24=LpVariable('utilite_6_0_24',0, 20) 
+U6_0_24=LpVariable('U6_0_24',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_235
 
-U1_2427=LpVariable('utilite_1_2427',0, 20) 
+U1_2427=LpVariable('U1_2427',0, 20) 
 
-U2_46_0=LpVariable('utilite_2_46_0',0, 20) 
+U2_46_0=LpVariable('U2_46_0',0, 20) 
 
-U3_23_0=LpVariable('utilite_3_23_0',0, 20) 
+U3_23_0=LpVariable('U3_23_0',0, 20) 
 
-U4_14_0=LpVariable('utilite_4_14_0',0, 20) 
+U4_14_0=LpVariable('U4_14_0',0, 20) 
 
-U5_5_1=LpVariable('utilite_5_5_1',0, 20) 
+U5_5_1=LpVariable('U5_5_1',0, 20) 
 
-U6_0_56=LpVariable('utilite_6_0_56',0, 20) 
+U6_0_56=LpVariable('U6_0_56',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_236
 
-U1_900=LpVariable('utilite_1_900',0, 20) 
+U1_900=LpVariable('U1_900',0, 20) 
 
-U2_4_4=LpVariable('utilite_2_4_4',0, 20) 
+U2_4_4=LpVariable('U2_4_4',0, 20) 
 
-U3_0_5=LpVariable('utilite_3_0_5',0, 20) 
+U3_0_5=LpVariable('U3_0_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_25_0=LpVariable('utilite_5_25_0',0, 20) 
+U5_25_0=LpVariable('U5_25_0',0, 20) 
 
-U6_1_64=LpVariable('utilite_6_1_64',0, 20) 
+U6_1_64=LpVariable('U6_1_64',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_237
 
-U1_967=LpVariable('utilite_1_967',0, 20) 
+U1_967=LpVariable('U1_967',0, 20) 
 
-U2_0_1=LpVariable('utilite_2_0_1',0, 20) 
+U2_0_1=LpVariable('U2_0_1',0, 20) 
 
-U3_53_0=LpVariable('utilite_3_53_0',0, 20) 
+U3_53_0=LpVariable('U3_53_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_0_9=LpVariable('utilite_5_0_9',0, 20) 
+U5_0_9=LpVariable('U5_0_9',0, 20) 
 
-U6_0_0=LpVariable('utilite_6_0_0',0, 20) 
+U6_0_0=LpVariable('U6_0_0',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_238
 
-U1_1573=LpVariable('utilite_1_1573',0, 20) 
+U1_1573=LpVariable('U1_1573',0, 20) 
 
-U2_0_4=LpVariable('utilite_2_0_4',0, 20) 
+U2_0_4=LpVariable('U2_0_4',0, 20) 
 
-U3_35_0=LpVariable('utilite_3_35_0',0, 20) 
+U3_35_0=LpVariable('U3_35_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_5_0=LpVariable('utilite_5_5_0',0, 20) 
+U5_5_0=LpVariable('U5_5_0',0, 20) 
 
-U6_0_5=LpVariable('utilite_6_0_5',0, 20) 
+U6_0_5=LpVariable('U6_0_5',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_239
 
-U1_1732=LpVariable('utilite_1_1732',0, 20) 
+U1_1732=LpVariable('U1_1732',0, 20) 
 
-U2_4_2=LpVariable('utilite_2_4_2',0, 20) 
+U2_4_2=LpVariable('U2_4_2',0, 20) 
 
-U3_21_0=LpVariable('utilite_3_21_0',0, 20) 
+U3_21_0=LpVariable('U3_21_0',0, 20) 
 
-U4_5_8=LpVariable('utilite_4_5_8',0, 20) 
+U4_5_8=LpVariable('U4_5_8',0, 20) 
 
-U5_7_9=LpVariable('utilite_5_7_9',0, 20) 
+U5_7_9=LpVariable('U5_7_9',0, 20) 
 
-U6_0_28=LpVariable('utilite_6_0_28',0, 20) 
+U6_0_28=LpVariable('U6_0_28',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_240
 
-U1_1000=LpVariable('utilite_1_1000',0, 20) 
+U1_1000=LpVariable('U1_1000',0, 20) 
 
-U2_0_0=LpVariable('utilite_2_0_0',0, 20) 
+U2_0_0=LpVariable('U2_0_0',0, 20) 
 
-U3_52_7=LpVariable('utilite_3_52_7',0, 20) 
+U3_52_7=LpVariable('U3_52_7',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_0_012=LpVariable('utilite_5_0_012',0, 20) 
+U5_0_012=LpVariable('U5_0_012',0, 20) 
 
-U6_0_0116=LpVariable('utilite_6_0_0116',0, 20) 
+U6_0_0116=LpVariable('U6_0_0116',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_241
 
-U1_916=LpVariable('utilite_1_916',0, 20) 
+U1_916=LpVariable('U1_916',0, 20) 
 
-U2_4_9=LpVariable('utilite_2_4_9',0, 20) 
+U2_4_9=LpVariable('U2_4_9',0, 20) 
 
-U3_0_5=LpVariable('utilite_3_0_5',0, 20) 
+U3_0_5=LpVariable('U3_0_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_24_4=LpVariable('utilite_5_24_4',0, 20) 
+U5_24_4=LpVariable('U5_24_4',0, 20) 
 
-U6_1_96=LpVariable('utilite_6_1_96',0, 20) 
+U6_1_96=LpVariable('U6_1_96',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_242
 
-U1_1760=LpVariable('utilite_1_1760',0, 20) 
+U1_1760=LpVariable('U1_1760',0, 20) 
 
-U2_8_8=LpVariable('utilite_2_8_8',0, 20) 
+U2_8_8=LpVariable('U2_8_8',0, 20) 
 
-U3_32_9=LpVariable('utilite_3_32_9',0, 20) 
+U3_32_9=LpVariable('U3_32_9',0, 20) 
 
-U4_4_0=LpVariable('utilite_4_4_0',0, 20) 
+U4_4_0=LpVariable('U4_4_0',0, 20) 
 
-U5_6_8=LpVariable('utilite_5_6_8',0, 20) 
+U5_6_8=LpVariable('U5_6_8',0, 20) 
 
-U6_0_12=LpVariable('utilite_6_0_12',0, 20) 
+U6_0_12=LpVariable('U6_0_12',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_243
 
-U1_2029=LpVariable('utilite_1_2029',0, 20) 
+U1_2029=LpVariable('U1_2029',0, 20) 
 
-U2_2_1=LpVariable('utilite_2_2_1',0, 20) 
+U2_2_1=LpVariable('U2_2_1',0, 20) 
 
-U3_1_0=LpVariable('utilite_3_1_0',0, 20) 
+U3_1_0=LpVariable('U3_1_0',0, 20) 
 
-U4_3_5=LpVariable('utilite_4_3_5',0, 20) 
+U4_3_5=LpVariable('U4_3_5',0, 20) 
 
-U5_3_5=LpVariable('utilite_5_3_5',0, 20) 
+U5_3_5=LpVariable('U5_3_5',0, 20) 
 
-U6_0_96=LpVariable('utilite_6_0_96',0, 20) 
+U6_0_96=LpVariable('U6_0_96',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_244
 
-U1_1582=LpVariable('utilite_1_1582',0, 20) 
+U1_1582=LpVariable('U1_1582',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_27_0=LpVariable('utilite_3_27_0',0, 20) 
+U3_27_0=LpVariable('U3_27_0',0, 20) 
 
-U4_3_5=LpVariable('utilite_4_3_5',0, 20) 
+U4_3_5=LpVariable('U4_3_5',0, 20) 
 
-U5_5_7=LpVariable('utilite_5_5_7',0, 20) 
+U5_5_7=LpVariable('U5_5_7',0, 20) 
 
-U6_0_52=LpVariable('utilite_6_0_52',0, 20) 
+U6_0_52=LpVariable('U6_0_52',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_245
 
-U1_1728=LpVariable('utilite_1_1728',0, 20) 
+U1_1728=LpVariable('U1_1728',0, 20) 
 
-U2_4_0=LpVariable('utilite_2_4_0',0, 20) 
+U2_4_0=LpVariable('U2_4_0',0, 20) 
 
-U3_30_0=LpVariable('utilite_3_30_0',0, 20) 
+U3_30_0=LpVariable('U3_30_0',0, 20) 
 
-U4_5_6=LpVariable('utilite_4_5_6',0, 20) 
+U4_5_6=LpVariable('U4_5_6',0, 20) 
 
-U5_8_2=LpVariable('utilite_5_8_2',0, 20) 
+U5_8_2=LpVariable('U5_8_2',0, 20) 
 
-U6_0_208=LpVariable('utilite_6_0_208',0, 20) 
+U6_0_208=LpVariable('U6_0_208',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_246
 
-U1_1684=LpVariable('utilite_1_1684',0, 20) 
+U1_1684=LpVariable('U1_1684',0, 20) 
 
-U2_4_0=LpVariable('utilite_2_4_0',0, 20) 
+U2_4_0=LpVariable('U2_4_0',0, 20) 
 
-U3_34_8=LpVariable('utilite_3_34_8',0, 20) 
+U3_34_8=LpVariable('U3_34_8',0, 20) 
 
-U4_4_6=LpVariable('utilite_4_4_6',0, 20) 
+U4_4_6=LpVariable('U4_4_6',0, 20) 
 
-U5_7_3=LpVariable('utilite_5_7_3',0, 20) 
+U5_7_3=LpVariable('U5_7_3',0, 20) 
 
-U6_0_136=LpVariable('utilite_6_0_136',0, 20) 
+U6_0_136=LpVariable('U6_0_136',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_247
 
-U1_1719=LpVariable('utilite_1_1719',0, 20) 
+U1_1719=LpVariable('U1_1719',0, 20) 
 
-U2_4_0=LpVariable('utilite_2_4_0',0, 20) 
+U2_4_0=LpVariable('U2_4_0',0, 20) 
 
-U3_24_0=LpVariable('utilite_3_24_0',0, 20) 
+U3_24_0=LpVariable('U3_24_0',0, 20) 
 
-U4_4_0=LpVariable('utilite_4_4_0',0, 20) 
+U4_4_0=LpVariable('U4_4_0',0, 20) 
 
-U5_9_0=LpVariable('utilite_5_9_0',0, 20) 
+U5_9_0=LpVariable('U5_9_0',0, 20) 
 
-U6_0_3556=LpVariable('utilite_6_0_3556',0, 20) 
+U6_0_3556=LpVariable('U6_0_3556',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_248
 
-U1_1703=LpVariable('utilite_1_1703',0, 20) 
+U1_1703=LpVariable('U1_1703',0, 20) 
 
-U2_8_1=LpVariable('utilite_2_8_1',0, 20) 
+U2_8_1=LpVariable('U2_8_1',0, 20) 
 
-U3_28_4=LpVariable('utilite_3_28_4',0, 20) 
+U3_28_4=LpVariable('U3_28_4',0, 20) 
 
-U4_3_6=LpVariable('utilite_4_3_6',0, 20) 
+U4_3_6=LpVariable('U4_3_6',0, 20) 
 
-U5_7_6=LpVariable('utilite_5_7_6',0, 20) 
+U5_7_6=LpVariable('U5_7_6',0, 20) 
 
-U6_0_16=LpVariable('utilite_6_0_16',0, 20) 
+U6_0_16=LpVariable('U6_0_16',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_249
 
-U1_1589=LpVariable('utilite_1_1589',0, 20) 
+U1_1589=LpVariable('U1_1589',0, 20) 
 
-U2_0_2=LpVariable('utilite_2_0_2',0, 20) 
+U2_0_2=LpVariable('U2_0_2',0, 20) 
 
-U3_5_7=LpVariable('utilite_3_5_7',0, 20) 
+U3_5_7=LpVariable('U3_5_7',0, 20) 
 
-U4_3_4=LpVariable('utilite_4_3_4',0, 20) 
+U4_3_4=LpVariable('U4_3_4',0, 20) 
 
-U5_8_1=LpVariable('utilite_5_8_1',0, 20) 
+U5_8_1=LpVariable('U5_8_1',0, 20) 
 
-U6_0_88=LpVariable('utilite_6_0_88',0, 20) 
+U6_0_88=LpVariable('U6_0_88',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_250
 
-U1_2320=LpVariable('utilite_1_2320',0, 20) 
+U1_2320=LpVariable('U1_2320',0, 20) 
 
-U2_23_3=LpVariable('utilite_2_23_3',0, 20) 
+U2_23_3=LpVariable('U2_23_3',0, 20) 
 
-U3_38_1=LpVariable('utilite_3_38_1',0, 20) 
+U3_38_1=LpVariable('U3_38_1',0, 20) 
 
-U4_3_8=LpVariable('utilite_4_3_8',0, 20) 
+U4_3_8=LpVariable('U4_3_8',0, 20) 
 
-U5_8_6=LpVariable('utilite_5_8_6',0, 20) 
+U5_8_6=LpVariable('U5_8_6',0, 20) 
 
-U6_0_112=LpVariable('utilite_6_0_112',0, 20) 
+U6_0_112=LpVariable('U6_0_112',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_251
 
-U1_2100=LpVariable('utilite_1_2100',0, 20) 
+U1_2100=LpVariable('U1_2100',0, 20) 
 
-U2_14_0=LpVariable('utilite_2_14_0',0, 20) 
+U2_14_0=LpVariable('U2_14_0',0, 20) 
 
-U3_36_0=LpVariable('utilite_3_36_0',0, 20) 
+U3_36_0=LpVariable('U3_36_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_6_7=LpVariable('utilite_5_6_7',0, 20) 
+U5_6_7=LpVariable('U5_6_7',0, 20) 
 
-U6_0_272=LpVariable('utilite_6_0_272',0, 20) 
+U6_0_272=LpVariable('U6_0_272',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_252
 
-U1_2675=LpVariable('utilite_1_2675',0, 20) 
+U1_2675=LpVariable('U1_2675',0, 20) 
 
-U2_41_0=LpVariable('utilite_2_41_0',0, 20) 
+U2_41_0=LpVariable('U2_41_0',0, 20) 
 
-U3_33_0=LpVariable('utilite_3_33_0',0, 20) 
+U3_33_0=LpVariable('U3_33_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_4_4=LpVariable('utilite_5_4_4',0, 20) 
+U5_4_4=LpVariable('U5_4_4',0, 20) 
 
-U6_0_68=LpVariable('utilite_6_0_68',0, 20) 
+U6_0_68=LpVariable('U6_0_68',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_253
 
-U1_1845=LpVariable('utilite_1_1845',0, 20) 
+U1_1845=LpVariable('U1_1845',0, 20) 
 
-U2_10_5=LpVariable('utilite_2_10_5',0, 20) 
+U2_10_5=LpVariable('U2_10_5',0, 20) 
 
-U3_29_4=LpVariable('utilite_3_29_4',0, 20) 
+U3_29_4=LpVariable('U3_29_4',0, 20) 
 
-U4_0_9=LpVariable('utilite_4_0_9',0, 20) 
+U4_0_9=LpVariable('U4_0_9',0, 20) 
 
-U5_5_0=LpVariable('utilite_5_5_0',0, 20) 
+U5_5_0=LpVariable('U5_5_0',0, 20) 
 
-U6_0_24=LpVariable('utilite_6_0_24',0, 20) 
+U6_0_24=LpVariable('U6_0_24',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_254
 
-U1_2118=LpVariable('utilite_1_2118',0, 20) 
+U1_2118=LpVariable('U1_2118',0, 20) 
 
-U2_16_3=LpVariable('utilite_2_16_3',0, 20) 
+U2_16_3=LpVariable('U2_16_3',0, 20) 
 
-U3_45_5=LpVariable('utilite_3_45_5',0, 20) 
+U3_45_5=LpVariable('U3_45_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_6_9=LpVariable('utilite_5_6_9',0, 20) 
+U5_6_9=LpVariable('U5_6_9',0, 20) 
 
-U6_0_312=LpVariable('utilite_6_0_312',0, 20) 
+U6_0_312=LpVariable('U6_0_312',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_255
 
-U1_2029=LpVariable('utilite_1_2029',0, 20) 
+U1_2029=LpVariable('U1_2029',0, 20) 
 
-U2_11_0=LpVariable('utilite_2_11_0',0, 20) 
+U2_11_0=LpVariable('U2_11_0',0, 20) 
 
-U3_15_3=LpVariable('utilite_3_15_3',0, 20) 
+U3_15_3=LpVariable('U3_15_3',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_4_3=LpVariable('utilite_5_4_3',0, 20) 
+U5_4_3=LpVariable('U5_4_3',0, 20) 
 
-U6_0_02=LpVariable('utilite_6_0_02',0, 20) 
+U6_0_02=LpVariable('U6_0_02',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_256
 
-U1_2105=LpVariable('utilite_1_2105',0, 20) 
+U1_2105=LpVariable('U1_2105',0, 20) 
 
-U2_3_1=LpVariable('utilite_2_3_1',0, 20) 
+U2_3_1=LpVariable('U2_3_1',0, 20) 
 
-U3_43_5=LpVariable('utilite_3_43_5',0, 20) 
+U3_43_5=LpVariable('U3_43_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_3_2=LpVariable('utilite_5_3_2',0, 20) 
+U5_3_2=LpVariable('U5_3_2',0, 20) 
 
-U6_0_384=LpVariable('utilite_6_0_384',0, 20) 
+U6_0_384=LpVariable('U6_0_384',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_257
 
-U1_1431=LpVariable('utilite_1_1431',0, 20) 
+U1_1431=LpVariable('U1_1431',0, 20) 
 
-U2_10_7=LpVariable('utilite_2_10_7',0, 20) 
+U2_10_7=LpVariable('U2_10_7',0, 20) 
 
-U3_0_0=LpVariable('utilite_3_0_0',0, 20) 
+U3_0_0=LpVariable('U3_0_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_21_52=LpVariable('utilite_5_21_52',0, 20) 
+U5_21_52=LpVariable('U5_21_52',0, 20) 
 
-U6_1_64=LpVariable('utilite_6_1_64',0, 20) 
+U6_1_64=LpVariable('U6_1_64',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_258
 
-U1_1134=LpVariable('utilite_1_1134',0, 20) 
+U1_1134=LpVariable('U1_1134',0, 20) 
 
-U2_6_5=LpVariable('utilite_2_6_5',0, 20) 
+U2_6_5=LpVariable('U2_6_5',0, 20) 
 
-U3_0_5=LpVariable('utilite_3_0_5',0, 20) 
+U3_0_5=LpVariable('U3_0_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_33_0=LpVariable('utilite_5_33_0',0, 20) 
+U5_33_0=LpVariable('U5_33_0',0, 20) 
 
-U6_2_2=LpVariable('utilite_6_2_2',0, 20) 
+U6_2_2=LpVariable('U6_2_2',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_259
 
-U1_1757=LpVariable('utilite_1_1757',0, 20) 
+U1_1757=LpVariable('U1_1757',0, 20) 
 
-U2_7_5=LpVariable('utilite_2_7_5',0, 20) 
+U2_7_5=LpVariable('U2_7_5',0, 20) 
 
-U3_34_7=LpVariable('utilite_3_34_7',0, 20) 
+U3_34_7=LpVariable('U3_34_7',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_5_4=LpVariable('utilite_5_5_4',0, 20) 
+U5_5_4=LpVariable('U5_5_4',0, 20) 
 
-U6_0_44=LpVariable('utilite_6_0_44',0, 20) 
+U6_0_44=LpVariable('U6_0_44',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_260
 
-U1_1809=LpVariable('utilite_1_1809',0, 20) 
+U1_1809=LpVariable('U1_1809',0, 20) 
 
-U2_8_8=LpVariable('utilite_2_8_8',0, 20) 
+U2_8_8=LpVariable('U2_8_8',0, 20) 
 
-U3_34_4=LpVariable('utilite_3_34_4',0, 20) 
+U3_34_4=LpVariable('U3_34_4',0, 20) 
 
-U4_1_8=LpVariable('utilite_4_1_8',0, 20) 
+U4_1_8=LpVariable('U4_1_8',0, 20) 
 
-U5_4_3=LpVariable('utilite_5_4_3',0, 20) 
+U5_4_3=LpVariable('U5_4_3',0, 20) 
 
-U6_0_16=LpVariable('utilite_6_0_16',0, 20) 
+U6_0_16=LpVariable('U6_0_16',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_261
 
-U1_1133=LpVariable('utilite_1_1133',0, 20) 
+U1_1133=LpVariable('U1_1133',0, 20) 
 
-U2_6_5=LpVariable('utilite_2_6_5',0, 20) 
+U2_6_5=LpVariable('U2_6_5',0, 20) 
 
-U3_0_5=LpVariable('utilite_3_0_5',0, 20) 
+U3_0_5=LpVariable('U3_0_5',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_33_0=LpVariable('utilite_5_33_0',0, 20) 
+U5_33_0=LpVariable('U5_33_0',0, 20) 
 
-U6_2_31648=LpVariable('utilite_6_2_31648',0, 20) 
+U6_2_31648=LpVariable('U6_2_31648',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_262
 
-U1_2368=LpVariable('utilite_1_2368',0, 20) 
+U1_2368=LpVariable('U1_2368',0, 20) 
 
-U2_26_4=LpVariable('utilite_2_26_4',0, 20) 
+U2_26_4=LpVariable('U2_26_4',0, 20) 
 
-U3_42_0=LpVariable('utilite_3_42_0',0, 20) 
+U3_42_0=LpVariable('U3_42_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_6_6=LpVariable('utilite_5_6_6',0, 20) 
+U5_6_6=LpVariable('U5_6_6',0, 20) 
 
-U6_0_156=LpVariable('utilite_6_0_156',0, 20) 
+U6_0_156=LpVariable('U6_0_156',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_263
 
-U1_2251=LpVariable('utilite_1_2251',0, 20) 
+U1_2251=LpVariable('U1_2251',0, 20) 
 
-U2_20_3=LpVariable('utilite_2_20_3',0, 20) 
+U2_20_3=LpVariable('U2_20_3',0, 20) 
 
-U3_51_4=LpVariable('utilite_3_51_4',0, 20) 
+U3_51_4=LpVariable('U3_51_4',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_6_5=LpVariable('utilite_5_6_5',0, 20) 
+U5_6_5=LpVariable('U5_6_5',0, 20) 
 
-U6_0_08=LpVariable('utilite_6_0_08',0, 20) 
+U6_0_08=LpVariable('U6_0_08',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_264
 
-U1_2017=LpVariable('utilite_1_2017',0, 20) 
+U1_2017=LpVariable('U1_2017',0, 20) 
 
-U2_13_2=LpVariable('utilite_2_13_2',0, 20) 
+U2_13_2=LpVariable('U2_13_2',0, 20) 
 
-U3_31_9=LpVariable('utilite_3_31_9',0, 20) 
+U3_31_9=LpVariable('U3_31_9',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_6_3=LpVariable('utilite_5_6_3',0, 20) 
+U5_6_3=LpVariable('U5_6_3',0, 20) 
 
-U6_0_08=LpVariable('utilite_6_0_08',0, 20) 
+U6_0_08=LpVariable('U6_0_08',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_265
 
-U1_2435=LpVariable('utilite_1_2435',0, 20) 
+U1_2435=LpVariable('U1_2435',0, 20) 
 
-U2_42_0=LpVariable('utilite_2_42_0',0, 20) 
+U2_42_0=LpVariable('U2_42_0',0, 20) 
 
-U3_34_0=LpVariable('utilite_3_34_0',0, 20) 
+U3_34_0=LpVariable('U3_34_0',0, 20) 
 
-U4_14_0=LpVariable('utilite_4_14_0',0, 20) 
+U4_14_0=LpVariable('U4_14_0',0, 20) 
 
-U5_4_8=LpVariable('utilite_5_4_8',0, 20) 
+U5_4_8=LpVariable('U5_4_8',0, 20) 
 
-U6_0_36=LpVariable('utilite_6_0_36',0, 20) 
+U6_0_36=LpVariable('U6_0_36',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_266
 
-U1_2226=LpVariable('utilite_1_2226',0, 20) 
+U1_2226=LpVariable('U1_2226',0, 20) 
 
-U2_19_6=LpVariable('utilite_2_19_6',0, 20) 
+U2_19_6=LpVariable('U2_19_6',0, 20) 
 
-U3_45_1=LpVariable('utilite_3_45_1',0, 20) 
+U3_45_1=LpVariable('U3_45_1',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_6_9=LpVariable('utilite_5_6_9',0, 20) 
+U5_6_9=LpVariable('U5_6_9',0, 20) 
 
-U6_0_112=LpVariable('utilite_6_0_112',0, 20) 
+U6_0_112=LpVariable('U6_0_112',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_267
 
-U1_2423=LpVariable('utilite_1_2423',0, 20) 
+U1_2423=LpVariable('U1_2423',0, 20) 
 
-U2_20_4=LpVariable('utilite_2_20_4',0, 20) 
+U2_20_4=LpVariable('U2_20_4',0, 20) 
 
-U3_34_1=LpVariable('utilite_3_34_1',0, 20) 
+U3_34_1=LpVariable('U3_34_1',0, 20) 
 
-U4_4_1=LpVariable('utilite_4_4_1',0, 20) 
+U4_4_1=LpVariable('U4_4_1',0, 20) 
 
-U5_11_2=LpVariable('utilite_5_11_2',0, 20) 
+U5_11_2=LpVariable('U5_11_2',0, 20) 
 
-U6_0_08=LpVariable('utilite_6_0_08',0, 20) 
+U6_0_08=LpVariable('U6_0_08',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_268
 
-U1_2255=LpVariable('utilite_1_2255',0, 20) 
+U1_2255=LpVariable('U1_2255',0, 20) 
 
-U2_21_0=LpVariable('utilite_2_21_0',0, 20) 
+U2_21_0=LpVariable('U2_21_0',0, 20) 
 
-U3_47_0=LpVariable('utilite_3_47_0',0, 20) 
+U3_47_0=LpVariable('U3_47_0',0, 20) 
 
-U4_6_0=LpVariable('utilite_4_6_0',0, 20) 
+U4_6_0=LpVariable('U4_6_0',0, 20) 
 
-U5_4_1=LpVariable('utilite_5_4_1',0, 20) 
+U5_4_1=LpVariable('U5_4_1',0, 20) 
 
-U6_0_052=LpVariable('utilite_6_0_052',0, 20) 
+U6_0_052=LpVariable('U6_0_052',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_269
 
-U1_2025=LpVariable('utilite_1_2025',0, 20) 
+U1_2025=LpVariable('U1_2025',0, 20) 
 
-U2_9_2=LpVariable('utilite_2_9_2',0, 20) 
+U2_9_2=LpVariable('U2_9_2',0, 20) 
 
-U3_71_4=LpVariable('utilite_3_71_4',0, 20) 
+U3_71_4=LpVariable('U3_71_4',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_3_56=LpVariable('utilite_5_3_56',0, 20) 
+U5_3_56=LpVariable('U5_3_56',0, 20) 
 
-U6_0_0268=LpVariable('utilite_6_0_0268',0, 20) 
+U6_0_0268=LpVariable('U6_0_0268',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_270
 
-U1_2339=LpVariable('utilite_1_2339',0, 20) 
+U1_2339=LpVariable('U1_2339',0, 20) 
 
-U2_23_0=LpVariable('utilite_2_23_0',0, 20) 
+U2_23_0=LpVariable('U2_23_0',0, 20) 
 
-U3_39_0=LpVariable('utilite_3_39_0',0, 20) 
+U3_39_0=LpVariable('U3_39_0',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_7_1=LpVariable('utilite_5_7_1',0, 20) 
+U5_7_1=LpVariable('U5_7_1',0, 20) 
 
-U6_0_008=LpVariable('utilite_6_0_008',0, 20) 
+U6_0_008=LpVariable('U6_0_008',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_271
 
-U1_2342=LpVariable('utilite_1_2342',0, 20) 
+U1_2342=LpVariable('U1_2342',0, 20) 
 
-U2_25_2=LpVariable('utilite_2_25_2',0, 20) 
+U2_25_2=LpVariable('U2_25_2',0, 20) 
 
-U3_45_2=LpVariable('utilite_3_45_2',0, 20) 
+U3_45_2=LpVariable('U3_45_2',0, 20) 
 
-U4_2_4=LpVariable('utilite_4_2_4',0, 20) 
+U4_2_4=LpVariable('U4_2_4',0, 20) 
 
-U5_6_3=LpVariable('utilite_5_6_3',0, 20) 
+U5_6_3=LpVariable('U5_6_3',0, 20) 
 
-U6_0_152=LpVariable('utilite_6_0_152',0, 20) 
+U6_0_152=LpVariable('U6_0_152',0, 20) 
 
  # Variables associated to the marginal utility functions of food 1 x_272
 
-U1_2201=LpVariable('utilite_1_2201',0, 20) 
+U1_2201=LpVariable('U1_2201',0, 20) 
 
-U2_5_03=LpVariable('utilite_2_5_03',0, 20) 
+U2_5_03=LpVariable('U2_5_03',0, 20) 
 
-U3_48_43=LpVariable('utilite_3_48_43',0, 20) 
+U3_48_43=LpVariable('U3_48_43',0, 20) 
 
-U4_0_0=LpVariable('utilite_4_0_0',0, 20) 
+U4_0_0=LpVariable('U4_0_0',0, 20) 
 
-U5_6_5=LpVariable('utilite_5_6_5',0, 20) 
+U5_6_5=LpVariable('U5_6_5',0, 20) 
 
-U6_0_08=LpVariable('utilite_6_0_08',0, 20) 
+U6_0_08=LpVariable('U6_0_08',0, 20) 
 
 # The objective function 
 
@@ -46892,13 +46894,577 @@ prob.writeLP('The Nutriscore.lp')
 
 prob.solve() 
 
-print('Statut:', LpStatus[prob.status]) 
+print('Status:', LpStatus[prob.status]) 
 
 # Each of the variables is printed with it's resolved optimum value 
-ordered_resultss
+
 for v in prob.variables(): 
 
 	 print(v.name, '=', v.varValue) 
 
-print('Valeur fonction objectif = ', value(prob.objective)) 
+print('Value of objective function = ', value(prob.objective)) 
+
+results = {} 
+
+results[1] = U1_1623.varValue + U2_2_4.varValue + U3_18_0.varValue + U4_9_0.varValue + U5_11_0.varValue + U6_0_08.varValue 
+
+results[2] = U1_1548.varValue + U2_0_8.varValue + U3_1_0.varValue + U4_6_2.varValue + U5_13_9.varValue + U6_0_4.varValue 
+
+results[3] = U1_1506.varValue + U2_0_2.varValue + U3_8_8.varValue + U4_8_8.varValue + U5_8_4.varValue + U6_0_336.varValue 
+
+results[4] = U1_1561.varValue + U2_0_3.varValue + U3_11_8.varValue + U4_6_2.varValue + U5_8_9.varValue + U6_0_196.varValue 
+
+results[5] = U1_1565.varValue + U2_0_2.varValue + U3_5_0.varValue + U4_4_0.varValue + U5_8_0.varValue + U6_0_0.varValue 
+
+results[6] = U1_1653.varValue + U2_0_6.varValue + U3_0_7.varValue + U4_6_3.varValue + U5_14_0.varValue + U6_0_044.varValue 
+
+results[7] = U1_565.varValue + U2_0_7.varValue + U3_7_5.varValue + U4_2_0.varValue + U5_3_7.varValue + U6_0_004.varValue 
+
+results[8] = U1_1573.varValue + U2_0_3.varValue + U3_8_8.varValue + U4_5_8.varValue + U5_9_0.varValue + U6_0_356.varValue 
+
+results[9] = U1_1530.varValue + U2_1_33.varValue + U3_4_0.varValue + U4_9_0.varValue + U5_14_0.varValue + U6_0_173.varValue 
+
+results[10] = U1_1594.varValue + U2_0_2.varValue + U3_4_0.varValue + U4_4_0.varValue + U5_7_5.varValue + U6_0_332.varValue 
+
+results[11] = U1_1510.varValue + U2_0_667.varValue + U3_3_0.varValue + U4_10_0.varValue + U5_13_0.varValue + U6_0_227.varValue 
+
+results[12] = U1_1573.varValue + U2_0_3.varValue + U3_2_9.varValue + U4_11_0.varValue + U5_15_0.varValue + U6_0_036.varValue 
+
+results[13] = U1_1540.varValue + U2_0_6.varValue + U3_11_0.varValue + U4_8_9.varValue + U5_9_4.varValue + U6_0_0.varValue 
+
+results[14] = U1_1611.varValue + U2_1_6.varValue + U3_21_0.varValue + U4_7_6.varValue + U5_9_7.varValue + U6_0_072.varValue 
+
+results[15] = U1_1602.varValue + U2_0_5.varValue + U3_1_1.varValue + U4_6_4.varValue + U5_8_1.varValue + U6_0_004.varValue 
+
+results[16] = U1_1615.varValue + U2_0_8.varValue + U3_2_1.varValue + U4_5_8.varValue + U5_14_1.varValue + U6_0_48.varValue 
+
+results[17] = U1_1561.varValue + U2_0_4.varValue + U3_13_9.varValue + U4_7_0.varValue + U5_8_5.varValue + U6_0_148.varValue 
+
+results[18] = U1_1603.varValue + U2_0_3.varValue + U3_13_3.varValue + U4_3_9.varValue + U5_12_0.varValue + U6_0_26416.varValue 
+
+results[19] = U1_1523.varValue + U2_0_3.varValue + U3_9_4.varValue + U4_5_5.varValue + U5_7_8.varValue + U6_0_16.varValue 
+
+results[20] = U1_1565.varValue + U2_0_7.varValue + U3_5_4.varValue + U4_7_5.varValue + U5_13_8.varValue + U6_0_0012.varValue 
+
+results[21] = U1_1632.varValue + U2_0_7.varValue + U3_16_8.varValue + U4_5_2.varValue + U5_9_2.varValue + U6_0_008.varValue 
+
+results[22] = U1_1540.varValue + U2_0_0.varValue + U3_5_0.varValue + U4_3_0.varValue + U5_7_0.varValue + U6_0_0.varValue 
+
+results[23] = U1_1452.varValue + U2_0_5.varValue + U3_1_1.varValue + U4_12_0.varValue + U5_11_0.varValue + U6_0_396.varValue 
+
+results[24] = U1_1652.varValue + U2_0_8.varValue + U3_13_0.varValue + U4_4_3.varValue + U5_7_6.varValue + U6_0_096.varValue 
+
+results[25] = U1_1552.varValue + U2_0_2.varValue + U3_6_0.varValue + U4_5_0.varValue + U5_8_0.varValue + U6_0_332.varValue 
+
+results[26] = U1_1594.varValue + U2_0_3.varValue + U3_0_6.varValue + U4_4_4.varValue + U5_6_7.varValue + U6_0_0.varValue 
+
+results[27] = U1_1548.varValue + U2_0_4.varValue + U3_16_0.varValue + U4_7_5.varValue + U5_14_0.varValue + U6_0_22.varValue 
+
+results[28] = U1_628.varValue + U2_0_1.varValue + U3_0_5.varValue + U4_1_3.varValue + U5_2_8.varValue + U6_0_0.varValue 
+
+results[29] = U1_1536.varValue + U2_0_8.varValue + U3_2_7.varValue + U4_39_1.varValue + U5_12_8.varValue + U6_0_024.varValue 
+
+results[30] = U1_1613.varValue + U2_0_5.varValue + U3_18_0.varValue + U4_5_0.varValue + U5_9_0.varValue + U6_0_252.varValue 
+
+results[31] = U1_1841.varValue + U2_2_2.varValue + U3_10_9.varValue + U4_8_6.varValue + U5_11_9.varValue + U6_0_072.varValue 
+
+results[32] = U1_1791.varValue + U2_1_0.varValue + U3_12_0.varValue + U4_7_6.varValue + U5_8_8.varValue + U6_0_156.varValue 
+
+results[33] = U1_1682.varValue + U2_1_2.varValue + U3_14_0.varValue + U4_14_0.varValue + U5_11_0.varValue + U6_0_104.varValue 
+
+results[34] = U1_1564.varValue + U2_0_3.varValue + U3_4_0.varValue + U4_3_2.varValue + U5_7_3.varValue + U6_0_4.varValue 
+
+results[35] = U1_1561.varValue + U2_2_8.varValue + U3_18_9.varValue + U4_8_5.varValue + U5_9_3.varValue + U6_0_008.varValue 
+
+results[36] = U1_1539.varValue + U2_1_7.varValue + U3_20_0.varValue + U4_8_7.varValue + U5_9_8.varValue + U6_0_168.varValue 
+
+results[37] = U1_1602.varValue + U2_0_3.varValue + U3_17_0.varValue + U4_4_0.varValue + U5_8_2.varValue + U6_0_32.varValue 
+
+results[38] = U1_1615.varValue + U2_0_2.varValue + U3_6_7.varValue + U4_2_3.varValue + U5_8_8.varValue + U6_0_44.varValue 
+
+results[39] = U1_1602.varValue + U2_0_3.varValue + U3_17_0.varValue + U4_6_1.varValue + U5_8_2.varValue + U6_0_36.varValue 
+
+results[40] = U1_1565.varValue + U2_0_5.varValue + U3_15_0.varValue + U4_6_1.varValue + U5_8_0.varValue + U6_0_288.varValue 
+
+results[41] = U1_724.varValue + U2_1_3.varValue + U3_11_0.varValue + U4_0_0.varValue + U5_7_4.varValue + U6_0_18.varValue 
+
+results[42] = U1_1581.varValue + U2_0_5.varValue + U3_16_0.varValue + U4_6_1.varValue + U5_8_1.varValue + U6_0_28.varValue 
+
+results[43] = U1_1615.varValue + U2_0_3.varValue + U3_15_0.varValue + U4_5_2.varValue + U5_8_3.varValue + U6_0_36.varValue 
+
+results[44] = U1_1615.varValue + U2_0_3.varValue + U3_15_0.varValue + U4_3_1.varValue + U5_8_3.varValue + U6_0_36.varValue 
+
+results[45] = U1_1632.varValue + U2_0_3.varValue + U3_11_2.varValue + U4_3_7.varValue + U5_7_7.varValue + U6_0_32.varValue 
+
+results[46] = U1_1609.varValue + U2_0_8.varValue + U3_17_0.varValue + U4_8_9.varValue + U5_10_0.varValue + U6_0_3.varValue 
+
+results[47] = U1_1648.varValue + U2_2_0.varValue + U3_26_0.varValue + U4_5_3.varValue + U5_8_1.varValue + U6_0_056.varValue 
+
+results[48] = U1_1632.varValue + U2_0_3.varValue + U3_13_0.varValue + U4_3_7.varValue + U5_7_7.varValue + U6_0_32.varValue 
+
+results[49] = U1_1615.varValue + U2_0_3.varValue + U3_15_0.varValue + U4_5_2.varValue + U5_8_3.varValue + U6_0_36.varValue 
+
+results[50] = U1_1540.varValue + U2_0_3.varValue + U3_5_5.varValue + U4_0_0.varValue + U5_7_3.varValue + U6_0_12.varValue 
+
+results[51] = U1_1578.varValue + U2_0_3.varValue + U3_11_9.varValue + U4_4_8.varValue + U5_9_3.varValue + U6_0_4.varValue 
+
+results[52] = U1_1473.varValue + U2_0_8.varValue + U3_23_9.varValue + U4_5_1.varValue + U5_8_0.varValue + U6_0_044.varValue 
+
+results[53] = U1_1565.varValue + U2_0_5.varValue + U3_14_0.varValue + U4_9_5.varValue + U5_10_0.varValue + U6_0_32.varValue 
+
+results[54] = U1_1636.varValue + U2_0_3.varValue + U3_11_9.varValue + U4_3_9.varValue + U5_7_8.varValue + U6_0_28.varValue 
+
+results[55] = U1_1615.varValue + U2_0_3.varValue + U3_15_0.varValue + U4_3_1.varValue + U5_8_3.varValue + U6_0_36.varValue 
+
+results[56] = U1_1586.varValue + U2_0_2.varValue + U3_7_0.varValue + U4_3_0.varValue + U5_8_0.varValue + U6_0_44.varValue 
+
+results[57] = U1_1602.varValue + U2_0_3.varValue + U3_17_0.varValue + U4_6_1.varValue + U5_8_2.varValue + U6_0_36.varValue 
+
+results[58] = U1_1569.varValue + U2_1_7.varValue + U3_19_0.varValue + U4_5_5.varValue + U5_6_3.varValue + U6_0_06.varValue 
+
+results[59] = U1_1647.varValue + U2_0_8.varValue + U3_24_0.varValue + U4_4_5.varValue + U5_8_0.varValue + U6_0_152.varValue 
+
+results[60] = U1_1623.varValue + U2_0_8.varValue + U3_17_0.varValue + U4_3_8.varValue + U5_6_8.varValue + U6_0_344.varValue 
+
+results[61] = U1_1628.varValue + U2_1_4.varValue + U3_27_2.varValue + U4_2_1.varValue + U5_8_1.varValue + U6_0_128.varValue 
+
+results[62] = U1_1565.varValue + U2_2_1.varValue + U3_20_0.varValue + U4_9_5.varValue + U5_9_7.varValue + U6_0_2.varValue 
+
+results[63] = U1_1648.varValue + U2_3_0.varValue + U3_20_0.varValue + U4_4_9.varValue + U5_8_6.varValue + U6_0_332.varValue 
+
+results[64] = U1_1705.varValue + U2_1_0.varValue + U3_19_9.varValue + U4_10_4.varValue + U5_10_9.varValue + U6_0_23.varValue 
+
+results[65] = U1_2633.varValue + U2_4_6.varValue + U3_4_0.varValue + U4_13_0.varValue + U5_26_0.varValue + U6_0_004.varValue 
+
+results[66] = U1_1697.varValue + U2_3_3.varValue + U3_23_0.varValue + U4_5_3.varValue + U5_7_4.varValue + U6_0_26.varValue 
+
+results[67] = U1_1658.varValue + U2_1_4.varValue + U3_29_0.varValue + U4_6_6.varValue + U5_9_6.varValue + U6_0_096.varValue 
+
+results[68] = U1_1697.varValue + U2_3_9.varValue + U3_22_0.varValue + U4_6_3.varValue + U5_7_4.varValue + U6_0_248.varValue 
+
+results[69] = U1_1602.varValue + U2_1_4.varValue + U3_15_0.varValue + U4_0_0.varValue + U5_7_8.varValue + U6_0_24.varValue 
+
+results[70] = U1_1590.varValue + U2_2_0.varValue + U3_33_0.varValue + U4_8_0.varValue + U5_8_0.varValue + U6_0_12.varValue 
+
+results[71] = U1_1616.varValue + U2_1_2.varValue + U3_27_5.varValue + U4_7_6.varValue + U5_9_5.varValue + U6_0_11176.varValue 
+
+results[72] = U1_1780.varValue + U2_2_22.varValue + U3_18_9.varValue + U4_8_44.varValue + U5_9_78.varValue + U6_0_107.varValue 
+
+results[73] = U1_1573.varValue + U2_0_2.varValue + U3_4_0.varValue + U4_5_0.varValue + U5_8_0.varValue + U6_0_72.varValue 
+
+results[74] = U1_1615.varValue + U2_2_6.varValue + U3_21_3.varValue + U4_0_0.varValue + U5_9_6.varValue + U6_0_004.varValue 
+
+results[75] = U1_1586.varValue + U2_3_0.varValue + U3_21_0.varValue + U4_5_1.varValue + U5_8_4.varValue + U6_0_32.varValue 
+
+results[76] = U1_1669.varValue + U2_4_3.varValue + U3_20_0.varValue + U4_7_0.varValue + U5_8_5.varValue + U6_0_32.varValue 
+
+results[77] = U1_1687.varValue + U2_4_5.varValue + U3_17_0.varValue + U4_7_9.varValue + U5_8_9.varValue + U6_0_3.varValue 
+
+results[78] = U1_1590.varValue + U2_1_3.varValue + U3_31_3.varValue + U4_5_3.varValue + U5_8_1.varValue + U6_0_3.varValue 
+
+results[79] = U1_1605.varValue + U2_1_5.varValue + U3_36_0.varValue + U4_8_0.varValue + U5_8_0.varValue + U6_0_22.varValue 
+
+results[80] = U1_776.varValue + U2_0_5.varValue + U3_7_3.varValue + U4_0_0.varValue + U5_14_0.varValue + U6_0_56.varValue 
+
+results[81] = U1_1724.varValue + U2_4_4.varValue + U3_12_0.varValue + U4_6_0.varValue + U5_11_0.varValue + U6_0_008.varValue 
+
+results[82] = U1_1566.varValue + U2_0_3.varValue + U3_14_5.varValue + U4_3_8.varValue + U5_12_8.varValue + U6_0_372.varValue 
+
+results[83] = U1_1630.varValue + U2_4_9.varValue + U3_27_0.varValue + U4_9_9.varValue + U5_6_0.varValue + U6_0_232.varValue 
+
+results[84] = U1_1626.varValue + U2_0_4.varValue + U3_19_0.varValue + U4_4_2.varValue + U5_9_2.varValue + U6_0_412.varValue 
+
+results[85] = U1_1611.varValue + U2_1_6.varValue + U3_29_0.varValue + U4_4_0.varValue + U5_8_0.varValue + U6_0_04.varValue 
+
+results[86] = U1_1552.varValue + U2_0_2.varValue + U3_16_0.varValue + U4_6_0.varValue + U5_8_4.varValue + U6_0_4.varValue 
+
+results[87] = U1_1602.varValue + U2_3_4.varValue + U3_21_6.varValue + U4_12_1.varValue + U5_9_8.varValue + U6_0_2.varValue 
+
+results[88] = U1_1582.varValue + U2_0_3.varValue + U3_21_8.varValue + U4_4_0.varValue + U5_8_7.varValue + U6_0_392.varValue 
+
+results[89] = U1_1598.varValue + U2_0_7.varValue + U3_30_0.varValue + U4_5_8.varValue + U5_8_6.varValue + U6_0_14.varValue 
+
+results[90] = U1_1008.varValue + U2_0_1.varValue + U3_57_5.varValue + U4_0_0.varValue + U5_0_6.varValue + U6_0_012.varValue 
+
+results[91] = U1_1680.varValue + U2_3_3.varValue + U3_22_0.varValue + U4_6_0.varValue + U5_7_5.varValue + U6_0_26.varValue 
+
+results[92] = U1_1693.varValue + U2_3_8.varValue + U3_21_0.varValue + U4_7_1.varValue + U5_7_5.varValue + U6_0_232.varValue 
+
+results[93] = U1_1660.varValue + U2_1_1.varValue + U3_4_0.varValue + U4_18_0.varValue + U5_45_0.varValue + U6_1_07.varValue 
+
+results[94] = U1_1628.varValue + U2_1_1.varValue + U3_28_0.varValue + U4_6_8.varValue + U5_9_3.varValue + U6_0_108.varValue 
+
+results[95] = U1_1902.varValue + U2_4_6.varValue + U3_16_0.varValue + U4_6_9.varValue + U5_9_5.varValue + U6_0_26.varValue 
+
+results[96] = U1_1720.varValue + U2_4_9.varValue + U3_9_0.varValue + U4_5_5.varValue + U5_10_0.varValue + U6_0_34.varValue 
+
+results[97] = U1_1697.varValue + U2_3_9.varValue + U3_22_0.varValue + U4_6_3.varValue + U5_7_4.varValue + U6_0_248.varValue 
+
+results[98] = U1_1653.varValue + U2_3_8.varValue + U3_22_0.varValue + U4_6_3.varValue + U5_7_4.varValue + U6_0_252.varValue 
+
+results[99] = U1_1668.varValue + U2_3_8.varValue + U3_22_0.varValue + U4_6_3.varValue + U5_7_4.varValue + U6_0_252.varValue 
+
+results[100] = U1_1697.varValue + U2_3_3.varValue + U3_23_0.varValue + U4_5_3.varValue + U5_7_4.varValue + U6_0_26.varValue 
+
+results[101] = U1_1460.varValue + U2_0_8.varValue + U3_24_0.varValue + U4_0_0.varValue + U5_8_0.varValue + U6_0_152.varValue 
+
+results[102] = U1_1708.varValue + U2_3_7.varValue + U3_21_0.varValue + U4_4_4.varValue + U5_7_9.varValue + U6_0_24.varValue 
+
+results[103] = U1_1565.varValue + U2_0_7.varValue + U3_17_1.varValue + U4_2_7.varValue + U5_12_7.varValue + U6_0_44.varValue 
+
+results[104] = U1_1569.varValue + U2_0_3.varValue + U3_11_0.varValue + U4_0_0.varValue + U5_11_0.varValue + U6_0_324.varValue 
+
+results[105] = U1_1695.varValue + U2_4_2.varValue + U3_17_7.varValue + U4_6_9.varValue + U5_9_0.varValue + U6_0_124.varValue 
+
+results[106] = U1_1597.varValue + U2_0_6.varValue + U3_8_5.varValue + U4_3_3.varValue + U5_7_9.varValue + U6_0_76.varValue 
+
+results[107] = U1_1676.varValue + U2_3_8.varValue + U3_8_2.varValue + U4_5_1.varValue + U5_9_2.varValue + U6_0_38.varValue 
+
+results[108] = U1_1565.varValue + U2_0_4.varValue + U3_7_7.varValue + U4_6_2.varValue + U5_7_2.varValue + U6_0_68.varValue 
+
+results[109] = U1_1624.varValue + U2_0_3.varValue + U3_17_0.varValue + U4_4_5.varValue + U5_8_0.varValue + U6_0_4.varValue 
+
+results[110] = U1_1754.varValue + U2_1_3.varValue + U3_22_4.varValue + U4_4_7.varValue + U5_7_7.varValue + U6_0_26.varValue 
+
+results[111] = U1_351.varValue + U2_0_2.varValue + U3_25_0.varValue + U4_0_0.varValue + U5_2_6.varValue + U6_0_132.varValue 
+
+results[112] = U1_1620.varValue + U2_0_333.varValue + U3_17_0.varValue + U4_3_0.varValue + U5_9_33.varValue + U6_0_44.varValue 
+
+results[113] = U1_1556.varValue + U2_0_8.varValue + U3_26_0.varValue + U4_0_0.varValue + U5_9_3.varValue + U6_0_12.varValue 
+
+results[114] = U1_1791.varValue + U2_4_8.varValue + U3_20_1.varValue + U4_7_7.varValue + U5_9_7.varValue + U6_0_012.varValue 
+
+results[115] = U1_1632.varValue + U2_0_3.varValue + U3_11_2.varValue + U4_2_8.varValue + U5_7_7.varValue + U6_0_32.varValue 
+
+results[116] = U1_1661.varValue + U2_3_0.varValue + U3_21_0.varValue + U4_5_1.varValue + U5_8_4.varValue + U6_0_32.varValue 
+
+results[117] = U1_1532.varValue + U2_2_8.varValue + U3_21_0.varValue + U4_11_0.varValue + U5_11_0.varValue + U6_0_48.varValue 
+
+results[118] = U1_1649.varValue + U2_1_7.varValue + U3_30_0.varValue + U4_6_2.varValue + U5_9_0.varValue + U6_0_092.varValue 
+
+results[119] = U1_1650.varValue + U2_0_333.varValue + U3_17_0.varValue + U4_3_0.varValue + U5_9_33.varValue + U6_0_44.varValue 
+
+results[120] = U1_1573.varValue + U2_0_2.varValue + U3_18_0.varValue + U4_5_8.varValue + U5_7_4.varValue + U6_0_44.varValue 
+
+results[121] = U1_1577.varValue + U2_0_9.varValue + U3_27_0.varValue + U4_5_0.varValue + U5_10_0.varValue + U6_0_312.varValue 
+
+results[122] = U1_1625.varValue + U2_0_5.varValue + U3_8_6.varValue + U4_3_4.varValue + U5_8_0.varValue + U6_0_56896.varValue 
+
+results[123] = U1_1718.varValue + U2_4_3.varValue + U3_25_7.varValue + U4_6_4.varValue + U5_7_9.varValue + U6_0_144.varValue 
+
+results[124] = U1_1741.varValue + U2_3_1.varValue + U3_24_3.varValue + U4_8_6.varValue + U5_9_2.varValue + U6_0_076.varValue 
+
+results[125] = U1_1628.varValue + U2_2_2.varValue + U3_27_8.varValue + U4_9_2.varValue + U5_9_1.varValue + U6_0_16.varValue 
+
+results[126] = U1_1632.varValue + U2_0_2.varValue + U3_19_9.varValue + U4_3_5.varValue + U5_7_7.varValue + U6_0_296.varValue 
+
+results[127] = U1_1624.varValue + U2_0_2.varValue + U3_22_0.varValue + U4_2_1.varValue + U5_7_1.varValue + U6_0_3.varValue 
+
+results[128] = U1_1561.varValue + U2_0_2.varValue + U3_18_4.varValue + U4_4_9.varValue + U5_7_9.varValue + U6_0_36.varValue 
+
+results[129] = U1_987.varValue + U2_0_0.varValue + U3_58_0.varValue + U4_1_0.varValue + U5_0_4.varValue + U6_0_0.varValue 
+
+results[130] = U1_1626.varValue + U2_0_4.varValue + U3_19_0.varValue + U4_4_2.varValue + U5_9_2.varValue + U6_0_4.varValue 
+
+results[131] = U1_1678.varValue + U2_1_9.varValue + U3_15_0.varValue + U4_9_2.varValue + U5_11_0.varValue + U6_0_292.varValue 
+
+results[132] = U1_1582.varValue + U2_0_6.varValue + U3_15_0.varValue + U4_2_8.varValue + U5_7_9.varValue + U6_0_3.varValue 
+
+results[133] = U1_1669.varValue + U2_2_6.varValue + U3_15_0.varValue + U4_4_8.varValue + U5_7_6.varValue + U6_0_256.varValue 
+
+results[134] = U1_1531.varValue + U2_0_7.varValue + U3_15_1.varValue + U4_3_7.varValue + U5_12_7.varValue + U6_0_6.varValue 
+
+results[135] = U1_1879.varValue + U2_1_8.varValue + U3_5_2.varValue + U4_5_3.varValue + U5_6_1.varValue + U6_0_444.varValue 
+
+results[136] = U1_1891.varValue + U2_1_4.varValue + U3_1_4.varValue + U4_5_3.varValue + U5_6_0.varValue + U6_0_84.varValue 
+
+results[137] = U1_1770.varValue + U2_4_2.varValue + U3_24_0.varValue + U4_8_1.varValue + U5_5_3.varValue + U6_0_152.varValue 
+
+results[138] = U1_1660.varValue + U2_3_8.varValue + U3_28_9.varValue + U4_5_7.varValue + U5_8_3.varValue + U6_0_144.varValue 
+
+results[139] = U1_1594.varValue + U2_0_7.varValue + U3_32_0.varValue + U4_5_1.varValue + U5_7_6.varValue + U6_0_312.varValue 
+
+results[140] = U1_1577.varValue + U2_1_3.varValue + U3_26_8.varValue + U4_8_6.varValue + U5_9_3.varValue + U6_0_168.varValue 
+
+results[141] = U1_1565.varValue + U2_2_9.varValue + U3_0_4.varValue + U4_0_0.varValue + U5_68_3.varValue + U6_0_392.varValue 
+
+results[142] = U1_1561.varValue + U2_0_2.varValue + U3_7_0.varValue + U4_3_0.varValue + U5_8_0.varValue + U6_0_62.varValue 
+
+results[143] = U1_1601.varValue + U2_0_3.varValue + U3_15_4.varValue + U4_2_9.varValue + U5_11_3.varValue + U6_0_372.varValue 
+
+results[144] = U1_1674.varValue + U2_2_6.varValue + U3_15_0.varValue + U4_6_8.varValue + U5_7_6.varValue + U6_0_26.varValue 
+
+results[145] = U1_1645.varValue + U2_1_8.varValue + U3_28_8.varValue + U4_6_2.varValue + U5_8_1.varValue + U6_0_1524.varValue 
+
+results[146] = U1_1666.varValue + U2_0_8.varValue + U3_18_0.varValue + U4_4_5.varValue + U5_9_0.varValue + U6_0_4064.varValue 
+
+results[147] = U1_1588.varValue + U2_0_3.varValue + U3_19_0.varValue + U4_4_5.varValue + U5_8_0.varValue + U6_0_4.varValue 
+
+results[148] = U1_1619.varValue + U2_0_5.varValue + U3_23_0.varValue + U4_3_5.varValue + U5_9_2.varValue + U6_0_252.varValue 
+
+results[149] = U1_1716.varValue + U2_3_8.varValue + U3_16_5.varValue + U4_4_0.varValue + U5_11_5.varValue + U6_0_22352.varValue 
+
+results[150] = U1_1520.varValue + U2_0_4.varValue + U3_17_0.varValue + U4_15_0.varValue + U5_13_0.varValue + U6_0_6096.varValue 
+
+results[151] = U1_1628.varValue + U2_1_8.varValue + U3_28_8.varValue + U4_6_2.varValue + U5_8_1.varValue + U6_0_152.varValue 
+
+results[152] = U1_1651.varValue + U2_1_5.varValue + U3_21_0.varValue + U4_8_3.varValue + U5_11_0.varValue + U6_0_36.varValue 
+
+results[153] = U1_1573.varValue + U2_0_2.varValue + U3_10_0.varValue + U4_0_0.varValue + U5_8_7.varValue + U6_0_44.varValue 
+
+results[154] = U1_1625.varValue + U2_1_2.varValue + U3_25_0.varValue + U4_5_0.varValue + U5_9_5.varValue + U6_0_32004.varValue 
+
+results[155] = U1_1820.varValue + U2_2_5.varValue + U3_17_0.varValue + U4_8_0.varValue + U5_8_0.varValue + U6_0_168.varValue 
+
+results[156] = U1_1881.varValue + U2_1_7.varValue + U3_5_2.varValue + U4_5_3.varValue + U5_5_7.varValue + U6_0_572.varValue 
+
+results[157] = U1_1682.varValue + U2_1_4.varValue + U3_34_0.varValue + U4_6_4.varValue + U5_8_7.varValue + U6_0_152.varValue 
+
+results[158] = U1_1610.varValue + U2_1_0.varValue + U3_28_8.varValue + U4_5_0.varValue + U5_8_8.varValue + U6_0_27432.varValue 
+
+results[159] = U1_1592.varValue + U2_0_2.varValue + U3_19_0.varValue + U4_5_0.varValue + U5_9_0.varValue + U6_0_372.varValue 
+
+results[160] = U1_1570.varValue + U2_0_5.varValue + U3_13_0.varValue + U4_3_0.varValue + U5_13_0.varValue + U6_0_7112.varValue 
+
+results[161] = U1_1657.varValue + U2_2_5.varValue + U3_22_0.varValue + U4_1_2.varValue + U5_8_8.varValue + U6_0_34.varValue 
+
+results[162] = U1_1926.varValue + U2_1_8.varValue + U3_1_2.varValue + U4_0_0.varValue + U5_13_0.varValue + U6_0_88.varValue 
+
+results[163] = U1_1594.varValue + U2_0_1.varValue + U3_37_0.varValue + U4_2_0.varValue + U5_4_5.varValue + U6_0_332.varValue 
+
+results[164] = U1_1569.varValue + U2_0_1.varValue + U3_37_0.varValue + U4_2_0.varValue + U5_4_5.varValue + U6_0_332.varValue 
+
+results[165] = U1_2239.varValue + U2_4_0.varValue + U3_27_0.varValue + U4_0_0.varValue + U5_4_3.varValue + U6_0_12.varValue 
+
+results[166] = U1_1972.varValue + U2_13_7.varValue + U3_15_6.varValue + U4_5_7.varValue + U5_7_5.varValue + U6_0_012.varValue 
+
+results[167] = U1_1616.varValue + U2_0_5.varValue + U3_24_0.varValue + U4_2_7.varValue + U5_6_5.varValue + U6_0_6.varValue 
+
+results[168] = U1_1552.varValue + U2_3_2.varValue + U3_0_0.varValue + U4_0_0.varValue + U5_68_9.varValue + U6_1_96.varValue 
+
+results[169] = U1_2035.varValue + U2_1_6.varValue + U3_0_5.varValue + U4_3_5.varValue + U5_5_2.varValue + U6_1_016.varValue 
+
+results[170] = U1_2029.varValue + U2_2_1.varValue + U3_0_5.varValue + U4_4_0.varValue + U5_3_5.varValue + U6_0_96.varValue 
+
+results[171] = U1_1611.varValue + U2_1_2.varValue + U3_24_0.varValue + U4_0_0.varValue + U5_6_1.varValue + U6_0_22.varValue 
+
+results[172] = U1_1676.varValue + U2_5_0.varValue + U3_23_0.varValue + U4_9_0.varValue + U5_9_0.varValue + U6_0_352.varValue 
+
+results[173] = U1_1100.varValue + U2_2_7.varValue + U3_0_5.varValue + U4_0_0.varValue + U5_23_0.varValue + U6_1_08.varValue 
+
+results[174] = U1_1895.varValue + U2_4_3.varValue + U3_17_0.varValue + U4_0_0.varValue + U5_7_6.varValue + U6_0_2.varValue 
+
+results[175] = U1_833.varValue + U2_0_1.varValue + U3_50_0.varValue + U4_0_0.varValue + U5_0_5.varValue + U6_0_008.varValue 
+
+results[176] = U1_1025.varValue + U2_0_1.varValue + U3_61_0.varValue + U4_0_0.varValue + U5_0_5.varValue + U6_0_016.varValue 
+
+results[177] = U1_1025.varValue + U2_0_1.varValue + U3_61_0.varValue + U4_0_0.varValue + U5_0_5.varValue + U6_0_016.varValue 
+
+results[178] = U1_1124.varValue + U2_0_1.varValue + U3_55_0.varValue + U4_0_5.varValue + U5_0_5.varValue + U6_0_008.varValue 
+
+results[179] = U1_1205.varValue + U2_0_1.varValue + U3_71_0.varValue + U4_0_0.varValue + U5_0_5.varValue + U6_0_014.varValue 
+
+results[180] = U1_1205.varValue + U2_0_1.varValue + U3_71_0.varValue + U4_0_0.varValue + U5_0_5.varValue + U6_0_012.varValue 
+
+results[181] = U1_987.varValue + U2_0_0.varValue + U3_59_0.varValue + U4_0_0.varValue + U5_0_0.varValue + U6_0_0.varValue 
+
+results[182] = U1_1025.varValue + U2_0_1.varValue + U3_61_0.varValue + U4_0_0.varValue + U5_0_5.varValue + U6_0_016.varValue 
+
+results[183] = U1_1187.varValue + U2_5_6.varValue + U3_0_5.varValue + U4_0_0.varValue + U5_34_0.varValue + U6_2_16.varValue 
+
+results[184] = U1_502.varValue + U2_0_5.varValue + U3_0_3.varValue + U4_0_0.varValue + U5_23_8.varValue + U6_1_32.varValue 
+
+results[185] = U1_1862.varValue + U2_1_8.varValue + U3_5_3.varValue + U4_5_1.varValue + U5_5_3.varValue + U6_1_58.varValue 
+
+results[186] = U1_2233.varValue + U2_2_8.varValue + U3_7_0.varValue + U4_1_7.varValue + U5_2_1.varValue + U6_0_76.varValue 
+
+results[187] = U1_1619.varValue + U2_1_3.varValue + U3_23_3.varValue + U4_0_0.varValue + U5_10_6.varValue + U6_0_12.varValue 
+
+results[188] = U1_1661.varValue + U2_3_8.varValue + U3_26_6.varValue + U4_0_0.varValue + U5_10_8.varValue + U6_0_4.varValue 
+
+results[189] = U1_1569.varValue + U2_0_6.varValue + U3_6_5.varValue + U4_0_0.varValue + U5_7_9.varValue + U6_0_76.varValue 
+
+results[190] = U1_2674.varValue + U2_51_0.varValue + U3_16_0.varValue + U4_15_0.varValue + U5_6_2.varValue + U6_0_44.varValue 
+
+results[191] = U1_1669.varValue + U2_3_9.varValue + U3_20_0.varValue + U4_10_0.varValue + U5_9_7.varValue + U6_0_52.varValue 
+
+results[192] = U1_1615.varValue + U2_1_4.varValue + U3_29_4.varValue + U4_0_0.varValue + U5_9_1.varValue + U6_0_088.varValue 
+
+results[193] = U1_1709.varValue + U2_4_0.varValue + U3_22_0.varValue + U4_4_0.varValue + U5_9_4.varValue + U6_0_4064.varValue 
+
+results[194] = U1_1703.varValue + U2_3_1.varValue + U3_25_0.varValue + U4_3_8.varValue + U5_7_7.varValue + U6_0_332.varValue 
+
+results[195] = U1_1715.varValue + U2_4_1.varValue + U3_22_0.varValue + U4_0_0.varValue + U5_7_6.varValue + U6_0_32.varValue 
+
+results[196] = U1_1565.varValue + U2_0_2.varValue + U3_19_0.varValue + U4_0_0.varValue + U5_7_9.varValue + U6_0_372.varValue 
+
+results[197] = U1_1552.varValue + U2_0_2.varValue + U3_16_0.varValue + U4_0_0.varValue + U5_8_4.varValue + U6_0_4.varValue 
+
+results[198] = U1_2055.varValue + U2_3_0.varValue + U3_45_2.varValue + U4_0_0.varValue + U5_4_9.varValue + U6_0_064.varValue 
+
+results[199] = U1_2165.varValue + U2_8_8.varValue + U3_1_4.varValue + U4_0_0.varValue + U5_5_4.varValue + U6_0_392.varValue 
+
+results[200] = U1_1590.varValue + U2_0_6.varValue + U3_24_4.varValue + U4_2_8.varValue + U5_6_5.varValue + U6_0_6.varValue 
+
+results[201] = U1_1728.varValue + U2_5_8.varValue + U3_11_0.varValue + U4_0_0.varValue + U5_9_0.varValue + U6_0_024.varValue 
+
+results[202] = U1_1745.varValue + U2_8_1.varValue + U3_26_0.varValue + U4_6_1.varValue + U5_6_4.varValue + U6_0_4.varValue 
+
+results[203] = U1_1682.varValue + U2_20_0.varValue + U3_0_0.varValue + U4_0_0.varValue + U5_32_0.varValue + U6_0_64.varValue 
+
+results[204] = U1_1665.varValue + U2_18_0.varValue + U3_0_0.varValue + U4_0_0.varValue + U5_33_0.varValue + U6_0_6.varValue 
+
+results[205] = U1_1602.varValue + U2_0_1.varValue + U3_25_0.varValue + U4_0_0.varValue + U5_6_0.varValue + U6_0_5.varValue 
+
+results[206] = U1_1710.varValue + U2_3_67.varValue + U3_25_7.varValue + U4_3_67.varValue + U5_8_33.varValue + U6_0_333.varValue 
+
+results[207] = U1_1586.varValue + U2_0_0.varValue + U3_34_48.varValue + U4_0_0.varValue + U5_1_0.varValue + U6_0_06.varValue 
+
+results[208] = U1_1577.varValue + U2_0_2.varValue + U3_28_0.varValue + U4_3_5.varValue + U5_6_0.varValue + U6_0_52.varValue 
+
+results[209] = U1_1640.varValue + U2_20_0.varValue + U3_0_0.varValue + U4_0_0.varValue + U5_32_0.varValue + U6_0_64.varValue 
+
+results[210] = U1_1665.varValue + U2_5_0.varValue + U3_23_0.varValue + U4_9_0.varValue + U5_9_0.varValue + U6_0_36.varValue 
+
+results[211] = U1_2226.varValue + U2_4_2.varValue + U3_29_7.varValue + U4_0_0.varValue + U5_3_7.varValue + U6_0_0.varValue 
+
+results[212] = U1_2264.varValue + U2_23_0.varValue + U3_32_0.varValue + U4_9_0.varValue + U5_7_3.varValue + U6_0_0268.varValue 
+
+results[213] = U1_1732.varValue + U2_4_2.varValue + U3_21_0.varValue + U4_0_0.varValue + U5_5_8.varValue + U6_0_28.varValue 
+
+results[214] = U1_1602.varValue + U2_0_4.varValue + U3_35_0.varValue + U4_3_3.varValue + U5_5_5.varValue + U6_0_508.varValue 
+
+results[215] = U1_1695.varValue + U2_3_6.varValue + U3_25_7.varValue + U4_4_0.varValue + U5_6_3.varValue + U6_0_8.varValue 
+
+results[216] = U1_2046.varValue + U2_2_0.varValue + U3_1_0.varValue + U4_4_0.varValue + U5_3_5.varValue + U6_0_96.varValue 
+
+results[217] = U1_1665.varValue + U2_18_0.varValue + U3_0_0.varValue + U4_0_0.varValue + U5_33_0.varValue + U6_0_6.varValue 
+
+results[218] = U1_1611.varValue + U2_0_2.varValue + U3_28_2.varValue + U4_3_5.varValue + U5_6_0.varValue + U6_0_52.varValue 
+
+results[219] = U1_2151.varValue + U2_4_2.varValue + U3_12_5.varValue + U4_0_0.varValue + U5_5_8.varValue + U6_0_32.varValue 
+
+results[220] = U1_1648.varValue + U2_0_4.varValue + U3_30_0.varValue + U4_2_6.varValue + U5_6_2.varValue + U6_0_3.varValue 
+
+results[221] = U1_2188.varValue + U2_3_0.varValue + U3_2_9.varValue + U4_0_0.varValue + U5_4_2.varValue + U6_0_88.varValue 
+
+results[222] = U1_2042.varValue + U2_1_9.varValue + U3_0_5.varValue + U4_0_0.varValue + U5_3_3.varValue + U6_1_308.varValue 
+
+results[223] = U1_1715.varValue + U2_4_1.varValue + U3_22_0.varValue + U4_5_0.varValue + U5_7_6.varValue + U6_0_32.varValue 
+
+results[224] = U1_1686.varValue + U2_3_1.varValue + U3_25_0.varValue + U4_3_8.varValue + U5_7_7.varValue + U6_0_32.varValue 
+
+results[225] = U1_1686.varValue + U2_3_1.varValue + U3_25_0.varValue + U4_3_8.varValue + U5_7_7.varValue + U6_0_32.varValue 
+
+results[226] = U1_1678.varValue + U2_20_0.varValue + U3_0_1.varValue + U4_0_0.varValue + U5_25_0.varValue + U6_0_76.varValue 
+
+results[227] = U1_1665.varValue + U2_18_0.varValue + U3_0_0.varValue + U4_0_0.varValue + U5_33_0.varValue + U6_0_6.varValue 
+
+results[228] = U1_874.varValue + U2_2_9.varValue + U3_0_5.varValue + U4_0_0.varValue + U5_34_0.varValue + U6_2_2.varValue 
+
+results[229] = U1_1712.varValue + U2_1_5.varValue + U3_5_0.varValue + U4_7_0.varValue + U5_5_0.varValue + U6_0_82.varValue 
+
+results[230] = U1_1761.varValue + U2_5_6.varValue + U3_35_0.varValue + U4_3_6.varValue + U5_5_7.varValue + U6_0_292.varValue 
+
+results[231] = U1_1599.varValue + U2_0_7.varValue + U3_37_0.varValue + U4_2_1.varValue + U5_6_9.varValue + U6_0_43688.varValue 
+
+results[232] = U1_1728.varValue + U2_3_9.varValue + U3_23_0.varValue + U4_3_9.varValue + U5_8_8.varValue + U6_0_36.varValue 
+
+results[233] = U1_1634.varValue + U2_0_2.varValue + U3_5_7.varValue + U4_3_4.varValue + U5_8_5.varValue + U6_0_88.varValue 
+
+results[234] = U1_1761.varValue + U2_4_0.varValue + U3_19_5.varValue + U4_0_0.varValue + U5_7_6.varValue + U6_0_24.varValue 
+
+results[235] = U1_2427.varValue + U2_46_0.varValue + U3_23_0.varValue + U4_14_0.varValue + U5_5_1.varValue + U6_0_56.varValue 
+
+results[236] = U1_900.varValue + U2_4_4.varValue + U3_0_5.varValue + U4_0_0.varValue + U5_25_0.varValue + U6_1_64.varValue 
+
+results[237] = U1_967.varValue + U2_0_1.varValue + U3_53_0.varValue + U4_0_0.varValue + U5_0_9.varValue + U6_0_0.varValue 
+
+results[238] = U1_1573.varValue + U2_0_4.varValue + U3_35_0.varValue + U4_0_0.varValue + U5_5_0.varValue + U6_0_5.varValue 
+
+results[239] = U1_1732.varValue + U2_4_2.varValue + U3_21_0.varValue + U4_5_8.varValue + U5_7_9.varValue + U6_0_28.varValue 
+
+results[240] = U1_1000.varValue + U2_0_0.varValue + U3_52_7.varValue + U4_0_0.varValue + U5_0_012.varValue + U6_0_0116.varValue 
+
+results[241] = U1_916.varValue + U2_4_9.varValue + U3_0_5.varValue + U4_0_0.varValue + U5_24_4.varValue + U6_1_96.varValue 
+
+results[242] = U1_1760.varValue + U2_8_8.varValue + U3_32_9.varValue + U4_4_0.varValue + U5_6_8.varValue + U6_0_12.varValue 
+
+results[243] = U1_2029.varValue + U2_2_1.varValue + U3_1_0.varValue + U4_3_5.varValue + U5_3_5.varValue + U6_0_96.varValue 
+
+results[244] = U1_1582.varValue + U2_0_2.varValue + U3_27_0.varValue + U4_3_5.varValue + U5_5_7.varValue + U6_0_52.varValue 
+
+results[245] = U1_1728.varValue + U2_4_0.varValue + U3_30_0.varValue + U4_5_6.varValue + U5_8_2.varValue + U6_0_208.varValue 
+
+results[246] = U1_1684.varValue + U2_4_0.varValue + U3_34_8.varValue + U4_4_6.varValue + U5_7_3.varValue + U6_0_136.varValue 
+
+results[247] = U1_1719.varValue + U2_4_0.varValue + U3_24_0.varValue + U4_4_0.varValue + U5_9_0.varValue + U6_0_3556.varValue 
+
+results[248] = U1_1703.varValue + U2_8_1.varValue + U3_28_4.varValue + U4_3_6.varValue + U5_7_6.varValue + U6_0_16.varValue 
+
+results[249] = U1_1589.varValue + U2_0_2.varValue + U3_5_7.varValue + U4_3_4.varValue + U5_8_1.varValue + U6_0_88.varValue 
+
+results[250] = U1_2320.varValue + U2_23_3.varValue + U3_38_1.varValue + U4_3_8.varValue + U5_8_6.varValue + U6_0_112.varValue 
+
+results[251] = U1_2100.varValue + U2_14_0.varValue + U3_36_0.varValue + U4_0_0.varValue + U5_6_7.varValue + U6_0_272.varValue 
+
+results[252] = U1_2675.varValue + U2_41_0.varValue + U3_33_0.varValue + U4_0_0.varValue + U5_4_4.varValue + U6_0_68.varValue 
+
+results[253] = U1_1845.varValue + U2_10_5.varValue + U3_29_4.varValue + U4_0_9.varValue + U5_5_0.varValue + U6_0_24.varValue 
+
+results[254] = U1_2118.varValue + U2_16_3.varValue + U3_45_5.varValue + U4_0_0.varValue + U5_6_9.varValue + U6_0_312.varValue 
+
+results[255] = U1_2029.varValue + U2_11_0.varValue + U3_15_3.varValue + U4_0_0.varValue + U5_4_3.varValue + U6_0_02.varValue 
+
+results[256] = U1_2105.varValue + U2_3_1.varValue + U3_43_5.varValue + U4_0_0.varValue + U5_3_2.varValue + U6_0_384.varValue 
+
+results[257] = U1_1431.varValue + U2_10_7.varValue + U3_0_0.varValue + U4_0_0.varValue + U5_21_52.varValue + U6_1_64.varValue 
+
+results[258] = U1_1134.varValue + U2_6_5.varValue + U3_0_5.varValue + U4_0_0.varValue + U5_33_0.varValue + U6_2_2.varValue 
+
+results[259] = U1_1757.varValue + U2_7_5.varValue + U3_34_7.varValue + U4_0_0.varValue + U5_5_4.varValue + U6_0_44.varValue 
+
+results[260] = U1_1809.varValue + U2_8_8.varValue + U3_34_4.varValue + U4_1_8.varValue + U5_4_3.varValue + U6_0_16.varValue 
+
+results[261] = U1_1133.varValue + U2_6_5.varValue + U3_0_5.varValue + U4_0_0.varValue + U5_33_0.varValue + U6_2_31648.varValue 
+
+results[262] = U1_2368.varValue + U2_26_4.varValue + U3_42_0.varValue + U4_0_0.varValue + U5_6_6.varValue + U6_0_156.varValue 
+
+results[263] = U1_2251.varValue + U2_20_3.varValue + U3_51_4.varValue + U4_0_0.varValue + U5_6_5.varValue + U6_0_08.varValue 
+
+results[264] = U1_2017.varValue + U2_13_2.varValue + U3_31_9.varValue + U4_0_0.varValue + U5_6_3.varValue + U6_0_08.varValue 
+
+results[265] = U1_2435.varValue + U2_42_0.varValue + U3_34_0.varValue + U4_14_0.varValue + U5_4_8.varValue + U6_0_36.varValue 
+
+results[266] = U1_2226.varValue + U2_19_6.varValue + U3_45_1.varValue + U4_0_0.varValue + U5_6_9.varValue + U6_0_112.varValue 
+
+results[267] = U1_2423.varValue + U2_20_4.varValue + U3_34_1.varValue + U4_4_1.varValue + U5_11_2.varValue + U6_0_08.varValue 
+
+results[268] = U1_2255.varValue + U2_21_0.varValue + U3_47_0.varValue + U4_6_0.varValue + U5_4_1.varValue + U6_0_052.varValue 
+
+results[269] = U1_2025.varValue + U2_9_2.varValue + U3_71_4.varValue + U4_0_0.varValue + U5_3_56.varValue + U6_0_0268.varValue 
+
+results[270] = U1_2339.varValue + U2_23_0.varValue + U3_39_0.varValue + U4_0_0.varValue + U5_7_1.varValue + U6_0_008.varValue 
+
+results[271] = U1_2342.varValue + U2_25_2.varValue + U3_45_2.varValue + U4_2_4.varValue + U5_6_3.varValue + U6_0_152.varValue 
+
+results[272] = U1_2201.varValue + U2_5_03.varValue + U3_48_43.varValue + U4_0_0.varValue + U5_6_5.varValue + U6_0_08.varValue 
+
+df = pd.read_excel('OpenFood_Petales.xlsx',header=0) 
+
+df = df.drop_duplicates('productname').reset_index(drop=True) 
+
+df_results = pd.DataFrame(columns=('Food', 'Score', 'Nutri-Score')) 
+
+ordered_results = sorted(results.items(),key = lambda x:x[1],reverse = True) 
+
+for i in ordered_results: 
+
+	 index = i[0]-1 
+
+	 df_results.loc[index] = [df.loc[index]['productname'], i[1], df.loc[index]['nutriscoregrade']] 
+
+print(df_results) 
+
+df_results.to_csv('results.csv') 
 

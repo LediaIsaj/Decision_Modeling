@@ -11,8 +11,8 @@ class UTA_Grenerator:
     
     
     def __init__(self,filepath):
-        
-        filename = file.split(".")
+        self.filepath = filepath
+        filename = filepath.split(".")
         self.filename = filename[0]+".py"
         
         self.df = pd.read_excel(filepath,header=0)
@@ -31,11 +31,10 @@ class UTA_Grenerator:
         
     
     def create_uta_file(self):
-        print(self.df)
-        print(self.df.shape[0])
         f= open(self.filename,"w+")
         line1 = "# Auto-Grenerated python file \r\n"
         line2 = "from pulp import * \r\n"
+        line2 += "import pandas as pd \r\n"
         line3 = "prob = LpProblem('NutriScore', LpMaximize) \r\n"
         
         lines_vars = "# Create problem variables \r\n"
@@ -65,6 +64,8 @@ class UTA_Grenerator:
         grade_D = list()
         grade_E = list()
         
+        #Get ordered products
+        ordered_results = "results = {} \r\n"
         for index, row in self.df.iterrows():
             prodNumb = str(index+1)
             marginal_uility += " # Variables associated to the marginal utility functions of food 1 x_"+prodNumb+"\r\n"
@@ -77,12 +78,12 @@ class UTA_Grenerator:
             proteins100g = self.double_sanitizer(str(row['proteins100g']))
             sodium100g = self.double_sanitizer(str(row['sodium100g']))
             
-            marginal_uility += "U1_"+energy100g+"=LpVariable('utilite_1_"+energy100g+"',0, 20) \r\n"
-            marginal_uility += "U2_"+saturatedfat100g+"=LpVariable('utilite_2_"+saturatedfat100g+"',0, 20) \r\n"
-            marginal_uility += "U3_"+sugars100g+"=LpVariable('utilite_3_"+sugars100g+"',0, 20) \r\n"
-            marginal_uility += "U4_"+fiber100g+"=LpVariable('utilite_4_"+fiber100g+"',0, 20) \r\n"
-            marginal_uility += "U5_"+proteins100g+"=LpVariable('utilite_5_"+proteins100g+"',0, 20) \r\n"
-            marginal_uility += "U6_"+sodium100g+"=LpVariable('utilite_6_"+sodium100g+"',0, 20) \r\n"
+            marginal_uility += "U1_"+energy100g+"=LpVariable('U1_"+energy100g+"',0, 20) \r\n"
+            marginal_uility += "U2_"+saturatedfat100g+"=LpVariable('U2_"+saturatedfat100g+"',0, 20) \r\n"
+            marginal_uility += "U3_"+sugars100g+"=LpVariable('U3_"+sugars100g+"',0, 20) \r\n"
+            marginal_uility += "U4_"+fiber100g+"=LpVariable('U4_"+fiber100g+"',0, 20) \r\n"
+            marginal_uility += "U5_"+proteins100g+"=LpVariable('U5_"+proteins100g+"',0, 20) \r\n"
+            marginal_uility += "U6_"+sodium100g+"=LpVariable('U6_"+sodium100g+"',0, 20) \r\n"
             
             constraints +="prob+=U1_"+energy100g
             constraints += " + U2_"+saturatedfat100g
@@ -90,6 +91,8 @@ class UTA_Grenerator:
             constraints += " + U4_"+fiber100g
             constraints += " + U5_"+proteins100g
             constraints += " + U6_"+sodium100g + " == x_"+prodNumb + " , 'product "+prodNumb+" constraint' \r\n" 
+            
+            ordered_results += "results["+prodNumb +"] = U1_"+energy100g +".varValue + U2_"+saturatedfat100g + ".varValue + U3_"+sugars100g +".varValue + U4_"+fiber100g +".varValue + U5_"+proteins100g + ".varValue + U6_"+sodium100g +".varValue \r\n"
             
             nutri_grade = row['nutriscoregrade']
             if (nutri_grade == 'a'):
@@ -175,15 +178,25 @@ class UTA_Grenerator:
         probl = "# The problem data is written to an .lp file \r\n"
         probl += "prob.writeLP('The Nutriscore.lp') \r\n"
         probl += "prob.solve() \r\n"
-        probl += "print('Statut:', LpStatus[prob.status]) \r\n"
+        probl += "print('Status:', LpStatus[prob.status]) \r\n"
         probl += "# Each of the variables is printed with it's resolved optimum value \r\n"
         probl += "for v in prob.variables(): \r\n"
         probl += "\t print(v.name, '=', v.varValue) \r\n"
-        probl += "print('Valeur fonction objectif = ', value(prob.objective)) \r\n"
+        probl += "print('Value of objective function = ', value(prob.objective)) \r\n"
 
         mon_consts = monotonicity1 + monotonicity2 + monotonicity3 + monotonicity4 + monotonicity5 + monotonicity6
+        ordered_results += "df = pd.read_excel('"+self.filepath+"',header=0) \r\n"
+        ordered_results += "df = df.drop_duplicates('productname').reset_index(drop=True) \r\n"
+        ordered_results += "df_results = pd.DataFrame(columns=('Food', 'Score', 'Nutri-Score')) \r\n"
+        ordered_results += "ordered_results = sorted(results.items(),key = lambda x:x[1],reverse = True) \r\n"
+        ordered_results += "for i in ordered_results: \r\n"
+        ordered_results += "\t index = i[0]-1 \r\n"
+        ordered_results += "\t df_results.loc[index] = [df.loc[index]['productname'], i[1], df.loc[index]['nutriscoregrade']] \r\n"      
+        ordered_results += "print(df_results) \r\n"
+        ordered_results += "df_results.to_csv('results.csv') \r\n"
+        
         #Write all the specified lines of code into the file
-        f.writelines([line1, line2, line3,lines_vars,lines_epsilon, marginal_uility,line_obj, constraints, lines_pref,mon_consts,probl])
+        f.writelines([line1, line2, line3,lines_vars,lines_epsilon, marginal_uility,line_obj, constraints, lines_pref,mon_consts,probl, ordered_results])
 file = "OpenFood_Petales.xlsx"
 test1 = UTA_Grenerator(file)
 test1.create_uta_file()
